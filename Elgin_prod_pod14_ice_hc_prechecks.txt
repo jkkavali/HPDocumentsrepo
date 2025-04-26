@@ -1,0 +1,1578 @@
+     ┌────────────────────────────────────────────────────────────────────┐
+     │                • MobaXterm Personal Edition v20.2 •                │
+     │              (X server, SSH client and network tools)              │
+     │                                                                    │
+     │ ➤ Your computer drives are accessible through the /drives path     │
+     │ ➤ Your DISPLAY is set to 10.1.0.108:0.0                            │
+     │ ➤ When using SSH, your remote DISPLAY is automatically forwarded   │
+     │ ➤ Each command status is specified by a special symbol (✔ or ✘)    │
+     │                                                                    │
+     │ • Important:                                                       │
+     │ This is MobaXterm Personal Edition. The Professional edition       │
+     │ allows you to customize MobaXterm for your company: you can add    │
+     │ your own logo, your parameters, your welcome message and generate  │
+     │ either an MSI installation package or a portable executable.       │
+     │ We can also modify MobaXterm or develop the plugins you need.      │
+     │ For more information: https://mobaxterm.mobatek.net/download.html  │
+     └────────────────────────────────────────────────────────────────────┘
+
+  24/04/2025   12:24.38   /home/mobaxterm  ssh cbis-admin@10.244.45.218 
+_ssh: Could not resolve hostname 10.244.45.218\342\200\203: Name or service not known
+
+
+  24/04/2025   12:24.41   /home/mobaxterm  ssh superuser1@10.244.45.215
+------------------------------------------------------------------------------
+* WARNING                                                                    *
+* You are accessing a secured system and your actions will be logged along   *
+* with identifying information. Disconnect immediately if you are not an     *
+* authorized user of this system.                                            *
+------------------------------------------------------------------------------
+superuser1@10.244.45.215's password:
+X11 forwarding request failed on channel 0
+Last failed login: Thu Apr 24 08:15:15 UTC 2025 from 10.247.14.76 on ssh:notty
+There were 3 failed login attempts since the last successful login.
+Last login: Thu Apr 24 06:45:04 2025 from 10.247.14.71
+ =========== ** W A R N I N G ** ======================
+
+ This is a Nokia system, restricted
+ to authorized individuals. This system is subject to
+ monitoring. Unauthorized users, access, and/or
+ modification will be prosecuted.
+
+ ======================================================
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ ls -lrth
+total 17M
+-rw-r--r--. 1 superuser1 superuser1 7.9M Mar 25 23:12 usdelpod14-ncs_HealthChecksSummary_2025-03-25_22-49.html
+-rw-r--r--. 1 superuser1 superuser1 7.3M Mar 25 23:12 usdelpod14-ncs_HealthChecksSummary_2025-03-25_22-49.json
+-rw-r--r--. 1 superuser1 superuser1 1.5M Mar 25 23:12 usdelpod14-ncs_HealthChecksSummary_2025-03-25_22-49.log
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ ls -lrth
+total 126M
+-rw-r--r--. 1 superuser1 superuser1 7.9M Mar 25 23:12 usdelpod14-ncs_HealthChecksSummary_2025-03-25_22-49.html
+-rw-r--r--. 1 superuser1 superuser1 7.3M Mar 25 23:12 usdelpod14-ncs_HealthChecksSummary_2025-03-25_22-49.json
+-rw-r--r--. 1 superuser1 superuser1 1.5M Mar 25 23:12 usdelpod14-ncs_HealthChecksSummary_2025-03-25_22-49.log
+-rw-r-----. 1 superuser1 superuser1 110M Apr 24 08:16 ice-support-package-1.3-b455-base.tar.gz.self 2.ext
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ sudo cp ice-support-package-1.3-b455-base.tar.gz.self                   cbis-admin
+cp: cannot stat ‘ice-support-package-1.3-b455-base.tar.gz.self’: No such file or directory
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ sudo cp ice-support-package-1.3-b455-base.tar.gz.self                   /home/cbis-admin
+cp: cannot stat ‘ice-support-package-1.3-b455-base.tar.gz.self’: No such file or directory
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ sudo -i -u cbis-admin
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ pwd
+/home/cbis-admin
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ logout
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ ls -lrth
+total 126M
+-rw-r--r--. 1 superuser1 superuser1 7.9M Mar 25 23:12 usdelpod14-ncs_HealthChecksSummary_2025-03-25_22-49.html
+-rw-r--r--. 1 superuser1 superuser1 7.3M Mar 25 23:12 usdelpod14-ncs_HealthChecksSummary_2025-03-25_22-49.json
+-rw-r--r--. 1 superuser1 superuser1 1.5M Mar 25 23:12 usdelpod14-ncs_HealthChecksSummary_2025-03-25_22-49.log
+-rw-r-----. 1 superuser1 superuser1 110M Apr 24 08:16 ice-support-package-1.3-b455-base.tar.gz.self 2.ext
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ mv ice-support-package-1.3-b455-base.tar.gz.self\ 2.e                  xt ice-support-package-1.3-b455-base.tar.gz.ext
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ ls -lrth
+total 126M
+-rw-r--r--. 1 superuser1 superuser1 7.9M Mar 25 23:12 usdelpod14-ncs_HealthChecksSummary_2025-03-25_22-49.html
+-rw-r--r--. 1 superuser1 superuser1 7.3M Mar 25 23:12 usdelpod14-ncs_HealthChecksSummary_2025-03-25_22-49.json
+-rw-r--r--. 1 superuser1 superuser1 1.5M Mar 25 23:12 usdelpod14-ncs_HealthChecksSummary_2025-03-25_22-49.log
+-rw-r-----. 1 superuser1 superuser1 110M Apr 24 08:16 ice-support-package-1.3-b455-base.tar.gz.ext
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ sudo cp ice-support-package-1.3-b455-base.tar.gz.ext                   /home/cbis-admin
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ sudo -i -u cbis-admin
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ ls -prth
+all_irq_pin_seg/                                          workerbm-9_reboot_logs/
+salt/                                                     masterbm-0_reboot_logs/
+body_usdelpod14-ncs.json                                  edgebm-0_reboot_logs/
+all_irq_pin_seg.zip                                       monitor_reboot_logs/
+safeguard.sh                                              storagbm-2_reboot_logs/
+cbis-admin@172.31.0.18                                    logrotate_podman_ansible (2).tgz
+HC_Checklist_updated.zip                                  logrotate_podman_ansible .tgz
+cbis-admin@172.31.0.17                                    logrotate_podman.tgz
+freeg.text                                                test.gz
+freeg1.text1                                              check_freeze_events.sh
+disable-enable-sctp.yaml                                  restore_cbis_manager_image.yml
+servicenow.zip                                            memCpuChk_v2.1.sh
+cinfo-1.0.tar                                             logrotate_podman_ansible_mp2_compatiable.tgz
+nginx.tar                                                 check_too.sh
+firewall_POD14_ELG.json                                   tcpdump_nodes/
+NCS22-12_deployment_optimization_TSN_v0.6.tgz             cnf_size_check_v2.sh
+-                                                         04288266/
+{                                                         nohup.out
+usdelpod14-ncs_HealthChecksSummary_2023-08-21_09-53.html  NCS22-12_deployment_optimization_TSN/
+power.sh                                                  ice-install-on-local/
+servicenow_USD/                                           Log/
+perf.log                                                  VerifyHP.nfvi2.sh
+bcmt_Folder/                                              nadcmfiles/
+servicenow/                                               srcfiles/
+whereabouts-cleaner-TSN-NCS22.tgz                         mobafiles/
+usdelpod14-ncs_HealthChecksSummary_2023-10-27_17-06.html  ipmi-ips
+usdelpod14-ncs_HealthChecksSummary_2023-11-02_16-45.html  logs/
+usdelpod14-ncs_HealthChecksSummary_2023-11-02_16-45.log   ipmi_init.01212025.055957
+usdelpod14-ncs_HealthChecksSummary_2023-11-02_16-45.json  ipmi_good.01212025.055957
+NCS22.12-PP0.tar.gz                                       worker
+screenlog.0                                               usdelpod14-ncs_HealthChecksSummary_2025-01-22_09-34.html
+usdelpod14-ncs_HealthChecksSummary_2023-11-06_18-45.html  drop_cache/
+usdelpod14-ncs_HealthChecksSummary_2023-11-06_18-45.log   ice/
+usdelpod14-ncs_HealthChecksSummary_2023-11-06_18-45.json  icerc
+ansible/                                                  HealthCheckFiles/
+workerbm-6_reboot_logs/                                   ice-support-package-1.3-b455-base.tar.gz.ext
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ ls -lrth
+total 4.5G
+drwxrwxr-x.  2 cbis-admin cbis-admin  199 May 12  2023 all_irq_pin_seg
+drwxr-x---.  4 cbis-admin cbis-admin   28 May 24  2023 salt
+-rw-r-----.  1 cbis-admin cbis-admin 104K May 24  2023 body_usdelpod14-ncs.json
+-rw-r-----.  1 cbis-admin cbis-admin 4.3K May 25  2023 all_irq_pin_seg.zip
+-rwxr-x---.  1 cbis-admin cbis-admin 1.5K May 25  2023 safeguard.sh
+-rwxr-x---.  1 cbis-admin cbis-admin 1.5K May 25  2023 cbis-admin@172.31.0.18
+-rw-r-----.  1 cbis-admin cbis-admin  18K May 25  2023 HC_Checklist_updated.zip
+-rw-r-----.  1 cbis-admin cbis-admin  18K May 25  2023 cbis-admin@172.31.0.17
+-rw-r-----.  1 cbis-admin cbis-admin   80 May 25  2023 freeg.text
+-rw-r-----.  1 cbis-admin cbis-admin    4 May 25  2023 freeg1.text1
+-rw-r-----.  1 cbis-admin cbis-admin 2.6K May 25  2023 disable-enable-sctp.yaml
+-rw-r-----.  1 cbis-admin cbis-admin 4.5K May 26  2023 servicenow.zip
+-rw-r-----.  1 cbis-admin cbis-admin  73M May 26  2023 cinfo-1.0.tar
+-rw-r-----.  1 cbis-admin cbis-admin 132M May 26  2023 nginx.tar
+-rw-r-----.  1 cbis-admin cbis-admin  55K May 31  2023 firewall_POD14_ELG.json
+-rw-r-----.  1 cbis-admin cbis-admin  79K Aug  1  2023 NCS22-12_deployment_optimization_TSN_v0.6.tgz
+-rw-r-----.  1 cbis-admin cbis-admin    0 Aug 11  2023 -
+-rw-r-----.  1 cbis-admin cbis-admin    0 Aug 11  2023 {
+-rw-r-----.  1 cbis-admin cbis-admin 4.3M Aug 21  2023 usdelpod14-ncs_HealthChecksSummary_2023-08-21_09-53.html
+-rwxrwxrwx.  1 cbis-admin cbis-admin  294 Sep 18  2023 power.sh
+drwxr-x---.  2 cbis-admin cbis-admin  171 Sep 18  2023 servicenow_USD
+-rw-------.  1 cbis-admin cbis-admin  11M Sep 20  2023 perf.log
+drwxr-x---.  3 cbis-admin cbis-admin   37 Sep 20  2023 bcmt_Folder
+drwxr-x---.  2 cbis-admin cbis-admin   61 Sep 20  2023 servicenow
+-rw-r-----.  1 cbis-admin cbis-admin 107M Sep 26  2023 whereabouts-cleaner-TSN-NCS22.tgz
+-rw-r-----.  1 cbis-admin cbis-admin 3.6M Oct 27  2023 usdelpod14-ncs_HealthChecksSummary_2023-10-27_17-06.html
+-rwxrwxrwx.  1 root       root       3.6M Nov  2  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-02_16-45.html
+-rwxrwxrwx.  1 root       root       889K Nov  2  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-02_16-45.log
+-rwxrwxrwx.  1 root       root       3.6M Nov  2  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-02_16-45.json
+-rw-r-----.  1 cbis-admin cbis-admin 1.5G Nov  3  2023 NCS22.12-PP0.tar.gz
+-rw-r-----.  1 cbis-admin cbis-admin 1.1M Nov  3  2023 screenlog.0
+-rwxrwxrwx.  1 root       root       3.5M Nov  6  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-06_18-45.html
+-rwxrwxrwx.  1 root       root       871K Nov  6  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-06_18-45.log
+-rwxrwxrwx.  1 root       root       3.6M Nov  6  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-06_18-45.json
+drwxr-x---.  2 cbis-admin cbis-admin   57 Jan 13  2024 ansible
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  4  2024 workerbm-6_reboot_logs
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  4  2024 workerbm-9_reboot_logs
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  5  2024 masterbm-0_reboot_logs
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  5  2024 edgebm-0_reboot_logs
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  5  2024 monitor_reboot_logs
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  5  2024 storagbm-2_reboot_logs
+-rw-r-----.  1 cbis-admin cbis-admin  913 Apr 22  2024 logrotate_podman_ansible (2).tgz
+-rw-r-----.  1 cbis-admin cbis-admin  913 Apr 22  2024 logrotate_podman_ansible .tgz
+-rw-r-----.  1 cbis-admin cbis-admin  913 Apr 22  2024 logrotate_podman.tgz
+-rw-r-----.  1 cbis-admin cbis-admin 2.5G May 13  2024 test.gz
+-rw-r-----.  1 cbis-admin cbis-admin  713 May 13  2024 check_freeze_events.sh
+-rwxrwxrwx.  1 cbis-admin cbis-admin  468 May 21  2024 restore_cbis_manager_image.yml
+-rw-r-----.  1 cbis-admin cbis-admin 1.3K Jul 19  2024 memCpuChk_v2.1.sh
+-rw-r-----.  1 cbis-admin cbis-admin  890 Aug  2  2024 logrotate_podman_ansible_mp2_compatiable.tgz
+-rw-r-----.  1 cbis-admin cbis-admin  774 Aug  9  2024 check_too.sh
+drwxr-x---.  2 cbis-admin cbis-admin   65 Sep  5  2024 tcpdump_nodes
+-rw-r-----.  1 cbis-admin cbis-admin 3.1K Oct  3  2024 cnf_size_check_v2.sh
+drwxr-x---.  2 cbis-admin cbis-admin 4.0K Nov 11 21:00 04288266
+-rw-------.  1 root       root         99 Nov 14 06:58 nohup.out
+drwxrwxr-x. 10 cbis-admin cbis-admin 4.0K Nov 15 06:45 NCS22-12_deployment_optimization_TSN
+drwxr-x---.  5 cbis-admin cbis-admin   79 Dec 26 10:14 ice-install-on-local
+drwxr-x---.  2 cbis-admin cbis-admin   41 Jan 17 05:57 Log
+-rw-r-----.  1 cbis-admin cbis-admin  60K Jan 17 06:15 VerifyHP.nfvi2.sh
+drwxr-x---.  2 cbis-admin cbis-admin    6 Jan 17 06:17 nadcmfiles
+drwxr-x---.  2 cbis-admin cbis-admin    6 Jan 17 06:17 srcfiles
+drwxr-x---.  2 cbis-admin cbis-admin    6 Jan 17 06:17 mobafiles
+-rw-r-----.  1 cbis-admin cbis-admin   75 Jan 21 04:27 ipmi-ips
+drwxr-x---.  2 cbis-admin cbis-admin 4.0K Jan 21 05:59 logs
+-rw-r-----.  1 cbis-admin cbis-admin   45 Jan 21 05:59 ipmi_init.01212025.055957
+-rw-r-----.  1 cbis-admin cbis-admin   45 Jan 21 05:59 ipmi_good.01212025.055957
+-rw-r-----.  1 cbis-admin cbis-admin  660 Jan 22 08:00 worker
+-rw-r-----.  1 cbis-admin cbis-admin 7.9M Jan 22 10:29 usdelpod14-ncs_HealthChecksSummary_2025-01-22_09-34.html
+drwxr-x---.  2 cbis-admin cbis-admin   49 Jan 22 10:58 drop_cache
+drwxr-x---.  7 cbis-admin cbis-admin  140 Mar 25 22:49 ice
+-rw-r-----.  1 cbis-admin cbis-admin  14K Mar 25 22:49 icerc
+drwxrwxrwx.  2 cbis-admin cbis-admin  16K Mar 25 23:13 HealthCheckFiles
+-rw-r-----.  1 root       root       110M Apr 24 08:18 ice-support-package-1.3-b455-base.tar.gz.ext
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ chmod +x ice-support-package-1.3-b455-base.tar.gz.ext
+chmod: changing permissions of ‘ice-support-package-1.3-b455-base.tar.gz.ext’: Operation not permitted
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ sudo chmod +x ice-support-package-1.3-b455-base.tar.g                  z.ext
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ timed out waiting for input: auto-logout
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ sudo -i -u cbis-admin
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ ls -lrth
+total 4.5G
+drwxrwxr-x.  2 cbis-admin cbis-admin  199 May 12  2023 all_irq_pin_seg
+drwxr-x---.  4 cbis-admin cbis-admin   28 May 24  2023 salt
+-rw-r-----.  1 cbis-admin cbis-admin 104K May 24  2023 body_usdelpod14-ncs.json
+-rw-r-----.  1 cbis-admin cbis-admin 4.3K May 25  2023 all_irq_pin_seg.zip
+-rwxr-x---.  1 cbis-admin cbis-admin 1.5K May 25  2023 safeguard.sh
+-rwxr-x---.  1 cbis-admin cbis-admin 1.5K May 25  2023 cbis-admin@172.31.0.18
+-rw-r-----.  1 cbis-admin cbis-admin  18K May 25  2023 HC_Checklist_updated.zip
+-rw-r-----.  1 cbis-admin cbis-admin  18K May 25  2023 cbis-admin@172.31.0.17
+-rw-r-----.  1 cbis-admin cbis-admin   80 May 25  2023 freeg.text
+-rw-r-----.  1 cbis-admin cbis-admin    4 May 25  2023 freeg1.text1
+-rw-r-----.  1 cbis-admin cbis-admin 2.6K May 25  2023 disable-enable-sctp.yaml
+-rw-r-----.  1 cbis-admin cbis-admin 4.5K May 26  2023 servicenow.zip
+-rw-r-----.  1 cbis-admin cbis-admin  73M May 26  2023 cinfo-1.0.tar
+-rw-r-----.  1 cbis-admin cbis-admin 132M May 26  2023 nginx.tar
+-rw-r-----.  1 cbis-admin cbis-admin  55K May 31  2023 firewall_POD14_ELG.json
+-rw-r-----.  1 cbis-admin cbis-admin  79K Aug  1  2023 NCS22-12_deployment_optimization_TSN_v0.6.tgz
+-rw-r-----.  1 cbis-admin cbis-admin    0 Aug 11  2023 -
+-rw-r-----.  1 cbis-admin cbis-admin    0 Aug 11  2023 {
+-rw-r-----.  1 cbis-admin cbis-admin 4.3M Aug 21  2023 usdelpod14-ncs_HealthChecksSummary_2023-08-21_09-53.html
+-rwxrwxrwx.  1 cbis-admin cbis-admin  294 Sep 18  2023 power.sh
+drwxr-x---.  2 cbis-admin cbis-admin  171 Sep 18  2023 servicenow_USD
+-rw-------.  1 cbis-admin cbis-admin  11M Sep 20  2023 perf.log
+drwxr-x---.  3 cbis-admin cbis-admin   37 Sep 20  2023 bcmt_Folder
+drwxr-x---.  2 cbis-admin cbis-admin   61 Sep 20  2023 servicenow
+-rw-r-----.  1 cbis-admin cbis-admin 107M Sep 26  2023 whereabouts-cleaner-TSN-NCS22.tgz
+-rw-r-----.  1 cbis-admin cbis-admin 3.6M Oct 27  2023 usdelpod14-ncs_HealthChecksSummary_2023-10-27_17-06.html
+-rwxrwxrwx.  1 root       root       3.6M Nov  2  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-02_16-45.html
+-rwxrwxrwx.  1 root       root       889K Nov  2  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-02_16-45.log
+-rwxrwxrwx.  1 root       root       3.6M Nov  2  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-02_16-45.json
+-rw-r-----.  1 cbis-admin cbis-admin 1.5G Nov  3  2023 NCS22.12-PP0.tar.gz
+-rw-r-----.  1 cbis-admin cbis-admin 1.1M Nov  3  2023 screenlog.0
+-rwxrwxrwx.  1 root       root       3.5M Nov  6  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-06_18-45.html
+-rwxrwxrwx.  1 root       root       871K Nov  6  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-06_18-45.log
+-rwxrwxrwx.  1 root       root       3.6M Nov  6  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-06_18-45.json
+drwxr-x---.  2 cbis-admin cbis-admin   57 Jan 13  2024 ansible
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  4  2024 workerbm-6_reboot_logs
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  4  2024 workerbm-9_reboot_logs
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  5  2024 masterbm-0_reboot_logs
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  5  2024 edgebm-0_reboot_logs
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  5  2024 monitor_reboot_logs
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  5  2024 storagbm-2_reboot_logs
+-rw-r-----.  1 cbis-admin cbis-admin  913 Apr 22  2024 logrotate_podman_ansible (2).tgz
+-rw-r-----.  1 cbis-admin cbis-admin  913 Apr 22  2024 logrotate_podman_ansible .tgz
+-rw-r-----.  1 cbis-admin cbis-admin  913 Apr 22  2024 logrotate_podman.tgz
+-rw-r-----.  1 cbis-admin cbis-admin 2.5G May 13  2024 test.gz
+-rw-r-----.  1 cbis-admin cbis-admin  713 May 13  2024 check_freeze_events.sh
+-rwxrwxrwx.  1 cbis-admin cbis-admin  468 May 21  2024 restore_cbis_manager_image.yml
+-rw-r-----.  1 cbis-admin cbis-admin 1.3K Jul 19  2024 memCpuChk_v2.1.sh
+-rw-r-----.  1 cbis-admin cbis-admin  890 Aug  2  2024 logrotate_podman_ansible_mp2_compatiable.tgz
+-rw-r-----.  1 cbis-admin cbis-admin  774 Aug  9  2024 check_too.sh
+drwxr-x---.  2 cbis-admin cbis-admin   65 Sep  5  2024 tcpdump_nodes
+-rw-r-----.  1 cbis-admin cbis-admin 3.1K Oct  3  2024 cnf_size_check_v2.sh
+drwxr-x---.  2 cbis-admin cbis-admin 4.0K Nov 11 21:00 04288266
+-rw-------.  1 root       root         99 Nov 14 06:58 nohup.out
+drwxrwxr-x. 10 cbis-admin cbis-admin 4.0K Nov 15 06:45 NCS22-12_deployment_optimization_TSN
+drwxr-x---.  5 cbis-admin cbis-admin   79 Dec 26 10:14 ice-install-on-local
+drwxr-x---.  2 cbis-admin cbis-admin   41 Jan 17 05:57 Log
+-rw-r-----.  1 cbis-admin cbis-admin  60K Jan 17 06:15 VerifyHP.nfvi2.sh
+drwxr-x---.  2 cbis-admin cbis-admin    6 Jan 17 06:17 nadcmfiles
+drwxr-x---.  2 cbis-admin cbis-admin    6 Jan 17 06:17 srcfiles
+drwxr-x---.  2 cbis-admin cbis-admin    6 Jan 17 06:17 mobafiles
+-rw-r-----.  1 cbis-admin cbis-admin   75 Jan 21 04:27 ipmi-ips
+drwxr-x---.  2 cbis-admin cbis-admin 4.0K Jan 21 05:59 logs
+-rw-r-----.  1 cbis-admin cbis-admin   45 Jan 21 05:59 ipmi_init.01212025.055957
+-rw-r-----.  1 cbis-admin cbis-admin   45 Jan 21 05:59 ipmi_good.01212025.055957
+-rw-r-----.  1 cbis-admin cbis-admin  660 Jan 22 08:00 worker
+-rw-r-----.  1 cbis-admin cbis-admin 7.9M Jan 22 10:29 usdelpod14-ncs_HealthChecksSummary_2025-01-22_09-34.html
+drwxr-x---.  2 cbis-admin cbis-admin   49 Jan 22 10:58 drop_cache
+drwxr-x---.  7 cbis-admin cbis-admin  140 Mar 25 22:49 ice
+-rw-r-----.  1 cbis-admin cbis-admin  14K Mar 25 22:49 icerc
+drwxrwxrwx.  2 cbis-admin cbis-admin  16K Mar 25 23:13 HealthCheckFiles
+-rwxr-x---.  1 root       root       110M Apr 24 08:18 ice-support-package-1.3-b455-base.tar.gz.ext
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ ls -lrth
+total 4.5G
+drwxrwxr-x.  2 cbis-admin cbis-admin  199 May 12  2023 all_irq_pin_seg
+drwxr-x---.  4 cbis-admin cbis-admin   28 May 24  2023 salt
+-rw-r-----.  1 cbis-admin cbis-admin 104K May 24  2023 body_usdelpod14-ncs.json
+-rw-r-----.  1 cbis-admin cbis-admin 4.3K May 25  2023 all_irq_pin_seg.zip
+-rwxr-x---.  1 cbis-admin cbis-admin 1.5K May 25  2023 safeguard.sh
+-rwxr-x---.  1 cbis-admin cbis-admin 1.5K May 25  2023 cbis-admin@172.31.0.18
+-rw-r-----.  1 cbis-admin cbis-admin  18K May 25  2023 HC_Checklist_updated.zip
+-rw-r-----.  1 cbis-admin cbis-admin  18K May 25  2023 cbis-admin@172.31.0.17
+-rw-r-----.  1 cbis-admin cbis-admin   80 May 25  2023 freeg.text
+-rw-r-----.  1 cbis-admin cbis-admin    4 May 25  2023 freeg1.text1
+-rw-r-----.  1 cbis-admin cbis-admin 2.6K May 25  2023 disable-enable-sctp.yaml
+-rw-r-----.  1 cbis-admin cbis-admin 4.5K May 26  2023 servicenow.zip
+-rw-r-----.  1 cbis-admin cbis-admin  73M May 26  2023 cinfo-1.0.tar
+-rw-r-----.  1 cbis-admin cbis-admin 132M May 26  2023 nginx.tar
+-rw-r-----.  1 cbis-admin cbis-admin  55K May 31  2023 firewall_POD14_ELG.json
+-rw-r-----.  1 cbis-admin cbis-admin  79K Aug  1  2023 NCS22-12_deployment_optimization_TSN_v0.6.tgz
+-rw-r-----.  1 cbis-admin cbis-admin    0 Aug 11  2023 -
+-rw-r-----.  1 cbis-admin cbis-admin    0 Aug 11  2023 {
+-rw-r-----.  1 cbis-admin cbis-admin 4.3M Aug 21  2023 usdelpod14-ncs_HealthChecksSummary_2023-08-21_09-53.html
+-rwxrwxrwx.  1 cbis-admin cbis-admin  294 Sep 18  2023 power.sh
+drwxr-x---.  2 cbis-admin cbis-admin  171 Sep 18  2023 servicenow_USD
+-rw-------.  1 cbis-admin cbis-admin  11M Sep 20  2023 perf.log
+drwxr-x---.  3 cbis-admin cbis-admin   37 Sep 20  2023 bcmt_Folder
+drwxr-x---.  2 cbis-admin cbis-admin   61 Sep 20  2023 servicenow
+-rw-r-----.  1 cbis-admin cbis-admin 107M Sep 26  2023 whereabouts-cleaner-TSN-NCS22.tgz
+-rw-r-----.  1 cbis-admin cbis-admin 3.6M Oct 27  2023 usdelpod14-ncs_HealthChecksSummary_2023-10-27_17-06.html
+-rwxrwxrwx.  1 root       root       3.6M Nov  2  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-02_16-45.html
+-rwxrwxrwx.  1 root       root       889K Nov  2  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-02_16-45.log
+-rwxrwxrwx.  1 root       root       3.6M Nov  2  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-02_16-45.json
+-rw-r-----.  1 cbis-admin cbis-admin 1.5G Nov  3  2023 NCS22.12-PP0.tar.gz
+-rw-r-----.  1 cbis-admin cbis-admin 1.1M Nov  3  2023 screenlog.0
+-rwxrwxrwx.  1 root       root       3.5M Nov  6  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-06_18-45.html
+-rwxrwxrwx.  1 root       root       871K Nov  6  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-06_18-45.log
+-rwxrwxrwx.  1 root       root       3.6M Nov  6  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-06_18-45.json
+drwxr-x---.  2 cbis-admin cbis-admin   57 Jan 13  2024 ansible
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  4  2024 workerbm-6_reboot_logs
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  4  2024 workerbm-9_reboot_logs
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  5  2024 masterbm-0_reboot_logs
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  5  2024 edgebm-0_reboot_logs
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  5  2024 monitor_reboot_logs
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  5  2024 storagbm-2_reboot_logs
+-rw-r-----.  1 cbis-admin cbis-admin  913 Apr 22  2024 logrotate_podman_ansible (2).tgz
+-rw-r-----.  1 cbis-admin cbis-admin  913 Apr 22  2024 logrotate_podman_ansible .tgz
+-rw-r-----.  1 cbis-admin cbis-admin  913 Apr 22  2024 logrotate_podman.tgz
+-rw-r-----.  1 cbis-admin cbis-admin 2.5G May 13  2024 test.gz
+-rw-r-----.  1 cbis-admin cbis-admin  713 May 13  2024 check_freeze_events.sh
+-rwxrwxrwx.  1 cbis-admin cbis-admin  468 May 21  2024 restore_cbis_manager_image.yml
+-rw-r-----.  1 cbis-admin cbis-admin 1.3K Jul 19  2024 memCpuChk_v2.1.sh
+-rw-r-----.  1 cbis-admin cbis-admin  890 Aug  2  2024 logrotate_podman_ansible_mp2_compatiable.tgz
+-rw-r-----.  1 cbis-admin cbis-admin  774 Aug  9  2024 check_too.sh
+drwxr-x---.  2 cbis-admin cbis-admin   65 Sep  5  2024 tcpdump_nodes
+-rw-r-----.  1 cbis-admin cbis-admin 3.1K Oct  3  2024 cnf_size_check_v2.sh
+drwxr-x---.  2 cbis-admin cbis-admin 4.0K Nov 11 21:00 04288266
+-rw-------.  1 root       root         99 Nov 14 06:58 nohup.out
+drwxrwxr-x. 10 cbis-admin cbis-admin 4.0K Nov 15 06:45 NCS22-12_deployment_optimization_TSN
+drwxr-x---.  5 cbis-admin cbis-admin   79 Dec 26 10:14 ice-install-on-local
+drwxr-x---.  2 cbis-admin cbis-admin   41 Jan 17 05:57 Log
+-rw-r-----.  1 cbis-admin cbis-admin  60K Jan 17 06:15 VerifyHP.nfvi2.sh
+drwxr-x---.  2 cbis-admin cbis-admin    6 Jan 17 06:17 nadcmfiles
+drwxr-x---.  2 cbis-admin cbis-admin    6 Jan 17 06:17 srcfiles
+drwxr-x---.  2 cbis-admin cbis-admin    6 Jan 17 06:17 mobafiles
+-rw-r-----.  1 cbis-admin cbis-admin   75 Jan 21 04:27 ipmi-ips
+drwxr-x---.  2 cbis-admin cbis-admin 4.0K Jan 21 05:59 logs
+-rw-r-----.  1 cbis-admin cbis-admin   45 Jan 21 05:59 ipmi_init.01212025.055957
+-rw-r-----.  1 cbis-admin cbis-admin   45 Jan 21 05:59 ipmi_good.01212025.055957
+-rw-r-----.  1 cbis-admin cbis-admin  660 Jan 22 08:00 worker
+-rw-r-----.  1 cbis-admin cbis-admin 7.9M Jan 22 10:29 usdelpod14-ncs_HealthChecksSummary_2025-01-22_09-34.html
+drwxr-x---.  2 cbis-admin cbis-admin   49 Jan 22 10:58 drop_cache
+drwxr-x---.  7 cbis-admin cbis-admin  140 Mar 25 22:49 ice
+-rw-r-----.  1 cbis-admin cbis-admin  14K Mar 25 22:49 icerc
+drwxrwxrwx.  2 cbis-admin cbis-admin  16K Mar 25 23:13 HealthCheckFiles
+-rwxr-x---.  1 root       root       110M Apr 24 08:18 ice-support-package-1.3-b455-base.tar.gz.ext
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ ./ice-support-package-1.3-b455-base.tar.gz.ext
+-bash: ./ice-support-package-1.3-b455-base.tar.gz.ext: Permission denied
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ sudo bash
+[root@usdelpod14-centralsite-centralsitemanager-0 cbis-admin (Active)]#
+[root@usdelpod14-centralsite-centralsitemanager-0 cbis-admin (Active)]# ./ice-support-package-1.3-b455-base.tar.gz.ext
+Extracting ICE package files, this action may take ~10 minute. Thanks for your patience :)
+ice-support-package-base/
+ice-support-package-base/icerc
+ice-support-package-base/plugins/
+ice-support-package-base/plugins/healthcheck--1.3-b455.tar.gz
+ice-support-package-base/ice/
+ice-support-package-base/ice/image_sign/
+ice-support-package-base/ice/image_sign/runclient.sh
+ice-support-package-base/ice/image_sign/InstaClientCertificate.pem
+ice-support-package-base/ice/image_sign/payload.json
+ice-support-package-base/ice/image_sign/access.key
+ice-support-package-base/ice/image_sign/InstaMTLSRoot.crt
+ice-support-package-base/ice/image_sign/certchain.crt
+ice-support-package-base/ice/image_sign/test_certchain.crt
+ice-support-package-base/ice/image_sign/production_certchain.crt
+ice-support-package-base/ice/image_sign/httpclient.py
+ice-support-package-base/ice/docker/
+ice-support-package-base/ice/docker/build_image.sh
+ice-support-package-base/ice/docker/requirements.txt
+ice-support-package-base/ice/docker/Dockerfile
+ice-support-package-base/ice/docker/ice-python-container-1.3-b455.tar.gz
+ice-support-package-base/ice/lib/
+ice-support-package-base/ice/lib/common.ice
+ice-support-package-base/ice/lib/HealthChecks/
+ice-support-package-base/ice/lib/HealthChecks/main.py
+ice-support-package-base/ice/lib/HealthChecks/public_key/
+ice-support-package-base/ice/lib/HealthChecks/public_key/public_key.pem
+ice-support-package-base/ice/lib/HealthChecks/about.txt
+ice-support-package-base/ice/lib/HealthChecks/sys_operation_main.py
+ice-support-package-base/ice/lib/HealthChecks/mains/
+ice-support-package-base/ice/lib/HealthChecks/mains/sys_operations_main.py
+ice-support-package-base/ice/lib/HealthChecks/mains/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/mains/validations_main.py
+ice-support-package-base/ice/lib/HealthChecks/mains/base_main.py
+ice-support-package-base/ice/lib/HealthChecks/mains/file_tracker_tester.py
+ice-support-package-base/ice/lib/HealthChecks/mains/file_tracker_static_test_main.py
+ice-support-package-base/ice/lib/HealthChecks/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/file_tracker_static_tests_main.py
+ice-support-package-base/ice/lib/HealthChecks/HealthCheckCommon/
+ice-support-package-base/ice/lib/HealthChecks/HealthCheckCommon/secret_filter.py
+ice-support-package-base/ice/lib/HealthChecks/HealthCheckCommon/PreviousResults.py
+ice-support-package-base/ice/lib/HealthChecks/HealthCheckCommon/base_init_flow.py
+ice-support-package-base/ice/lib/HealthChecks/HealthCheckCommon/flow.py
+ice-support-package-base/ice/lib/HealthChecks/HealthCheckCommon/log_flows/
+ice-support-package-base/ice/lib/HealthChecks/HealthCheckCommon/log_flows/base_log_validation.py
+ice-support-package-base/ice/lib/HealthChecks/HealthCheckCommon/log_flows/base_log_issues_finder_flow.py
+ice-support-package-base/ice/lib/HealthChecks/HealthCheckCommon/log_flows/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/HealthCheckCommon/printer.py
+ice-support-package-base/ice/lib/HealthChecks/HealthCheckCommon/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/HealthCheckCommon/operations.py
+ice-support-package-base/ice/lib/HealthChecks/HealthCheckCommon/parallel_runner.py
+ice-support-package-base/ice/lib/HealthChecks/HealthCheckCommon/file_utils.py
+ice-support-package-base/ice/lib/HealthChecks/HealthCheckCommon/UnifySystemParameterCheck.py
+ice-support-package-base/ice/lib/HealthChecks/HealthCheckCommon/validator.py
+ice-support-package-base/ice/lib/HealthChecks/HealthCheckCommon/base_validation_flow.py
+ice-support-package-base/ice/lib/HealthChecks/HealthCheckCommon/table_system_info.py
+ice-support-package-base/ice/lib/HealthChecks/HealthCheckCommon/base_SystemOperator_flow.py
+ice-support-package-base/ice/lib/HealthChecks/HealthCheckCommon/relevance_analyzer.py
+ice-support-package-base/ice/lib/HealthChecks/HealthCheckCommon/system_utils.py
+ice-support-package-base/ice/lib/HealthChecks/invoker/
+ice-support-package-base/ice/lib/HealthChecks/invoker/validations_flows_list.py
+ice-support-package-base/ice/lib/HealthChecks/invoker/sys_operation_flows_list.py
+ice-support-package-base/ice/lib/HealthChecks/invoker/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/invoker/invoker.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/ipaddress-1.0.16-py2.7.egg-info
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/redis/
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/redis/connection.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/redis/exceptions.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/redis/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/redis/client.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/redis/_compat.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/redis/utils.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/ipaddr.pyo
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/ipaddress.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/dateutil/
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/dateutil/_common.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/dateutil/zoneinfo/
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/dateutil/zoneinfo/rebuild.pyo
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/dateutil/zoneinfo/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/dateutil/zoneinfo/dateutil-zoneinfo.tar.gz
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/dateutil/zoneinfo/rebuild.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/dateutil/zoneinfo/__init__.pyo
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/dateutil/_version.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/dateutil/relativedelta.pyo
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/dateutil/rrule.pyo
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/dateutil/easter.pyo
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/dateutil/tzwin.pyo
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/dateutil/tzwin.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/dateutil/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/dateutil/tz/
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/dateutil/tz/_common.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/dateutil/tz/tz.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/dateutil/tz/win.pyo
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/dateutil/tz/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/dateutil/tz/win.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/dateutil/tz/tz.pyo
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/dateutil/tz/__init__.pyo
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/dateutil/tz/_common.pyo
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/dateutil/easter.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/dateutil/parser.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/dateutil/parser.pyo
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/dateutil/__init__.pyo
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/dateutil/relativedelta.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/dateutil/rrule.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/dateutil/_version.pyo
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/dateutil/_common.pyo
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/ipaddr.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/ipaddress.pyo
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/ipaddr-2.1.11-py2.7.egg-info
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/GZipRotatingFileHandler.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/psutil/
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/psutil/_common.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/psutil/_psutil_posix.so
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/psutil/_pssunos.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/psutil/_pswindows.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/psutil/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/psutil/_psposix.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/psutil/_pslinux.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/psutil/_psbsd.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/psutil/_compat.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/psutil/_psaix.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/psutil/_psosx.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/psutil/tests/
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/psutil/tests/test_misc.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/psutil/tests/test_process.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/psutil/tests/test_sunos.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/psutil/tests/test_memleaks.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/psutil/tests/test_bsd.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/psutil/tests/test_testutils.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/psutil/tests/test_unicode.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/psutil/tests/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/psutil/tests/__main__.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/psutil/tests/test_posix.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/psutil/tests/runner.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/psutil/tests/test_contracts.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/psutil/tests/test_windows.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/psutil/tests/test_system.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/psutil/tests/test_aix.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/psutil/tests/test_osx.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/psutil/tests/test_connections.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/psutil/tests/test_linux.py
+ice-support-package-base/ice/lib/HealthChecks/PythonLibraries/psutil/_psutil_linux.so
+ice-support-package-base/ice/lib/HealthChecks/flows/
+ice-support-package-base/ice/lib/HealthChecks/flows/System_info/
+ice-support-package-base/ice/lib/HealthChecks/flows/System_info/System_info_validations.py
+ice-support-package-base/ice/lib/HealthChecks/flows/System_info/System_info_flow.py
+ice-support-package-base/ice/lib/HealthChecks/flows/System_info/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Recommendations/
+ice-support-package-base/ice/lib/HealthChecks/flows/Recommendations/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Recommendations/OperationsRecommendationsValidations.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Recommendations/OperationsRecommendationsFlow.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/stable_marriage_problem.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/IPMIBlueprintDataCollectors.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/BlueprintValidationFlow.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/NICBlueprintDataCollectors.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/BlueprintDataCollectors.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/NUMABlueprintDataCollectors.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/DiskBlueprintDataCollectors.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/CsfAddOnBlueprintDataCollectors.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/BlueprintValidations.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/spec/
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/spec/blueprint_spec.json
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/spec/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/spec/blueprint_knowledge.json
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/spec/customers_blueprint_data/
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/spec/customers_blueprint_data/Hardware/
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/spec/customers_blueprint_data/Hardware/hp_g10_CLK_cx5.json
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/spec/customers_blueprint_data/Hardware/airframe_rm20_ICK_cx6                  .json
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/spec/customers_blueprint_data/Hardware/hp_g10_ICK_cx6.json
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/spec/customers_blueprint_data/Hardware/airframe_rm19_CLK_cx5                  .json
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/spec/customers_blueprint_data/Hardware/new_airframe_rm19_CLK                  _cx5_v0.json
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/spec/customers_blueprint_data/Hardware/new_hp_g9_5_2680_3_in                  tel_nic.json
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/spec/customers_blueprint_data/Hardware/hp_g9_5_2680_3_intel_                  nic.json
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/spec/customers_blueprint_data/Hardware/hp_g10_6230_intel_nic                  .json
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/spec/customers_blueprint_data/Firmware/
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/spec/customers_blueprint_data/Firmware/new_hp_g10_CLK_cx5.js                  on
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/spec/customers_blueprint_data/Firmware/new_hp_g10_ICK_cx6.js                  on
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/spec/customers_blueprint_data/Firmware/new_hp_g10_6230_intel                  _nic.json
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/spec/customers_blueprint_data/Firmware/new_airframe_rm19_CLK                  _cx5.json
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/spec/customers_blueprint_data/Firmware/new_airframe_rm20_ICK                  _cx6.json
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/spec/customers_blueprint_data/Firmware/new_hp_g9_5_2680_3_in                  tel_nic.json
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/spec/blueprint_from_excel_to_json.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/spec/blueprint_spec.zip
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/spec/blueprint_from_system_out_to_json.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/BlueprintDataCollectorsCommon.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/BlueprintInventory.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Blueprint/RaidControllerBlueprintDataCollector.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Monitoring/
+ice-support-package-base/ice/lib/HealthChecks/flows/Monitoring/zabbix_validations.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Monitoring/victoriaMetrics_flows.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Monitoring/btel_validations.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Monitoring/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Monitoring/victoria_metrics_validations.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Monitoring/elk_validations.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Monitoring/elk_flows.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Monitoring/zabbix_flows.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Monitoring/btel_flows_ncs.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Network/
+ice-support-package-base/ice/lib/HealthChecks/flows/Network/network_flows_cbis.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Network/network_validations.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Network/network_traffic_flows.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Network/network_flows_ncs.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Network/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Network/dump_flows_info.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Network/dumpflows_validations.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Chain_of_events/
+ice-support-package-base/ice/lib/HealthChecks/flows/Chain_of_events/operation_timing_info_mechanism.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Chain_of_events/operation_timing_info.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Chain_of_events/chain_of_events_flows.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Chain_of_events/files/
+ice-support-package-base/ice/lib/HealthChecks/flows/Chain_of_events/files/cna_operations_info.json
+ice-support-package-base/ice/lib/HealthChecks/flows/Chain_of_events/files/data_collector_operations_info.json
+ice-support-package-base/ice/lib/HealthChecks/flows/Chain_of_events/files/cnb_operations_info.json
+ice-support-package-base/ice/lib/HealthChecks/flows/Chain_of_events/files/cbis_operations_info.json
+ice-support-package-base/ice/lib/HealthChecks/flows/Chain_of_events/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Chain_of_events/chain_of_events_validations.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Chain_of_events/operation_timing_info_task_id_mechanism.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Chain_of_events/operation_timing_info_concentrated_file_mechanism.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Chain_of_events/identify_manual_changes.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Chain_of_events/operation_timing_info_file_per_attempt_operation_mecha                  nism.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Linux/
+ice-support-package-base/ice/lib/HealthChecks/flows/Linux/sync_validations.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Linux/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Linux/Services_requirements_list.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Linux/Linux_validations.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Linux/Linux_system_validation_flow.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Etcd/
+ice-support-package-base/ice/lib/HealthChecks/flows/Etcd/etcd_flow.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Etcd/etcd_validations.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Etcd/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Cbis/
+ice-support-package-base/ice/lib/HealthChecks/flows/Cbis/cbis_system_checks/
+ice-support-package-base/ice/lib/HealthChecks/flows/Cbis/cbis_system_checks/system_basic_checks.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Cbis/cbis_system_checks/RPM_Validation.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Cbis/cbis_system_checks/system_check_containers_to_exclude
+ice-support-package-base/ice/lib/HealthChecks/flows/Cbis/cbis_system_checks/system_info.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Cbis/cbis_system_checks/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Cbis/cbis_system_checks/Files/
+ice-support-package-base/ice/lib/HealthChecks/flows/Cbis/cbis_system_checks/Files/Infra.json
+ice-support-package-base/ice/lib/HealthChecks/flows/Cbis/cbis_system_checks/basic_system_validation_flow.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Cbis/cbis_system_checks/zombie_nodes_validation.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Cbis/scale_in_out_log_errors/
+ice-support-package-base/ice/lib/HealthChecks/flows/Cbis/scale_in_out_log_errors/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Cbis/scale_in_out_log_errors/scale_error_from_log_flow.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Cbis/scale_in_out_log_errors/scale_error.json
+ice-support-package-base/ice/lib/HealthChecks/flows/Cbis/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Cbis/system_log_checkes/
+ice-support-package-base/ice/lib/HealthChecks/flows/Cbis/system_log_checkes/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Cbis/system_log_checkes/system_error.json
+ice-support-package-base/ice/lib/HealthChecks/flows/Cbis/system_log_checkes/system_error_from_log_flow.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Cbis/user_config_validator/
+ice-support-package-base/ice/lib/HealthChecks/flows/Cbis/user_config_validator/user_config_checks.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Cbis/user_config_validator/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Cbis/user_config_validator/CBIS_user_config_validation_flow.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Ncs/
+ice-support-package-base/ice/lib/HealthChecks/flows/Ncs/ncs_validations.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Ncs/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Ncs/ncs_flow.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Storage/
+ice-support-package-base/ice/lib/HealthChecks/flows/Storage/ceph/
+ice-support-package-base/ice/lib/HealthChecks/flows/Storage/ceph/CephPgsDistributionFlow.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Storage/ceph/CephInfo.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Storage/ceph/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Storage/ceph/CephPgsDistribution.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Storage/ceph/CephFSID.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Storage/ceph/Ceph.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Storage/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Storage/glusterfs/
+ice-support-package-base/ice/lib/HealthChecks/flows/Storage/glusterfs/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Storage/glusterfs/GlusterFS.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Storage/GlusterFsFlow.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Storage/Ceph_base_host_validation_flow.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Storage/CephFSIDFlow.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Applications/
+ice-support-package-base/ice/lib/HealthChecks/flows/Applications/NCD/
+ice-support-package-base/ice/lib/HealthChecks/flows/Applications/NCD/NcdPreChecks.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Applications/NCD/NcdUserInput.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Applications/NCD/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Applications/NCD/ncd_config.json
+ice-support-package-base/ice/lib/HealthChecks/flows/Applications/NCD/NCDFlow.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Applications/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows/HW/
+ice-support-package-base/ice/lib/HealthChecks/flows/HW/HW_info.py
+ice-support-package-base/ice/lib/HealthChecks/flows/HW/VCPU.py
+ice-support-package-base/ice/lib/HealthChecks/flows/HW/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows/HW/HW_validations.py
+ice-support-package-base/ice/lib/HealthChecks/flows/HW/HW_validation_flow.py
+ice-support-package-base/ice/lib/HealthChecks/flows/HW/SMART.py
+ice-support-package-base/ice/lib/HealthChecks/flows/OpenStack/
+ice-support-package-base/ice/lib/HealthChecks/flows/OpenStack/Vms/
+ice-support-package-base/ice/lib/HealthChecks/flows/OpenStack/Vms/VmsInfo.py
+ice-support-package-base/ice/lib/HealthChecks/flows/OpenStack/Vms/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows/OpenStack/Vms/openstack_resource/
+ice-support-package-base/ice/lib/HealthChecks/flows/OpenStack/Vms/openstack_resource/openstack_resource_flow.py
+ice-support-package-base/ice/lib/HealthChecks/flows/OpenStack/Vms/openstack_resource/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows/OpenStack/Vms/openstack_resource/openstack_resource_validations.py
+ice-support-package-base/ice/lib/HealthChecks/flows/OpenStack/Vms/VmLevel2Flow.py
+ice-support-package-base/ice/lib/HealthChecks/flows/OpenStack/Vms/VmsInfoFlow.py
+ice-support-package-base/ice/lib/HealthChecks/flows/OpenStack/Vms/VmsInfoInformators.py
+ice-support-package-base/ice/lib/HealthChecks/flows/OpenStack/swift_service_validator.py
+ice-support-package-base/ice/lib/HealthChecks/flows/OpenStack/openstack_validations.py
+ice-support-package-base/ice/lib/HealthChecks/flows/OpenStack/Password_expiry_check.py
+ice-support-package-base/ice/lib/HealthChecks/flows/OpenStack/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows/OpenStack/openstack_validation_flow_cbis.py
+ice-support-package-base/ice/lib/HealthChecks/flows/OpenStack/OpenStack_validation_flow_ncs.py
+ice-support-package-base/ice/lib/HealthChecks/flows/OpenStack/HypervisorValidation.py
+ice-support-package-base/ice/lib/HealthChecks/flows/OpenStack/openstack_utils_data_collector.py
+ice-support-package-base/ice/lib/HealthChecks/flows/OpenStack/validation_based_openstack.py
+ice-support-package-base/ice/lib/HealthChecks/flows/OpenStack/LargeSetup_validator.py
+ice-support-package-base/ice/lib/HealthChecks/flows/OpenStack/Ironic_validations.py
+ice-support-package-base/ice/lib/HealthChecks/flows/OpenStack/cpu_steal/
+ice-support-package-base/ice/lib/HealthChecks/flows/OpenStack/cpu_steal/GuestValidator.py
+ice-support-package-base/ice/lib/HealthChecks/flows/OpenStack/cpu_steal/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows/OpenStack/cpu_steal/System_analytics_flow.py
+ice-support-package-base/ice/lib/HealthChecks/flows/OpenStack/cpu_steal/cpu_steal.py
+ice-support-package-base/ice/lib/HealthChecks/flows/K8s/
+ice-support-package-base/ice/lib/HealthChecks/flows/K8s/k8s_components/
+ice-support-package-base/ice/lib/HealthChecks/flows/K8s/k8s_components/k8s_vsphere_flows.py
+ice-support-package-base/ice/lib/HealthChecks/flows/K8s/k8s_components/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows/K8s/k8s_components/k8s_components_validator.py
+ice-support-package-base/ice/lib/HealthChecks/flows/K8s/k8s_components/k8s_vsphere_validation.py
+ice-support-package-base/ice/lib/HealthChecks/flows/K8s/k8s_components/expected_daemod_set.json
+ice-support-package-base/ice/lib/HealthChecks/flows/K8s/k8s_components/k8s_sanity_checks.py
+ice-support-package-base/ice/lib/HealthChecks/flows/K8s/k8s_components/K8s_flow.py
+ice-support-package-base/ice/lib/HealthChecks/flows/K8s/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows/K8s/ncs_logs/
+ice-support-package-base/ice/lib/HealthChecks/flows/K8s/ncs_logs/etcd_error_from_log_flow.py
+ice-support-package-base/ice/lib/HealthChecks/flows/K8s/ncs_logs/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows/K8s/ncs_logs/etcd_issues_in_log_nsc.json
+ice-support-package-base/ice/lib/HealthChecks/flows/Security/
+ice-support-package-base/ice/lib/HealthChecks/flows/Security/certificate_flow.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Security/AuthManagementFlow.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Security/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Security/AuthManagement/
+ice-support-package-base/ice/lib/HealthChecks/flows/Security/AuthManagement/AuthManagementValidations.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Security/AuthManagement/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Security/Certificate/
+ice-support-package-base/ice/lib/HealthChecks/flows/Security/Certificate/cbis_allcertificate_expiry_dates.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Security/Certificate/public_private_keys.json
+ice-support-package-base/ice/lib/HealthChecks/flows/Security/Certificate/certificate.json
+ice-support-package-base/ice/lib/HealthChecks/flows/Security/Certificate/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Security/Certificate/ncs_allcertificate_expiry_dates.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Security/Certificate/allcertificate_expiry_dates.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Security/Certificate/ncs_certificate_check.py
+ice-support-package-base/ice/lib/HealthChecks/flows/Security/Certificate/public_private_keys_certificate.py
+ice-support-package-base/ice/lib/HealthChecks/flows/ICE/
+ice-support-package-base/ice/lib/HealthChecks/flows/ICE/ICEInternalFlow.py
+ice-support-package-base/ice/lib/HealthChecks/flows/ICE/ICEInternalValidations.py
+ice-support-package-base/ice/lib/HealthChecks/flows/ICE/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/PreFlowValidations.py
+ice-support-package-base/ice/lib/HealthChecks/validation_template.py
+ice-support-package-base/ice/lib/HealthChecks/decrypt_out_files.py
+ice-support-package-base/ice/lib/HealthChecks/interactive_actions.py
+ice-support-package-base/ice/lib/HealthChecks/tools/
+ice-support-package-base/ice/lib/HealthChecks/tools/SubVersions.py
+ice-support-package-base/ice/lib/HealthChecks/tools/SecurityHelper.py
+ice-support-package-base/ice/lib/HealthChecks/tools/EnvironmentInfo.py
+ice-support-package-base/ice/lib/HealthChecks/tools/validation_list_json_to_exel.py
+ice-support-package-base/ice/lib/HealthChecks/tools/user_params.py
+ice-support-package-base/ice/lib/HealthChecks/tools/Helpers/
+ice-support-package-base/ice/lib/HealthChecks/tools/Helpers/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/tools/python_versioning_alignment.py
+ice-support-package-base/ice/lib/HealthChecks/tools/UI/
+ice-support-package-base/ice/lib/HealthChecks/tools/UI/VmsProcessResultDict.py
+ice-support-package-base/ice/lib/HealthChecks/tools/UI/ProcessedResultDict.py
+ice-support-package-base/ice/lib/HealthChecks/tools/UI/BlueprintHtmlPrint.py
+ice-support-package-base/ice/lib/HealthChecks/tools/UI/print_icerc_style.py
+ice-support-package-base/ice/lib/HealthChecks/tools/UI/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/tools/UI/VmsCliPrint.py
+ice-support-package-base/ice/lib/HealthChecks/tools/UI/HTMLPrint.py
+ice-support-package-base/ice/lib/HealthChecks/tools/UI/table_print.py
+ice-support-package-base/ice/lib/HealthChecks/tools/UI/HTMLBuilder.py
+ice-support-package-base/ice/lib/HealthChecks/tools/Exceptions.py
+ice-support-package-base/ice/lib/HealthChecks/tools/DynamicPaths.py
+ice-support-package-base/ice/lib/HealthChecks/tools/sys_toolkit.py
+ice-support-package-base/ice/lib/HealthChecks/tools/system_commands.py
+ice-support-package-base/ice/lib/HealthChecks/tools/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/tools/Info.py
+ice-support-package-base/ice/lib/HealthChecks/tools/lazy_global_data_loader.py
+ice-support-package-base/ice/lib/HealthChecks/tools/global_logging.py
+ice-support-package-base/ice/lib/HealthChecks/tools/adapter.py
+ice-support-package-base/ice/lib/HealthChecks/tools/ExecutionModule/
+ice-support-package-base/ice/lib/HealthChecks/tools/ExecutionModule/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/tools/ExecutionModule/HostExecutorsFactory/
+ice-support-package-base/ice/lib/HealthChecks/tools/ExecutionModule/HostExecutorsFactory/NcsVsphereOpenstackHostExecutorFa                  ctory.py
+ice-support-package-base/ice/lib/HealthChecks/tools/ExecutionModule/HostExecutorsFactory/BaseHostExecutorsFactory.py
+ice-support-package-base/ice/lib/HealthChecks/tools/ExecutionModule/HostExecutorsFactory/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/tools/ExecutionModule/HostExecutorsFactory/NcsBareMetalHostExecutorFactory.p                  y
+ice-support-package-base/ice/lib/HealthChecks/tools/ExecutionModule/HostExecutorsFactory/HostExecutor.py
+ice-support-package-base/ice/lib/HealthChecks/tools/ExecutionModule/HostExecutorsFactory/ncs_host_executor_factory.py
+ice-support-package-base/ice/lib/HealthChecks/tools/ExecutionModule/HostExecutorsFactory/CbisHostExecutorFactory.py
+ice-support-package-base/ice/lib/HealthChecks/tools/ExecutionModule/execution_helper.py
+ice-support-package-base/ice/lib/HealthChecks/tools/ConfigStore.py
+ice-support-package-base/ice/lib/HealthChecks/tools/sys_parameters.py
+ice-support-package-base/ice/lib/HealthChecks/tools/date_and_time_with_timezone.json
+ice-support-package-base/ice/lib/HealthChecks/tools/global_enums.py
+ice-support-package-base/ice/lib/HealthChecks/tools/python_utils.py
+ice-support-package-base/ice/lib/HealthChecks/tools/OrderedConst.py
+ice-support-package-base/ice/lib/HealthChecks/tools/name_to_url.json
+ice-support-package-base/ice/lib/HealthChecks/tools/InitializationFactory/
+ice-support-package-base/ice/lib/HealthChecks/tools/InitializationFactory/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/tools/InitializationFactory/InitializationFactory.py
+ice-support-package-base/ice/lib/HealthChecks/tools/paths.py
+ice-support-package-base/ice/lib/HealthChecks/tools/Conversion.py
+ice-support-package-base/ice/lib/HealthChecks/tools/SummaryFilesOperations.py
+ice-support-package-base/ice/lib/HealthChecks/tools/date_and_time_utils.py
+ice-support-package-base/ice/lib/HealthChecks/tools/popen_utils.py
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/test/
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/test/test_sys_operator_flow.py
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/test/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/test/test_operations.py
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/sys_data_collector/
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/sys_data_collector/collector.py
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/sys_data_collector/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/sys_data_collector/telemetry_collector/
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/sys_data_collector/telemetry_collector/telemetry_col                  lector_flow.py
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/sys_data_collector/telemetry_collector/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/sys_data_collector/telemetry_collector/sar_collector                  .py
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/sys_data_collector/log_collector/
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/sys_data_collector/log_collector/log_collector_param                  s.py
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/sys_data_collector/log_collector/configuration_gener                  ator/
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/sys_data_collector/log_collector/configuration_gener                  ator/log_scenarios_generator_flow.py
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/sys_data_collector/log_collector/configuration_gener                  ator/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/sys_data_collector/log_collector/configuration_gener                  ator/scenarios/
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/sys_data_collector/log_collector/configuration_gener                  ator/scenarios/base_log_scenario.py
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/sys_data_collector/log_collector/configuration_gener                  ator/scenarios/log_scenarios.py
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/sys_data_collector/log_collector/configuration_gener                  ator/scenarios/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/sys_data_collector/log_collector/configuration_gener                  ator/scenarios/create_customized_scenario_template.py
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/sys_data_collector/log_collector/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/sys_data_collector/log_collector/logs_collecting_flo                  w.py
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/sys_data_collector/log_collector/log_collector.py
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/sys_data_collector/log_collector/configurations/
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/sys_data_collector/log_collector/configurations/cbis                  _log_of_interest.yaml
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/sys_data_collector/log_collector/configurations/ncs_                  log_of_interest.yaml
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/FileTracker/
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/FileTracker/commands_diffs_collector.py
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/FileTracker/OperatorsOnLocalHost.py
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/FileTracker/DiffParser.py
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/FileTracker/FileTrackerBase.py
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/FileTracker/FileTrackerFlow.py
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/FileTracker/FileTrackerPaths.py
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/FileTracker/__init__.py
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/FileTracker/FileTrackerLogging.py
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/FileTracker/OperatorsOnAllHosts.py
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/FileTracker/dynamic_diffs_collector.py
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/FileTracker/Files/
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/FileTracker/Files/cna_dynamic_resources.json
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/FileTracker/Files/cnb_tracked_configuration_files.js                  on
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/FileTracker/Files/cnb_dynamic_resources.json
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/FileTracker/Files/cbis_ice_file_tracker.sh
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/FileTracker/Files/cna_tracked_configuration_files.js                  on
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/FileTracker/Files/ncs_tracked_configuration_files.js                  on
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/FileTracker/Files/tracked_commands.json
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/FileTracker/Files/file_tracker_configurations.json
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/FileTracker/Files/ncs_ice_file_tracker.sh
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/FileTracker/Files/tracked_folders.json
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/FileTracker/Files/cbis_tracked_configuration_files.j                  son
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/FileTracker/Files/ice_file_tracker.sh
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/FileTracker/Files/ncs_dynamic_resources.json
+ice-support-package-base/ice/lib/HealthChecks/flows_of_sys_operations/__init__.py
+ice-support-package-base/ice/lib/networking.ice
+ice-support-package-base/ice/lib/sar_sampler.ice
+ice-support-package-base/ice/lib/ansible/
+ice-support-package-base/ice/lib/ansible/osprofiler/
+ice-support-package-base/ice/lib/ansible/osprofiler/disable_osprofiler.yml
+ice-support-package-base/ice/lib/ansible/osprofiler/vars/
+ice-support-package-base/ice/lib/ansible/osprofiler/vars/services_config.yml
+ice-support-package-base/ice/lib/ansible/osprofiler/enable_osprofiler.yml
+ice-support-package-base/ice/lib/ipsec.ice
+ice-support-package-base/ice/lib/storage.ice
+ice-support-package-base/ice/lib/global_configurations.py
+ice-support-package-base/ice/lib/hardware.ice
+ice-support-package-base/ice/lib/file_tracker.ice
+ice-support-package-base/ice/lib/generate_configuration.py
+ice-support-package-base/ice/lib/__init__.py
+ice-support-package-base/ice/lib/operations.py
+ice-support-package-base/ice/lib/storage.fsid.exec
+ice-support-package-base/ice/lib/HA.ice
+ice-support-package-base/ice/lib/storage.py
+ice-support-package-base/ice/lib/healthcheck.ice
+ice-support-package-base/ice/lib/run_healthcheck.py
+ice-support-package-base/ice/lib/DumpFlow.py
+ice-support-package-base/ice/lib/common.py
+ice-support-package-base/ice/lib/openstack.ice
+ice-support-package-base/ice/ice_version_date
+ice-support-package-base/ice/ice-utils/
+ice-support-package-base/ice/ice-utils/ice-utils-cleanup.sh
+ice-support-package-base/ice/ice-utils/install_ice_utils.sh
+ice-support-package-base/ice/patches/
+ice-support-package-base/ice/patches/uc.bashrc.patch
+ice-support-package-base/ice/patches/uc.bashrc.patch.uninstall
+ice-support-package-base/ice/patches/uc.bashrc.patch.install
+ice-support-package-base/ice/proc-mon
+ice-support-package-base/ice/ice_version
+ice-support-package-base/ncs_icerc
+ice-support-package-base/Installer/
+ice-support-package-base/Installer/PythonUtils.py
+ice-support-package-base/Installer/CommonOperations.py
+ice-support-package-base/Installer/GlobalLogging.py
+ice-support-package-base/Installer/IceInstaller.py
+ice-support-package-base/Installer/Python3Libraries/
+ice-support-package-base/Installer/Python3Libraries/psutil/
+ice-support-package-base/Installer/Python3Libraries/psutil/_common.py
+ice-support-package-base/Installer/Python3Libraries/psutil/_pssunos.py
+ice-support-package-base/Installer/Python3Libraries/psutil/_psutil_posix.abi3.so
+ice-support-package-base/Installer/Python3Libraries/psutil/_pswindows.py
+ice-support-package-base/Installer/Python3Libraries/psutil/__init__.py
+ice-support-package-base/Installer/Python3Libraries/psutil/_psposix.py
+ice-support-package-base/Installer/Python3Libraries/psutil/_psutil_linux.abi3.so
+ice-support-package-base/Installer/Python3Libraries/psutil/_pslinux.py
+ice-support-package-base/Installer/Python3Libraries/psutil/_psbsd.py
+ice-support-package-base/Installer/Python3Libraries/psutil/_compat.py
+ice-support-package-base/Installer/Python3Libraries/psutil/_psaix.py
+ice-support-package-base/Installer/Python3Libraries/psutil/_psosx.py
+ice-support-package-base/Installer/Python3Libraries/psutil/tests/
+ice-support-package-base/Installer/Python3Libraries/psutil/tests/test_misc.py
+ice-support-package-base/Installer/Python3Libraries/psutil/tests/test_process.py
+ice-support-package-base/Installer/Python3Libraries/psutil/tests/test_sunos.py
+ice-support-package-base/Installer/Python3Libraries/psutil/tests/test_memleaks.py
+ice-support-package-base/Installer/Python3Libraries/psutil/tests/test_bsd.py
+ice-support-package-base/Installer/Python3Libraries/psutil/tests/test_testutils.py
+ice-support-package-base/Installer/Python3Libraries/psutil/tests/test_unicode.py
+ice-support-package-base/Installer/Python3Libraries/psutil/tests/__init__.py
+ice-support-package-base/Installer/Python3Libraries/psutil/tests/__main__.py
+ice-support-package-base/Installer/Python3Libraries/psutil/tests/test_posix.py
+ice-support-package-base/Installer/Python3Libraries/psutil/tests/runner.py
+ice-support-package-base/Installer/Python3Libraries/psutil/tests/test_contracts.py
+ice-support-package-base/Installer/Python3Libraries/psutil/tests/test_windows.py
+ice-support-package-base/Installer/Python3Libraries/psutil/tests/test_system.py
+ice-support-package-base/Installer/Python3Libraries/psutil/tests/test_aix.py
+ice-support-package-base/Installer/Python3Libraries/psutil/tests/test_osx.py
+ice-support-package-base/Installer/Python3Libraries/psutil/tests/test_connections.py
+ice-support-package-base/Installer/Python3Libraries/psutil/tests/test_linux.py
+ice-support-package-base/Installer/Version.py
+ice-support-package-base/Installer/install_on_all_managers.yaml
+ice-support-package-base/Installer/PackageInstaller.py
+ice-support-package-base/Installer/__init__.py
+ice-support-package-base/Installer/filetracker.json
+ice-support-package-base/Installer/conf.yaml
+ice-support-package-base/Installer/manager_local_installer.py
+ice-support-package-base/Installer/PythonLibraries/
+ice-support-package-base/Installer/PythonLibraries/psutil/
+ice-support-package-base/Installer/PythonLibraries/psutil/_common.py
+ice-support-package-base/Installer/PythonLibraries/psutil/_psutil_posix.so
+ice-support-package-base/Installer/PythonLibraries/psutil/_pssunos.py
+ice-support-package-base/Installer/PythonLibraries/psutil/_pswindows.py
+ice-support-package-base/Installer/PythonLibraries/psutil/_psosx.pyo
+ice-support-package-base/Installer/PythonLibraries/psutil/_pslinux.pyo
+ice-support-package-base/Installer/PythonLibraries/psutil/_pssunos.pyo
+ice-support-package-base/Installer/PythonLibraries/psutil/_psposix.pyo
+ice-support-package-base/Installer/PythonLibraries/psutil/_pswindows.pyo
+ice-support-package-base/Installer/PythonLibraries/psutil/__init__.py
+ice-support-package-base/Installer/PythonLibraries/psutil/_psposix.py
+ice-support-package-base/Installer/PythonLibraries/psutil/_pslinux.py
+ice-support-package-base/Installer/PythonLibraries/psutil/_psbsd.py
+ice-support-package-base/Installer/PythonLibraries/psutil/_compat.pyo
+ice-support-package-base/Installer/PythonLibraries/psutil/_compat.py
+ice-support-package-base/Installer/PythonLibraries/psutil/__init__.pyo
+ice-support-package-base/Installer/PythonLibraries/psutil/_psosx.py
+ice-support-package-base/Installer/PythonLibraries/psutil/tests/
+ice-support-package-base/Installer/PythonLibraries/psutil/tests/test_sunos.pyo
+ice-support-package-base/Installer/PythonLibraries/psutil/tests/test_windows.pyo
+ice-support-package-base/Installer/PythonLibraries/psutil/tests/test_misc.py
+ice-support-package-base/Installer/PythonLibraries/psutil/tests/runner.pyo
+ice-support-package-base/Installer/PythonLibraries/psutil/tests/test_process.py
+ice-support-package-base/Installer/PythonLibraries/psutil/tests/test_process.pyo
+ice-support-package-base/Installer/PythonLibraries/psutil/tests/test_linux.pyo
+ice-support-package-base/Installer/PythonLibraries/psutil/tests/test_sunos.py
+ice-support-package-base/Installer/PythonLibraries/psutil/tests/test_bsd.py
+ice-support-package-base/Installer/PythonLibraries/psutil/tests/__init__.py
+ice-support-package-base/Installer/PythonLibraries/psutil/tests/test_misc.pyo
+ice-support-package-base/Installer/PythonLibraries/psutil/tests/test_system.pyo
+ice-support-package-base/Installer/PythonLibraries/psutil/tests/test_posix.py
+ice-support-package-base/Installer/PythonLibraries/psutil/tests/runner.py
+ice-support-package-base/Installer/PythonLibraries/psutil/tests/test_windows.py
+ice-support-package-base/Installer/PythonLibraries/psutil/tests/test_system.py
+ice-support-package-base/Installer/PythonLibraries/psutil/tests/__init__.pyo
+ice-support-package-base/Installer/PythonLibraries/psutil/tests/test_osx.pyo
+ice-support-package-base/Installer/PythonLibraries/psutil/tests/test_osx.py
+ice-support-package-base/Installer/PythonLibraries/psutil/tests/test_bsd.pyo
+ice-support-package-base/Installer/PythonLibraries/psutil/tests/test_memory_leaks.pyo
+ice-support-package-base/Installer/PythonLibraries/psutil/tests/test_memory_leaks.py
+ice-support-package-base/Installer/PythonLibraries/psutil/tests/test_posix.pyo
+ice-support-package-base/Installer/PythonLibraries/psutil/tests/test_linux.py
+114680148+0 records in
+114680148+0 records out
+114680148 bytes (115 MB) copied, 122.474 s, 936 kB/s
+ice-support-package-base/Installer/PythonLibraries/psutil/_psutil_linux.so
+ice-support-package-base/Installer/PythonLibraries/psutil/_psbsd.pyo
+ice-support-package-base/Installer/PythonLibraries/psutil/_common.pyo
+ice-support-package-base/Installer/PluginInstaller.py
+ice-support-package-base/Installer/GlobalParameters.py
+ice-support-package-base/Installer/PopenTimeOut.py
+ice-support-package-base/Installer/DeploymentType.py
+ice-support-package-base/Installer/CbisManagerClient.py
+ice-support-package-base/Installer/global_enums.py
+ice-support-package-base/Installer/Action.py
+ice-support-package-base/Installer/Validations.py
+ice-support-package-base/Installer/Paths.py
+ice-support-package-base/Installer/hosts.hfx
+[root@usdelpod14-centralsite-centralsitemanager-0 cbis-admin (Active)]# ls -lrth
+total 4.5G
+drwxrwxr-x.  2 cbis-admin cbis-admin  199 May 12  2023 all_irq_pin_seg
+drwxr-x---.  4 cbis-admin cbis-admin   28 May 24  2023 salt
+-rw-r-----.  1 cbis-admin cbis-admin 104K May 24  2023 body_usdelpod14-ncs.json
+-rw-r-----.  1 cbis-admin cbis-admin 4.3K May 25  2023 all_irq_pin_seg.zip
+-rwxr-x---.  1 cbis-admin cbis-admin 1.5K May 25  2023 safeguard.sh
+-rwxr-x---.  1 cbis-admin cbis-admin 1.5K May 25  2023 cbis-admin@172.31.0.18
+-rw-r-----.  1 cbis-admin cbis-admin  18K May 25  2023 HC_Checklist_updated.zip
+-rw-r-----.  1 cbis-admin cbis-admin  18K May 25  2023 cbis-admin@172.31.0.17
+-rw-r-----.  1 cbis-admin cbis-admin   80 May 25  2023 freeg.text
+-rw-r-----.  1 cbis-admin cbis-admin    4 May 25  2023 freeg1.text1
+-rw-r-----.  1 cbis-admin cbis-admin 2.6K May 25  2023 disable-enable-sctp.yaml
+-rw-r-----.  1 cbis-admin cbis-admin 4.5K May 26  2023 servicenow.zip
+-rw-r-----.  1 cbis-admin cbis-admin  73M May 26  2023 cinfo-1.0.tar
+-rw-r-----.  1 cbis-admin cbis-admin 132M May 26  2023 nginx.tar
+-rw-r-----.  1 cbis-admin cbis-admin  55K May 31  2023 firewall_POD14_ELG.json
+-rw-r-----.  1 cbis-admin cbis-admin  79K Aug  1  2023 NCS22-12_deployment_optimization_TSN_v0.6.tgz
+-rw-r-----.  1 cbis-admin cbis-admin    0 Aug 11  2023 -
+-rw-r-----.  1 cbis-admin cbis-admin    0 Aug 11  2023 {
+-rw-r-----.  1 cbis-admin cbis-admin 4.3M Aug 21  2023 usdelpod14-ncs_HealthChecksSummary_2023-08-21_09-53.html
+-rwxrwxrwx.  1 cbis-admin cbis-admin  294 Sep 18  2023 power.sh
+drwxr-x---.  2 cbis-admin cbis-admin  171 Sep 18  2023 servicenow_USD
+-rw-------.  1 cbis-admin cbis-admin  11M Sep 20  2023 perf.log
+drwxr-x---.  3 cbis-admin cbis-admin   37 Sep 20  2023 bcmt_Folder
+drwxr-x---.  2 cbis-admin cbis-admin   61 Sep 20  2023 servicenow
+-rw-r-----.  1 cbis-admin cbis-admin 107M Sep 26  2023 whereabouts-cleaner-TSN-NCS22.tgz
+-rw-r-----.  1 cbis-admin cbis-admin 3.6M Oct 27  2023 usdelpod14-ncs_HealthChecksSummary_2023-10-27_17-06.html
+-rwxrwxrwx.  1 root       root       3.6M Nov  2  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-02_16-45.html
+-rwxrwxrwx.  1 root       root       889K Nov  2  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-02_16-45.log
+-rwxrwxrwx.  1 root       root       3.6M Nov  2  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-02_16-45.json
+-rw-r-----.  1 cbis-admin cbis-admin 1.5G Nov  3  2023 NCS22.12-PP0.tar.gz
+-rw-r-----.  1 cbis-admin cbis-admin 1.1M Nov  3  2023 screenlog.0
+-rwxrwxrwx.  1 root       root       3.5M Nov  6  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-06_18-45.html
+-rwxrwxrwx.  1 root       root       871K Nov  6  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-06_18-45.log
+-rwxrwxrwx.  1 root       root       3.6M Nov  6  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-06_18-45.json
+drwxr-x---.  2 cbis-admin cbis-admin   57 Jan 13  2024 ansible
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  4  2024 workerbm-6_reboot_logs
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  4  2024 workerbm-9_reboot_logs
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  5  2024 masterbm-0_reboot_logs
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  5  2024 edgebm-0_reboot_logs
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  5  2024 monitor_reboot_logs
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  5  2024 storagbm-2_reboot_logs
+-rw-r-----.  1 cbis-admin cbis-admin  913 Apr 22  2024 logrotate_podman_ansible (2).tgz
+-rw-r-----.  1 cbis-admin cbis-admin  913 Apr 22  2024 logrotate_podman_ansible .tgz
+-rw-r-----.  1 cbis-admin cbis-admin  913 Apr 22  2024 logrotate_podman.tgz
+-rw-r-----.  1 cbis-admin cbis-admin 2.5G May 13  2024 test.gz
+-rw-r-----.  1 cbis-admin cbis-admin  713 May 13  2024 check_freeze_events.sh
+-rwxrwxrwx.  1 cbis-admin cbis-admin  468 May 21  2024 restore_cbis_manager_image.yml
+-rw-r-----.  1 cbis-admin cbis-admin 1.3K Jul 19  2024 memCpuChk_v2.1.sh
+-rw-r-----.  1 cbis-admin cbis-admin  890 Aug  2  2024 logrotate_podman_ansible_mp2_compatiable.tgz
+-rw-r-----.  1 cbis-admin cbis-admin  774 Aug  9  2024 check_too.sh
+drwxr-x---.  2 cbis-admin cbis-admin   65 Sep  5  2024 tcpdump_nodes
+-rw-r-----.  1 cbis-admin cbis-admin 3.1K Oct  3  2024 cnf_size_check_v2.sh
+drwxr-x---.  2 cbis-admin cbis-admin 4.0K Nov 11 21:00 04288266
+-rw-------.  1 root       root         99 Nov 14 06:58 nohup.out
+drwxrwxr-x. 10 cbis-admin cbis-admin 4.0K Nov 15 06:45 NCS22-12_deployment_optimization_TSN
+drwxr-x---.  5 cbis-admin cbis-admin   79 Dec 26 10:14 ice-install-on-local
+drwxr-x---.  2 cbis-admin cbis-admin   41 Jan 17 05:57 Log
+-rw-r-----.  1 cbis-admin cbis-admin  60K Jan 17 06:15 VerifyHP.nfvi2.sh
+drwxr-x---.  2 cbis-admin cbis-admin    6 Jan 17 06:17 nadcmfiles
+drwxr-x---.  2 cbis-admin cbis-admin    6 Jan 17 06:17 srcfiles
+drwxr-x---.  2 cbis-admin cbis-admin    6 Jan 17 06:17 mobafiles
+-rw-r-----.  1 cbis-admin cbis-admin   75 Jan 21 04:27 ipmi-ips
+drwxr-x---.  2 cbis-admin cbis-admin 4.0K Jan 21 05:59 logs
+-rw-r-----.  1 cbis-admin cbis-admin   45 Jan 21 05:59 ipmi_init.01212025.055957
+-rw-r-----.  1 cbis-admin cbis-admin   45 Jan 21 05:59 ipmi_good.01212025.055957
+-rw-r-----.  1 cbis-admin cbis-admin  660 Jan 22 08:00 worker
+-rw-r-----.  1 cbis-admin cbis-admin 7.9M Jan 22 10:29 usdelpod14-ncs_HealthChecksSummary_2025-01-22_09-34.html
+drwxr-x---.  2 cbis-admin cbis-admin   49 Jan 22 10:58 drop_cache
+drwxr-xr-x.  5 root       root         79 Mar 13 11:53 ice-support-package-base
+drwxr-x---.  7 cbis-admin cbis-admin  140 Mar 25 22:49 ice
+-rw-r-----.  1 cbis-admin cbis-admin  14K Mar 25 22:49 icerc
+drwxrwxrwx.  2 cbis-admin cbis-admin  16K Mar 25 23:13 HealthCheckFiles
+-rwxr-x---.  1 root       root       110M Apr 24 08:18 ice-support-package-1.3-b455-base.tar.gz.ext
+[root@usdelpod14-centralsite-centralsitemanager-0 cbis-admin (Active)]# cd ice
+ice/                      ice-install-on-local/     ice-support-package-base/
+[root@usdelpod14-centralsite-centralsitemanager-0 cbis-admin (Active)]# cd ice-support-package-base/
+[root@usdelpod14-centralsite-centralsitemanager-0 ice-support-package-base (Active)]# ls -lrth
+total 52K
+drwxr-xr-x. 2 root root   42 Mar 13 11:53 plugins
+-rw-r--r--. 1 root root  14K Mar 13 11:53 ncs_icerc
+drwxr-xr-x. 4 root root 4.0K Mar 13 11:53 Installer
+-rw-r--r--. 1 root root  31K Mar 13 11:53 icerc
+drwxr-xr-x. 7 root root  140 Mar 13 11:53 ice
+[root@usdelpod14-centralsite-centralsitemanager-0 ice-support-package-base (Active)]# cd Installer/
+[root@usdelpod14-centralsite-centralsitemanager-0 Installer (Active)]# ls -lrth
+total 156K
+-rw-r--r--. 1 root root 2.8K Mar 13 11:53 Version.py
+-rw-r--r--. 1 root root 7.3K Mar 13 11:53 Validations.py
+-rw-r--r--. 1 root root  587 Mar 13 11:53 PythonUtils.py
+drwxr-xr-x. 3 root root   20 Mar 13 11:53 PythonLibraries
+drwxr-xr-x. 3 root root   20 Mar 13 11:53 Python3Libraries
+-rw-r--r--. 1 root root 2.4K Mar 13 11:53 PopenTimeOut.py
+-rw-r--r--. 1 root root  13K Mar 13 11:53 PluginInstaller.py
+-rw-r--r--. 1 root root  909 Mar 13 11:53 Paths.py
+-rw-r--r--. 1 root root  37K Mar 13 11:53 PackageInstaller.py
+-rwxr-xr-x. 1 root root  450 Mar 13 11:53 manager_local_installer.py
+-rwxr-xr-x. 1 root root 6.2K Mar 13 11:53 install_on_all_managers.yaml
+-rw-r--r--. 1 root root    0 Mar 13 11:53 __init__.py
+-rw-r--r--. 1 root root  13K Mar 13 11:53 IceInstaller.py
+-rwxr-xr-x. 1 root root  476 Mar 13 11:53 hosts.hfx
+-rw-r--r--. 1 root root 1.7K Mar 13 11:53 GlobalParameters.py
+-rw-r--r--. 1 root root 3.0K Mar 13 11:53 GlobalLogging.py
+-rw-r--r--. 1 root root 2.2K Mar 13 11:53 global_enums.py
+-rw-r--r--. 1 root root 3.3K Mar 13 11:53 filetracker.json
+-rw-r--r--. 1 root root 1.2K Mar 13 11:53 DeploymentType.py
+-rw-r--r--. 1 root root  297 Mar 13 11:53 conf.yaml
+-rw-r--r--. 1 root root 6.3K Mar 13 11:53 CommonOperations.py
+-rw-r--r--. 1 root root 5.6K Mar 13 11:53 CbisManagerClient.py
+-rw-r--r--. 1 root root 2.5K Mar 13 11:53 Action.py
+[root@usdelpod14-centralsite-centralsitemanager-0 Installer (Active)]# tmux
+[exited]
+[root@usdelpod14-centralsite-centralsitemanager-0 Installer (Active)]# cd
+[root@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]#
+[root@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]#
+[root@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]#
+[root@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]#
+[root@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]#
+[root@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]#
+[root@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]#
+[root@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]#
+[root@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]# ls -lrt
+total 31907436
+-rw-------.  1 root       root              6577 Jan 28  2019 original-ks.cfg
+-rw-------.  1 root       root              6921 Jan 28  2019 anaconda-ks.cfg
+-rwxr-xr-x.  1 root       root            854488 Apr  6  2021 haproxy-1.5.18-9.el7.x86_64.rpm
+drwxr-xr-x.  5 cbis-admin hugetlbfs         4096 Jul 28  2022 MLNX_OFED_LINUX-5.7-1.0.2.0-rhel7.9-x86_64
+-rw-r--r--.  1 cbis-admin hugetlbfs     84274860 Jan 24  2023 dpdk-20.11.0-1.el7.x86_64.rpm
+-rw-r--r--.  1 cbis-admin hugetlbfs         6077 Jan 24  2023 igb_uio_default_kernel.tar.gz
+-rw-r--r--.  1 cbis-admin hugetlbfs     15887754 Jan 24  2023 falco_src.tgz
+-rw-r--r--.  1 cbis-admin hugetlbfs      2615132 Jan 24  2023 wireguard.tgz
+-rw-r--r--.  1 cbis-admin hugetlbfs    381664956 Jan 24  2023 MLNX_OFED_LINUX-5.7-1.0.2.0-rhel7.9-x86_64.tgz
+drwxr-xr-x.  3 root       root                43 Jan 28  2023 cbis-installer
+-rw-r--r--.  1 cbis-admin hugetlbfs         2162 Jan 28  2023 baremetal_updater.sh
+-rw-r--r--.  1 cbis-admin hugetlbfs      2063032 Jan 28  2023 fw-ConnectX5-rel-16_25_1020-MCX542A-ACA_Ax-UEFI-14.18.19-Fle                  xBoot-3.5.701.bin.zip
+-rw-r--r--.  1 cbis-admin hugetlbfs      2062833 Jan 28  2023 fw-ConnectX5-rel-16_25_1020-MCX512F-ACA_Ax-UEFI-14.18.19-Fle                  xBoot-3.5.701.bin.zip
+-rw-r--r--.  1 cbis-admin hugetlbfs    102415491 Jan 28  2023 mft-4.15.0-104-x86_64-rpm.tgz
+drwxr-xr-x.  2 root       root                 6 May 23  2023 cbis-extensions
+drwxr-xr-x. 11 cbis-admin hugetlbfs         4096 May 23  2023 cbis
+drwxr-xr-x.  3 root       root                19 May 24  2023 ansible
+-rwxrwxrwx.  1 cbis-admin cbis-admin   111384321 Oct 27  2023 ice-support-package-1.3-b356-base.tar.gz.self.ext
+drwxr-xr-x.  4 root       root                58 Nov  3  2023 hfx_backup
+drwxr-xr-x.  5 root       root                79 Jan 11  2024 ice-support-package-base
+-rwxr-x---.  1 root       root         111650699 Mar  8  2024 z.
+-rwxr-x---.  1 root       root         111650699 Mar  8  2024 ice-support-package-1.3-b388-base.tar.gz.self.ext
+-rwxr-x---.  1 root       root         111640671 Mar  8  2024 ice-support-package-1.3-b372-base.tar.gz.self.ext
+-rw-r-----.  1 root       root               913 Apr 22  2024 logrotate_podman.tgz
+drwxrwxrwx.  2 root       root              4096 May  7  2024 HealthCheckFiles
+-r--r--r--.  1 root       root        2843546879 May 21  2024 cbis-manager.tar.gz
+drwxr-x---.  3 cbis-admin cbis-admin          35 Jun  5  2024 logrotate_podman_ansible
+-rwxr-x---.  1 cbis-admin cbis-admin        1297 Jul 19  2024 memCpuChk_v2.1.sh
+-rwxr-x---.  1 root       root                22 Jul 31  2024 update_command
+drwxr-xr-x.  2 root       root               123 Apr 24 07:54 zabbix_configuration
+drwxr-x---.  7 cbis-admin cbis-admin         140 Apr 24 08:48 ice
+-rw-r-----.  1 cbis-admin cbis-admin       14130 Apr 24 08:48 icerc
+-rw-r-----.  1 root       root       28524021005 Apr 24 08:50 update_log_2024-24-07-31-18-18-06.log
+[root@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]# tmux
+[exited]
+[root@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]#
+[root@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]#
+[root@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]#
+[root@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]#
+[root@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]#
+[root@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]#
+[root@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]# exit
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ ls -lrth
+total 4.5G
+drwxrwxr-x.  2 cbis-admin cbis-admin  199 May 12  2023 all_irq_pin_seg
+drwxr-x---.  4 cbis-admin cbis-admin   28 May 24  2023 salt
+-rw-r-----.  1 cbis-admin cbis-admin 104K May 24  2023 body_usdelpod14-ncs.json
+-rw-r-----.  1 cbis-admin cbis-admin 4.3K May 25  2023 all_irq_pin_seg.zip
+-rwxr-x---.  1 cbis-admin cbis-admin 1.5K May 25  2023 safeguard.sh
+-rwxr-x---.  1 cbis-admin cbis-admin 1.5K May 25  2023 cbis-admin@172.31.0.18
+-rw-r-----.  1 cbis-admin cbis-admin  18K May 25  2023 HC_Checklist_updated.zip
+-rw-r-----.  1 cbis-admin cbis-admin  18K May 25  2023 cbis-admin@172.31.0.17
+-rw-r-----.  1 cbis-admin cbis-admin   80 May 25  2023 freeg.text
+-rw-r-----.  1 cbis-admin cbis-admin    4 May 25  2023 freeg1.text1
+-rw-r-----.  1 cbis-admin cbis-admin 2.6K May 25  2023 disable-enable-sctp.yaml
+-rw-r-----.  1 cbis-admin cbis-admin 4.5K May 26  2023 servicenow.zip
+-rw-r-----.  1 cbis-admin cbis-admin  73M May 26  2023 cinfo-1.0.tar
+-rw-r-----.  1 cbis-admin cbis-admin 132M May 26  2023 nginx.tar
+-rw-r-----.  1 cbis-admin cbis-admin  55K May 31  2023 firewall_POD14_ELG.json
+-rw-r-----.  1 cbis-admin cbis-admin  79K Aug  1  2023 NCS22-12_deployment_optimization_TSN_v0.6.tgz
+-rw-r-----.  1 cbis-admin cbis-admin    0 Aug 11  2023 -
+-rw-r-----.  1 cbis-admin cbis-admin    0 Aug 11  2023 {
+-rw-r-----.  1 cbis-admin cbis-admin 4.3M Aug 21  2023 usdelpod14-ncs_HealthChecksSummary_2023-08-21_09-53.html
+-rwxrwxrwx.  1 cbis-admin cbis-admin  294 Sep 18  2023 power.sh
+drwxr-x---.  2 cbis-admin cbis-admin  171 Sep 18  2023 servicenow_USD
+-rw-------.  1 cbis-admin cbis-admin  11M Sep 20  2023 perf.log
+drwxr-x---.  3 cbis-admin cbis-admin   37 Sep 20  2023 bcmt_Folder
+drwxr-x---.  2 cbis-admin cbis-admin   61 Sep 20  2023 servicenow
+-rw-r-----.  1 cbis-admin cbis-admin 107M Sep 26  2023 whereabouts-cleaner-TSN-NCS22.tgz
+-rw-r-----.  1 cbis-admin cbis-admin 3.6M Oct 27  2023 usdelpod14-ncs_HealthChecksSummary_2023-10-27_17-06.html
+-rwxrwxrwx.  1 root       root       3.6M Nov  2  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-02_16-45.html
+-rwxrwxrwx.  1 root       root       889K Nov  2  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-02_16-45.log
+-rwxrwxrwx.  1 root       root       3.6M Nov  2  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-02_16-45.json
+-rw-r-----.  1 cbis-admin cbis-admin 1.5G Nov  3  2023 NCS22.12-PP0.tar.gz
+-rw-r-----.  1 cbis-admin cbis-admin 1.1M Nov  3  2023 screenlog.0
+-rwxrwxrwx.  1 root       root       3.5M Nov  6  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-06_18-45.html
+-rwxrwxrwx.  1 root       root       871K Nov  6  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-06_18-45.log
+-rwxrwxrwx.  1 root       root       3.6M Nov  6  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-06_18-45.json
+drwxr-x---.  2 cbis-admin cbis-admin   57 Jan 13  2024 ansible
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  4  2024 workerbm-6_reboot_logs
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  4  2024 workerbm-9_reboot_logs
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  5  2024 masterbm-0_reboot_logs
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  5  2024 edgebm-0_reboot_logs
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  5  2024 monitor_reboot_logs
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  5  2024 storagbm-2_reboot_logs
+-rw-r-----.  1 cbis-admin cbis-admin  913 Apr 22  2024 logrotate_podman_ansible (2).tgz
+-rw-r-----.  1 cbis-admin cbis-admin  913 Apr 22  2024 logrotate_podman_ansible .tgz
+-rw-r-----.  1 cbis-admin cbis-admin  913 Apr 22  2024 logrotate_podman.tgz
+-rw-r-----.  1 cbis-admin cbis-admin 2.5G May 13  2024 test.gz
+-rw-r-----.  1 cbis-admin cbis-admin  713 May 13  2024 check_freeze_events.sh
+-rwxrwxrwx.  1 cbis-admin cbis-admin  468 May 21  2024 restore_cbis_manager_image.yml
+-rw-r-----.  1 cbis-admin cbis-admin 1.3K Jul 19  2024 memCpuChk_v2.1.sh
+-rw-r-----.  1 cbis-admin cbis-admin  890 Aug  2  2024 logrotate_podman_ansible_mp2_compatiable.tgz
+-rw-r-----.  1 cbis-admin cbis-admin  774 Aug  9  2024 check_too.sh
+drwxr-x---.  2 cbis-admin cbis-admin   65 Sep  5  2024 tcpdump_nodes
+-rw-r-----.  1 cbis-admin cbis-admin 3.1K Oct  3  2024 cnf_size_check_v2.sh
+drwxr-x---.  2 cbis-admin cbis-admin 4.0K Nov 11 21:00 04288266
+-rw-------.  1 root       root         99 Nov 14 06:58 nohup.out
+drwxrwxr-x. 10 cbis-admin cbis-admin 4.0K Nov 15 06:45 NCS22-12_deployment_optimization_TSN
+drwxr-x---.  2 cbis-admin cbis-admin   41 Jan 17 05:57 Log
+-rw-r-----.  1 cbis-admin cbis-admin  60K Jan 17 06:15 VerifyHP.nfvi2.sh
+drwxr-x---.  2 cbis-admin cbis-admin    6 Jan 17 06:17 nadcmfiles
+drwxr-x---.  2 cbis-admin cbis-admin    6 Jan 17 06:17 srcfiles
+drwxr-x---.  2 cbis-admin cbis-admin    6 Jan 17 06:17 mobafiles
+-rw-r-----.  1 cbis-admin cbis-admin   75 Jan 21 04:27 ipmi-ips
+drwxr-x---.  2 cbis-admin cbis-admin 4.0K Jan 21 05:59 logs
+-rw-r-----.  1 cbis-admin cbis-admin   45 Jan 21 05:59 ipmi_init.01212025.055957
+-rw-r-----.  1 cbis-admin cbis-admin   45 Jan 21 05:59 ipmi_good.01212025.055957
+-rw-r-----.  1 cbis-admin cbis-admin  660 Jan 22 08:00 worker
+-rw-r-----.  1 cbis-admin cbis-admin 7.9M Jan 22 10:29 usdelpod14-ncs_HealthChecksSummary_2025-01-22_09-34.html
+drwxr-x---.  2 cbis-admin cbis-admin   49 Jan 22 10:58 drop_cache
+drwxr-xr-x.  5 root       root         79 Mar 13 11:53 ice-support-package-base
+drwxr-xr-x.  5 cbis-admin cbis-admin   79 Mar 13 11:53 ice-install-on-local
+-rwxr-x---.  1 root       root       110M Apr 24 08:18 ice-support-package-1.3-b455-base.tar.gz.ext
+drwxr-x---.  7 cbis-admin cbis-admin  140 Apr 24 08:49 ice
+-rw-r-----.  1 cbis-admin cbis-admin  14K Apr 24 08:49 icerc
+drwxrwxrwx.  2 cbis-admin cbis-admin  16K Apr 24 09:04 HealthCheckFiles
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ logout
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ ls -lrth
+total 126M
+-rw-r--r--. 1 superuser1 superuser1 7.9M Mar 25 23:12 usdelpod14-ncs_HealthChecksSummary_2025-03-25_22-49.html
+-rw-r--r--. 1 superuser1 superuser1 7.3M Mar 25 23:12 usdelpod14-ncs_HealthChecksSummary_2025-03-25_22-49.json
+-rw-r--r--. 1 superuser1 superuser1 1.5M Mar 25 23:12 usdelpod14-ncs_HealthChecksSummary_2025-03-25_22-49.log
+-rw-r-----. 1 superuser1 superuser1 110M Apr 24 08:16 ice-support-package-1.3-b455-base.tar.gz.ext
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ sudo -i -u cbis-admin
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ logout
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ pwd
+/home/superuser1/
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ sudo -i -u cbis-admin
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ ls -lrth
+total 4.5G
+drwxrwxr-x.  2 cbis-admin cbis-admin  199 May 12  2023 all_irq_pin_seg
+drwxr-x---.  4 cbis-admin cbis-admin   28 May 24  2023 salt
+-rw-r-----.  1 cbis-admin cbis-admin 104K May 24  2023 body_usdelpod14-ncs.json
+-rw-r-----.  1 cbis-admin cbis-admin 4.3K May 25  2023 all_irq_pin_seg.zip
+-rwxr-x---.  1 cbis-admin cbis-admin 1.5K May 25  2023 safeguard.sh
+-rwxr-x---.  1 cbis-admin cbis-admin 1.5K May 25  2023 cbis-admin@172.31.0.18
+-rw-r-----.  1 cbis-admin cbis-admin  18K May 25  2023 HC_Checklist_updated.zip
+-rw-r-----.  1 cbis-admin cbis-admin  18K May 25  2023 cbis-admin@172.31.0.17
+-rw-r-----.  1 cbis-admin cbis-admin   80 May 25  2023 freeg.text
+-rw-r-----.  1 cbis-admin cbis-admin    4 May 25  2023 freeg1.text1
+-rw-r-----.  1 cbis-admin cbis-admin 2.6K May 25  2023 disable-enable-sctp.yaml
+-rw-r-----.  1 cbis-admin cbis-admin 4.5K May 26  2023 servicenow.zip
+-rw-r-----.  1 cbis-admin cbis-admin  73M May 26  2023 cinfo-1.0.tar
+-rw-r-----.  1 cbis-admin cbis-admin 132M May 26  2023 nginx.tar
+-rw-r-----.  1 cbis-admin cbis-admin  55K May 31  2023 firewall_POD14_ELG.json
+-rw-r-----.  1 cbis-admin cbis-admin  79K Aug  1  2023 NCS22-12_deployment_optimization_TSN_v0.6.tgz
+-rw-r-----.  1 cbis-admin cbis-admin    0 Aug 11  2023 -
+-rw-r-----.  1 cbis-admin cbis-admin    0 Aug 11  2023 {
+-rw-r-----.  1 cbis-admin cbis-admin 4.3M Aug 21  2023 usdelpod14-ncs_HealthChecksSummary_2023-08-21_09-53.html
+-rwxrwxrwx.  1 cbis-admin cbis-admin  294 Sep 18  2023 power.sh
+drwxr-x---.  2 cbis-admin cbis-admin  171 Sep 18  2023 servicenow_USD
+-rw-------.  1 cbis-admin cbis-admin  11M Sep 20  2023 perf.log
+drwxr-x---.  3 cbis-admin cbis-admin   37 Sep 20  2023 bcmt_Folder
+drwxr-x---.  2 cbis-admin cbis-admin   61 Sep 20  2023 servicenow
+-rw-r-----.  1 cbis-admin cbis-admin 107M Sep 26  2023 whereabouts-cleaner-TSN-NCS22.tgz
+-rw-r-----.  1 cbis-admin cbis-admin 3.6M Oct 27  2023 usdelpod14-ncs_HealthChecksSummary_2023-10-27_17-06.html
+-rwxrwxrwx.  1 root       root       3.6M Nov  2  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-02_16-45.html
+-rwxrwxrwx.  1 root       root       889K Nov  2  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-02_16-45.log
+-rwxrwxrwx.  1 root       root       3.6M Nov  2  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-02_16-45.json
+-rw-r-----.  1 cbis-admin cbis-admin 1.5G Nov  3  2023 NCS22.12-PP0.tar.gz
+-rw-r-----.  1 cbis-admin cbis-admin 1.1M Nov  3  2023 screenlog.0
+-rwxrwxrwx.  1 root       root       3.5M Nov  6  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-06_18-45.html
+-rwxrwxrwx.  1 root       root       871K Nov  6  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-06_18-45.log
+-rwxrwxrwx.  1 root       root       3.6M Nov  6  2023 usdelpod14-ncs_HealthChecksSummary_2023-11-06_18-45.json
+drwxr-x---.  2 cbis-admin cbis-admin   57 Jan 13  2024 ansible
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  4  2024 workerbm-6_reboot_logs
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  4  2024 workerbm-9_reboot_logs
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  5  2024 masterbm-0_reboot_logs
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  5  2024 edgebm-0_reboot_logs
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  5  2024 monitor_reboot_logs
+drwxr-x---.  2 cbis-admin cbis-admin   38 Apr  5  2024 storagbm-2_reboot_logs
+-rw-r-----.  1 cbis-admin cbis-admin  913 Apr 22  2024 logrotate_podman_ansible (2).tgz
+-rw-r-----.  1 cbis-admin cbis-admin  913 Apr 22  2024 logrotate_podman_ansible .tgz
+-rw-r-----.  1 cbis-admin cbis-admin  913 Apr 22  2024 logrotate_podman.tgz
+-rw-r-----.  1 cbis-admin cbis-admin 2.5G May 13  2024 test.gz
+-rw-r-----.  1 cbis-admin cbis-admin  713 May 13  2024 check_freeze_events.sh
+-rwxrwxrwx.  1 cbis-admin cbis-admin  468 May 21  2024 restore_cbis_manager_image.yml
+-rw-r-----.  1 cbis-admin cbis-admin 1.3K Jul 19  2024 memCpuChk_v2.1.sh
+-rw-r-----.  1 cbis-admin cbis-admin  890 Aug  2  2024 logrotate_podman_ansible_mp2_compatiable.tgz
+-rw-r-----.  1 cbis-admin cbis-admin  774 Aug  9  2024 check_too.sh
+drwxr-x---.  2 cbis-admin cbis-admin   65 Sep  5  2024 tcpdump_nodes
+-rw-r-----.  1 cbis-admin cbis-admin 3.1K Oct  3  2024 cnf_size_check_v2.sh
+drwxr-x---.  2 cbis-admin cbis-admin 4.0K Nov 11 21:00 04288266
+-rw-------.  1 root       root         99 Nov 14 06:58 nohup.out
+drwxrwxr-x. 10 cbis-admin cbis-admin 4.0K Nov 15 06:45 NCS22-12_deployment_optimization_TSN
+drwxr-x---.  2 cbis-admin cbis-admin   41 Jan 17 05:57 Log
+-rw-r-----.  1 cbis-admin cbis-admin  60K Jan 17 06:15 VerifyHP.nfvi2.sh
+drwxr-x---.  2 cbis-admin cbis-admin    6 Jan 17 06:17 nadcmfiles
+drwxr-x---.  2 cbis-admin cbis-admin    6 Jan 17 06:17 srcfiles
+drwxr-x---.  2 cbis-admin cbis-admin    6 Jan 17 06:17 mobafiles
+-rw-r-----.  1 cbis-admin cbis-admin   75 Jan 21 04:27 ipmi-ips
+drwxr-x---.  2 cbis-admin cbis-admin 4.0K Jan 21 05:59 logs
+-rw-r-----.  1 cbis-admin cbis-admin   45 Jan 21 05:59 ipmi_init.01212025.055957
+-rw-r-----.  1 cbis-admin cbis-admin   45 Jan 21 05:59 ipmi_good.01212025.055957
+-rw-r-----.  1 cbis-admin cbis-admin  660 Jan 22 08:00 worker
+-rw-r-----.  1 cbis-admin cbis-admin 7.9M Jan 22 10:29 usdelpod14-ncs_HealthChecksSummary_2025-01-22_09-34.html
+drwxr-x---.  2 cbis-admin cbis-admin   49 Jan 22 10:58 drop_cache
+drwxr-xr-x.  5 root       root         79 Mar 13 11:53 ice-support-package-base
+drwxr-xr-x.  5 cbis-admin cbis-admin   79 Mar 13 11:53 ice-install-on-local
+-rwxr-x---.  1 root       root       110M Apr 24 08:18 ice-support-package-1.3-b455-base.tar.gz.ext
+drwxr-x---.  7 cbis-admin cbis-admin  140 Apr 24 08:49 ice
+-rw-r-----.  1 cbis-admin cbis-admin  14K Apr 24 08:49 icerc
+drwxrwxrwx.  2 cbis-admin cbis-admin  16K Apr 24 09:04 HealthCheckFiles
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ cd HealthCheckFiles/
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 HealthCheckFiles (Active)]$ ls -lrth
+total 828M
+-rw-r-----. 1 cbis-admin cbis-admin  182K May 25  2023 usdelpod14-centralsite_HealthChecksSummary_2023-05-25_10-04.html
+-rw-r-----. 1 cbis-admin cbis-admin  312K May 25  2023 usdelpod14-centralsite_HealthChecksSummary_2023-05-25_10-04.json
+-rw-r-----. 1 cbis-admin cbis-admin   48K May 25  2023 usdelpod14-centralsite_HealthChecksSummary_2023-05-25_10-04.log
+-rw-r-----. 1 cbis-admin cbis-admin  2.0M May 25  2023 usdelpod14-ncs_HealthChecksSummary_2023-05-25_10-06.html
+-rw-r-----. 1 cbis-admin cbis-admin  2.1M May 25  2023 usdelpod14-ncs_HealthChecksSummary_2023-05-25_10-06.json
+-rw-r-----. 1 cbis-admin cbis-admin  416K May 25  2023 usdelpod14-ncs_HealthChecksSummary_2023-05-25_10-06.log
+-rw-r-----. 1 cbis-admin cbis-admin  4.3M Aug 21  2023 usdelpod14-ncs_HealthChecksSummary_2023-08-21_01-03.html
+-rw-r-----. 1 cbis-admin cbis-admin  3.9M Aug 21  2023 usdelpod14-ncs_HealthChecksSummary_2023-08-21_01-03.json
+-rw-r-----. 1 cbis-admin cbis-admin  601K Aug 21  2023 usdelpod14-ncs_HealthChecksSummary_2023-08-21_01-03.log
+-rw-r-----. 1 cbis-admin cbis-admin  4.3M Aug 21  2023 usdelpod14-ncs_HealthChecksSummary_2023-08-21_09-53.html
+-rw-r-----. 1 cbis-admin cbis-admin  3.9M Aug 21  2023 usdelpod14-ncs_HealthChecksSummary_2023-08-21_09-53.json
+-rw-r-----. 1 cbis-admin cbis-admin  599K Aug 21  2023 usdelpod14-ncs_HealthChecksSummary_2023-08-21_09-53.log
+-rw-r-----. 1 cbis-admin cbis-admin  4.7M Aug 28  2023 usdelpod14-ncs_HealthChecksSummary_2023-08-28_14-19.html
+-rw-r-----. 1 cbis-admin cbis-admin  4.2M Aug 28  2023 usdelpod14-ncs_HealthChecksSummary_2023-08-28_14-19.json
+-rw-r-----. 1 cbis-admin cbis-admin  545K Aug 28  2023 usdelpod14-ncs_HealthChecksSummary_2023-08-28_14-19.log
+-rw-r-----. 1 cbis-admin cbis-admin  4.9M Sep  5  2023 usdelpod14-ncs_HealthChecksSummary_2023-09-05_05-53.html
+-rw-r-----. 1 cbis-admin cbis-admin  4.4M Sep  5  2023 usdelpod14-ncs_HealthChecksSummary_2023-09-05_05-53.json
+-rw-r-----. 1 cbis-admin cbis-admin  570K Sep  5  2023 usdelpod14-ncs_HealthChecksSummary_2023-09-05_05-53.log
+-rw-r-----. 1 cbis-admin cbis-admin  4.9M Sep  5  2023 usdelpod14-ncs_HealthChecksSummary_2023-09-05_08-18.html
+-rw-r-----. 1 cbis-admin cbis-admin  4.4M Sep  5  2023 usdelpod14-ncs_HealthChecksSummary_2023-09-05_08-18.json
+-rw-r-----. 1 cbis-admin cbis-admin  569K Sep  5  2023 usdelpod14-ncs_HealthChecksSummary_2023-09-05_08-18.log
+-rw-r-----. 1 cbis-admin cbis-admin  4.8M Sep  6  2023 usdelpod14-ncs_HealthChecksSummary_2023-09-06_07-54.html
+-rw-r-----. 1 cbis-admin cbis-admin  4.3M Sep  6  2023 usdelpod14-ncs_HealthChecksSummary_2023-09-06_07-54.json
+-rw-r-----. 1 cbis-admin cbis-admin  576K Sep  6  2023 usdelpod14-ncs_HealthChecksSummary_2023-09-06_07-54.log
+-rw-r-----. 1 cbis-admin cbis-admin   45K Dec 11  2023 usdelpod14-ncs_HealthChecksSummary_2023-12-11_08-48.log
+-rw-r-----. 1 cbis-admin cbis-admin  8.1K Dec 11  2023 usdelpod14-ncs_HealthChecksSummary_2023-12-11_09-47.log
+-rw-r-----. 1 cbis-admin cbis-admin   46K Dec 11  2023 usdelpod14-ncs_HealthChecksSummary_2023-12-11_10-01.log
+-rw-r-----. 1 cbis-admin cbis-admin  5.6M Jan  9  2024 usdelpod14-ncs_HealthChecksSummary_2024-01-09_10-56.html
+-rw-r-----. 1 cbis-admin cbis-admin  4.8M Jan  9  2024 usdelpod14-ncs_HealthChecksSummary_2024-01-09_10-56.json
+-rw-r-----. 1 cbis-admin cbis-admin  578K Jan  9  2024 usdelpod14-ncs_HealthChecksSummary_2024-01-09_10-56.log
+-rw-r-----. 1 cbis-admin cbis-admin  5.6M Feb 16  2024 usdelpod14-ncs_HealthChecksSummary_2024-02-16_08-15.html
+-rw-r-----. 1 cbis-admin cbis-admin  4.8M Feb 16  2024 usdelpod14-ncs_HealthChecksSummary_2024-02-16_08-15.json
+-rw-r-----. 1 cbis-admin cbis-admin  582K Feb 16  2024 usdelpod14-ncs_HealthChecksSummary_2024-02-16_08-15.log
+-rw-r-----. 1 cbis-admin cbis-admin  6.4M Feb 26  2024 usdelpod14-ncs_HealthChecksSummary_2024-02-26_19-53.html
+-rw-r-----. 1 cbis-admin cbis-admin  4.8M Feb 26  2024 usdelpod14-ncs_HealthChecksSummary_2024-02-26_19-53.json
+-rw-r-----. 1 cbis-admin cbis-admin  582K Feb 26  2024 usdelpod14-ncs_HealthChecksSummary_2024-02-26_19-53.log
+-rw-r-----. 1 cbis-admin cbis-admin  6.5M Feb 29  2024 usdelpod14-ncs_HealthChecksSummary_2024-02-29_09-13.html
+-rw-r-----. 1 cbis-admin cbis-admin  4.8M Feb 29  2024 usdelpod14-ncs_HealthChecksSummary_2024-02-29_09-13.json
+-rw-r-----. 1 cbis-admin cbis-admin  588K Feb 29  2024 usdelpod14-ncs_HealthChecksSummary_2024-02-29_09-13.log
+-rw-r-----. 1 cbis-admin cbis-admin  6.5M Mar  1  2024 usdelpod14-ncs_HealthChecksSummary_2024-03-01_09-34.html
+-rw-r-----. 1 cbis-admin cbis-admin  4.8M Mar  1  2024 usdelpod14-ncs_HealthChecksSummary_2024-03-01_09-34.json
+-rw-r-----. 1 cbis-admin cbis-admin  587K Mar  1  2024 usdelpod14-ncs_HealthChecksSummary_2024-03-01_09-34.log
+-rw-r-----. 1 cbis-admin cbis-admin  6.5M Mar  1  2024 usdelpod14-ncs_HealthChecksSummary_2024-03-01_10-31.html
+-rw-r-----. 1 cbis-admin cbis-admin  4.8M Mar  1  2024 usdelpod14-ncs_HealthChecksSummary_2024-03-01_10-31.json
+-rw-r-----. 1 cbis-admin cbis-admin  589K Mar  1  2024 usdelpod14-ncs_HealthChecksSummary_2024-03-01_10-31.log
+-rw-r-----. 1 cbis-admin cbis-admin  6.4M Mar  8  2024 usdelpod14-ncs_HealthChecksSummary_2024-03-08_20-29.html
+-rw-r-----. 1 cbis-admin cbis-admin  4.8M Mar  8  2024 usdelpod14-ncs_HealthChecksSummary_2024-03-08_20-29.json
+-rw-r-----. 1 cbis-admin cbis-admin  580K Mar  8  2024 usdelpod14-ncs_HealthChecksSummary_2024-03-08_20-29.log
+-rw-r--r--. 1 cbis-admin cbis-admin   295 Mar  8  2024 usdelpod14-ncs_HealthChecksSummary_2024-03-08_21-43.log
+-rw-r--r--. 1 cbis-admin cbis-admin  6.2M Mar 10  2024 usdelpod14-ncs_HealthChecksSummary_2024-03-10_04-35.html
+-rw-r--r--. 1 cbis-admin cbis-admin  5.7M Mar 10  2024 usdelpod14-ncs_HealthChecksSummary_2024-03-10_04-35.json
+-rw-r--r--. 1 cbis-admin cbis-admin  857K Mar 10  2024 usdelpod14-ncs_HealthChecksSummary_2024-03-10_04-35.log
+-rw-r--r--. 1 root       root        6.2M Mar 12  2024 usdelpod14-ncs_HealthChecksSummary_2024-03-12_07-50.html
+-rw-r--r--. 1 root       root        5.7M Mar 12  2024 usdelpod14-ncs_HealthChecksSummary_2024-03-12_07-50.json
+-rw-r--r--. 1 root       root        859K Mar 12  2024 usdelpod14-ncs_HealthChecksSummary_2024-03-12_07-50.log
+-rw-r--r--. 1 root       root        6.2M Mar 15  2024 usdelpod14-ncs_HealthChecksSummary_2024-03-15_11-27.html
+-rw-r--r--. 1 root       root        5.7M Mar 15  2024 usdelpod14-ncs_HealthChecksSummary_2024-03-15_11-27.json
+-rw-r--r--. 1 root       root        858K Mar 15  2024 usdelpod14-ncs_HealthChecksSummary_2024-03-15_11-27.log
+-rw-r--r--. 1 root       root        6.3M Mar 28  2024 usdelpod14-ncs_HealthChecksSummary_2024-03-28_19-05.html
+-rw-r--r--. 1 root       root        5.7M Mar 28  2024 usdelpod14-ncs_HealthChecksSummary_2024-03-28_19-05.json
+-rw-r--r--. 1 root       root        860K Mar 28  2024 usdelpod14-ncs_HealthChecksSummary_2024-03-28_19-05.log
+-rw-r--r--. 1 root       root         30K Mar 31  2024 usdelpod14-ncs_HealthChecksSummary_2024-03-31_04-02.log
+-rw-r--r--. 1 root       root        6.2M Apr  5  2024 usdelpod14-ncs_HealthChecksSummary_2024-04-05_13-30.html
+-rw-r--r--. 1 root       root        5.7M Apr  5  2024 usdelpod14-ncs_HealthChecksSummary_2024-04-05_13-30.json
+-rw-r--r--. 1 root       root        875K Apr  5  2024 usdelpod14-ncs_HealthChecksSummary_2024-04-05_13-30.log
+-rw-r--r--. 1 cbis-admin cbis-admin   295 Apr 23  2024 usdelpod14-ncs_HealthChecksSummary_2024-04-23_05-54.log
+-rw-r--r--. 1 cbis-admin cbis-admin  6.6M Apr 23  2024 usdelpod14-ncs_HealthChecksSummary_2024-04-23_05-59.html
+-rw-r--r--. 1 cbis-admin cbis-admin  5.9M Apr 23  2024 usdelpod14-ncs_HealthChecksSummary_2024-04-23_05-59.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.1M Apr 23  2024 usdelpod14-ncs_HealthChecksSummary_2024-04-23_05-59.log
+-rw-r--r--. 1 cbis-admin cbis-admin  6.2M May  6  2024 usdelpod14-ncs_HealthChecksSummary_2024-05-06_14-18.html
+-rw-r--r--. 1 cbis-admin cbis-admin  5.9M May  6  2024 usdelpod14-ncs_HealthChecksSummary_2024-05-06_14-18.json
+-rw-r--r--. 1 cbis-admin cbis-admin  978K May  6  2024 usdelpod14-ncs_HealthChecksSummary_2024-05-06_14-18.log
+-rw-r--r--. 1 cbis-admin cbis-admin  6.2M May  7  2024 usdelpod14-ncs_HealthChecksSummary_2024-05-07_10-34.html
+-rw-r--r--. 1 cbis-admin cbis-admin  5.9M May  7  2024 usdelpod14-ncs_HealthChecksSummary_2024-05-07_10-34.json
+-rw-r--r--. 1 cbis-admin cbis-admin  977K May  7  2024 usdelpod14-ncs_HealthChecksSummary_2024-05-07_10-34.log
+-rw-r--r--. 1 cbis-admin cbis-admin  6.2M May 17  2024 usdelpod14-ncs_HealthChecksSummary_2024-05-17_05-09.html
+-rw-r--r--. 1 cbis-admin cbis-admin  5.9M May 17  2024 usdelpod14-ncs_HealthChecksSummary_2024-05-17_05-09.json
+-rw-r--r--. 1 cbis-admin cbis-admin  977K May 17  2024 usdelpod14-ncs_HealthChecksSummary_2024-05-17_05-09.log
+-rw-r--r--. 1 cbis-admin cbis-admin  6.2M May 21  2024 usdelpod14-ncs_HealthChecksSummary_2024-05-21_04-24.html
+-rw-r--r--. 1 cbis-admin cbis-admin  5.9M May 21  2024 usdelpod14-ncs_HealthChecksSummary_2024-05-21_04-24.json
+-rw-r--r--. 1 cbis-admin cbis-admin  976K May 21  2024 usdelpod14-ncs_HealthChecksSummary_2024-05-21_04-24.log
+-rw-r--r--. 1 cbis-admin cbis-admin  6.2M May 21  2024 usdelpod14-ncs_HealthChecksSummary_2024-05-21_18-50.html
+-rw-r--r--. 1 cbis-admin cbis-admin  5.9M May 21  2024 usdelpod14-ncs_HealthChecksSummary_2024-05-21_18-50.json
+-rw-r--r--. 1 cbis-admin cbis-admin  974K May 21  2024 usdelpod14-ncs_HealthChecksSummary_2024-05-21_18-50.log
+-rw-r--r--. 1 cbis-admin cbis-admin  6.2M Jun 11  2024 usdelpod14-ncs_HealthChecksSummary_2024-06-11_17-04.html
+-rw-r--r--. 1 cbis-admin cbis-admin  5.8M Jun 11  2024 usdelpod14-ncs_HealthChecksSummary_2024-06-11_17-04.json
+-rw-r--r--. 1 cbis-admin cbis-admin  981K Jun 11  2024 usdelpod14-ncs_HealthChecksSummary_2024-06-11_17-04.log
+-rw-r--r--. 1 cbis-admin cbis-admin  5.9M Jul  8  2024 usdelpod14-ncs_HealthChecksSummary_2024-07-08_23-01.html
+-rw-r--r--. 1 cbis-admin cbis-admin  5.7M Jul  8  2024 usdelpod14-ncs_HealthChecksSummary_2024-07-08_23-01.json
+-rw-r--r--. 1 cbis-admin cbis-admin  959K Jul  8  2024 usdelpod14-ncs_HealthChecksSummary_2024-07-08_23-01.log
+-rw-r--r--. 1 cbis-admin cbis-admin  6.1M Jul 18  2024 usdelpod14-ncs_HealthChecksSummary_2024-07-18_18-02.html
+-rw-r--r--. 1 cbis-admin cbis-admin  5.7M Jul 18  2024 usdelpod14-ncs_HealthChecksSummary_2024-07-18_18-02.json
+-rw-r--r--. 1 cbis-admin cbis-admin 1004K Jul 18  2024 usdelpod14-ncs_HealthChecksSummary_2024-07-18_18-02.log
+-rw-r--r--. 1 cbis-admin cbis-admin  5.9M Jul 19  2024 usdelpod14-ncs_HealthChecksSummary_2024-07-19_14-27.html
+-rw-r--r--. 1 cbis-admin cbis-admin  5.7M Jul 19  2024 usdelpod14-ncs_HealthChecksSummary_2024-07-19_14-27.json
+-rw-r--r--. 1 cbis-admin cbis-admin  971K Jul 19  2024 usdelpod14-ncs_HealthChecksSummary_2024-07-19_14-27.log
+-rw-r--r--. 1 cbis-admin cbis-admin  6.1M Jul 26  2024 usdelpod14-ncs_HealthChecksSummary_2024-07-26_19-01.html
+-rw-r--r--. 1 cbis-admin cbis-admin  5.8M Jul 26  2024 usdelpod14-ncs_HealthChecksSummary_2024-07-26_19-01.json
+-rw-r--r--. 1 cbis-admin cbis-admin 1005K Jul 26  2024 usdelpod14-ncs_HealthChecksSummary_2024-07-26_19-01.log
+-rw-r--r--. 1 cbis-admin cbis-admin  6.4M Aug 21  2024 usdelpod14-ncs_HealthChecksSummary_2024-08-21_16-53.html
+-rw-r--r--. 1 cbis-admin cbis-admin  6.1M Aug 21  2024 usdelpod14-ncs_HealthChecksSummary_2024-08-21_16-53.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.1M Aug 21  2024 usdelpod14-ncs_HealthChecksSummary_2024-08-21_16-53.log
+-rw-r--r--. 1 cbis-admin cbis-admin  6.3M Sep  9  2024 usdelpod14-ncs_HealthChecksSummary_2024-09-09_10-02.html
+-rw-r--r--. 1 cbis-admin cbis-admin  6.0M Sep  9  2024 usdelpod14-ncs_HealthChecksSummary_2024-09-09_10-02.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.1M Sep  9  2024 usdelpod14-ncs_HealthChecksSummary_2024-09-09_10-02.log
+-rw-r--r--. 1 cbis-admin cbis-admin  6.3M Sep  9  2024 usdelpod14-ncs_HealthChecksSummary_2024-09-09_11-04.html
+-rw-r--r--. 1 cbis-admin cbis-admin  6.0M Sep  9  2024 usdelpod14-ncs_HealthChecksSummary_2024-09-09_11-04.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.1M Sep  9  2024 usdelpod14-ncs_HealthChecksSummary_2024-09-09_11-04.log
+-rw-r--r--. 1 cbis-admin cbis-admin  6.7M Sep 26  2024 usdelpod14-ncs_HealthChecksSummary_2024-09-26_05-25.html
+-rw-r--r--. 1 cbis-admin cbis-admin  6.2M Sep 26  2024 usdelpod14-ncs_HealthChecksSummary_2024-09-26_05-25.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.1M Sep 26  2024 usdelpod14-ncs_HealthChecksSummary_2024-09-26_05-25.log
+-rw-r--r--. 1 cbis-admin cbis-admin  6.7M Sep 26  2024 usdelpod14-ncs_HealthChecksSummary_2024-09-26_07-17.html
+-rw-r--r--. 1 cbis-admin cbis-admin  6.3M Sep 26  2024 usdelpod14-ncs_HealthChecksSummary_2024-09-26_07-17.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.1M Sep 26  2024 usdelpod14-ncs_HealthChecksSummary_2024-09-26_07-17.log
+-rw-r--r--. 1 cbis-admin cbis-admin  6.6M Oct  4  2024 usdelpod14-ncs_HealthChecksSummary_2024-10-04_03-34.html
+-rw-r--r--. 1 cbis-admin cbis-admin  6.2M Oct  4  2024 usdelpod14-ncs_HealthChecksSummary_2024-10-04_03-34.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.1M Oct  4  2024 usdelpod14-ncs_HealthChecksSummary_2024-10-04_03-34.log
+-rw-r--r--. 1 cbis-admin cbis-admin  6.7M Oct  4  2024 usdelpod14-ncs_HealthChecksSummary_2024-10-04_05-30.html
+-rw-r--r--. 1 cbis-admin cbis-admin  6.3M Oct  4  2024 usdelpod14-ncs_HealthChecksSummary_2024-10-04_05-30.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.1M Oct  4  2024 usdelpod14-ncs_HealthChecksSummary_2024-10-04_05-30.log
+-rw-r--r--. 1 cbis-admin cbis-admin  6.6M Oct  4  2024 usdelpod14-ncs_HealthChecksSummary_2024-10-04_09-19.html
+-rw-r--r--. 1 cbis-admin cbis-admin  6.2M Oct  4  2024 usdelpod14-ncs_HealthChecksSummary_2024-10-04_09-19.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.1M Oct  4  2024 usdelpod14-ncs_HealthChecksSummary_2024-10-04_09-19.log
+-rw-r--r--. 1 cbis-admin cbis-admin  6.7M Oct  4  2024 usdelpod14-ncs_HealthChecksSummary_2024-10-04_09-28.html
+-rw-r--r--. 1 cbis-admin cbis-admin  6.2M Oct  4  2024 usdelpod14-ncs_HealthChecksSummary_2024-10-04_09-28.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.1M Oct  4  2024 usdelpod14-ncs_HealthChecksSummary_2024-10-04_09-28.log
+-rw-r--r--. 1 cbis-admin cbis-admin  6.7M Oct 17  2024 usdelpod14-ncs_HealthChecksSummary_2024-10-17_18-22.html
+-rw-r--r--. 1 cbis-admin cbis-admin  6.2M Oct 17  2024 usdelpod14-ncs_HealthChecksSummary_2024-10-17_18-22.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.2M Oct 17  2024 usdelpod14-ncs_HealthChecksSummary_2024-10-17_18-22.log
+-rw-r--r--. 1 cbis-admin cbis-admin  6.6M Oct 18  2024 usdelpod14-ncs_HealthChecksSummary_2024-10-18_12-29.html
+-rw-r--r--. 1 cbis-admin cbis-admin  6.0M Oct 18  2024 usdelpod14-ncs_HealthChecksSummary_2024-10-18_12-29.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.3M Oct 18  2024 usdelpod14-ncs_HealthChecksSummary_2024-10-18_12-29.log
+-rw-r--r--. 1 cbis-admin cbis-admin  6.6M Oct 23  2024 usdelpod14-ncs_HealthChecksSummary_2024-10-23_13-32.html
+-rw-r--r--. 1 cbis-admin cbis-admin  6.0M Oct 23  2024 usdelpod14-ncs_HealthChecksSummary_2024-10-23_13-32.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.3M Oct 23  2024 usdelpod14-ncs_HealthChecksSummary_2024-10-23_13-32.log
+-rw-r--r--. 1 cbis-admin cbis-admin  6.7M Oct 29 04:53 usdelpod14-ncs_HealthChecksSummary_2024-10-29_04-40.html
+-rw-r--r--. 1 cbis-admin cbis-admin  6.0M Oct 29 04:53 usdelpod14-ncs_HealthChecksSummary_2024-10-29_04-40.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.3M Oct 29 04:53 usdelpod14-ncs_HealthChecksSummary_2024-10-29_04-40.log
+-rw-r--r--. 1 cbis-admin cbis-admin  7.5M Nov  5 22:28 usdelpod14-ncs_HealthChecksSummary_2024-11-05_22-14.html
+-rw-r--r--. 1 cbis-admin cbis-admin  6.2M Nov  5 22:28 usdelpod14-ncs_HealthChecksSummary_2024-11-05_22-14.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.5M Nov  5 22:28 usdelpod14-ncs_HealthChecksSummary_2024-11-05_22-14.log
+-rw-r--r--. 1 cbis-admin cbis-admin  7.5M Nov  7 18:45 usdelpod14-ncs_HealthChecksSummary_2024-11-07_18-31.html
+-rw-r--r--. 1 cbis-admin cbis-admin  6.2M Nov  7 18:45 usdelpod14-ncs_HealthChecksSummary_2024-11-07_18-31.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.5M Nov  7 18:45 usdelpod14-ncs_HealthChecksSummary_2024-11-07_18-31.log
+-rw-r--r--. 1 cbis-admin cbis-admin  7.4M Nov  7 18:48 usdelpod14-ncs_HealthChecksSummary_2024-11-07_18-34.html
+-rw-r--r--. 1 cbis-admin cbis-admin  6.2M Nov  7 18:48 usdelpod14-ncs_HealthChecksSummary_2024-11-07_18-34.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.5M Nov  7 18:48 usdelpod14-ncs_HealthChecksSummary_2024-11-07_18-34.log
+-rw-r--r--. 1 cbis-admin cbis-admin  7.5M Nov 11 05:37 usdelpod14-ncs_HealthChecksSummary_2024-11-11_05-23.html
+-rw-r--r--. 1 cbis-admin cbis-admin  6.2M Nov 11 05:37 usdelpod14-ncs_HealthChecksSummary_2024-11-11_05-23.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.5M Nov 11 05:37 usdelpod14-ncs_HealthChecksSummary_2024-11-11_05-23.log
+-rw-r--r--. 1 cbis-admin cbis-admin  7.4M Nov 12 05:02 usdelpod14-ncs_HealthChecksSummary_2024-11-12_04-49.html
+-rw-r--r--. 1 cbis-admin cbis-admin  6.2M Nov 12 05:02 usdelpod14-ncs_HealthChecksSummary_2024-11-12_04-49.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.5M Nov 12 05:02 usdelpod14-ncs_HealthChecksSummary_2024-11-12_04-49.log
+-rw-r--r--. 1 cbis-admin cbis-admin  7.6M Nov 12 07:00 usdelpod14-ncs_HealthChecksSummary_2024-11-12_06-47.html
+-rw-r--r--. 1 cbis-admin cbis-admin  6.2M Nov 12 07:00 usdelpod14-ncs_HealthChecksSummary_2024-11-12_06-47.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.4M Nov 12 07:00 usdelpod14-ncs_HealthChecksSummary_2024-11-12_06-47.log
+-rw-r--r--. 1 cbis-admin cbis-admin  7.5M Nov 13 09:26 usdelpod14-ncs_HealthChecksSummary_2024-11-13_09-12.html
+-rw-r--r--. 1 cbis-admin cbis-admin  6.2M Nov 13 09:26 usdelpod14-ncs_HealthChecksSummary_2024-11-13_09-12.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.4M Nov 13 09:26 usdelpod14-ncs_HealthChecksSummary_2024-11-13_09-12.log
+-rw-r--r--. 1 cbis-admin cbis-admin  7.6M Nov 14 04:31 usdelpod14-ncs_HealthChecksSummary_2024-11-14_04-18.html
+-rw-r--r--. 1 cbis-admin cbis-admin  6.2M Nov 14 04:31 usdelpod14-ncs_HealthChecksSummary_2024-11-14_04-18.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.5M Nov 14 04:31 usdelpod14-ncs_HealthChecksSummary_2024-11-14_04-18.log
+-rw-r--r--. 1 cbis-admin cbis-admin  7.5M Nov 15 04:59 usdelpod14-ncs_HealthChecksSummary_2024-11-15_04-45.html
+-rw-r--r--. 1 cbis-admin cbis-admin  6.2M Nov 15 04:59 usdelpod14-ncs_HealthChecksSummary_2024-11-15_04-45.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.5M Nov 15 04:59 usdelpod14-ncs_HealthChecksSummary_2024-11-15_04-45.log
+-rw-r--r--. 1 cbis-admin cbis-admin  7.4M Nov 15 07:04 usdelpod14-ncs_HealthChecksSummary_2024-11-15_06-50.html
+-rw-r--r--. 1 cbis-admin cbis-admin  6.2M Nov 15 07:04 usdelpod14-ncs_HealthChecksSummary_2024-11-15_06-50.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.4M Nov 15 07:04 usdelpod14-ncs_HealthChecksSummary_2024-11-15_06-50.log
+-rw-r--r--. 1 cbis-admin cbis-admin  7.4M Nov 15 07:50 usdelpod14-ncs_HealthChecksSummary_2024-11-15_07-36.html
+-rw-r--r--. 1 cbis-admin cbis-admin  6.2M Nov 15 07:50 usdelpod14-ncs_HealthChecksSummary_2024-11-15_07-36.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.5M Nov 15 07:50 usdelpod14-ncs_HealthChecksSummary_2024-11-15_07-36.log
+-rw-r--r--. 1 cbis-admin cbis-admin  7.5M Nov 15 08:11 usdelpod14-ncs_HealthChecksSummary_2024-11-15_07-57.html
+-rw-r--r--. 1 cbis-admin cbis-admin  6.2M Nov 15 08:11 usdelpod14-ncs_HealthChecksSummary_2024-11-15_07-57.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.5M Nov 15 08:11 usdelpod14-ncs_HealthChecksSummary_2024-11-15_07-57.log
+-rw-r--r--. 1 cbis-admin cbis-admin  7.4M Nov 18 04:12 usdelpod14-ncs_HealthChecksSummary_2024-11-18_03-58.html
+-rw-r--r--. 1 cbis-admin cbis-admin  6.2M Nov 18 04:12 usdelpod14-ncs_HealthChecksSummary_2024-11-18_03-58.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.5M Nov 18 04:12 usdelpod14-ncs_HealthChecksSummary_2024-11-18_03-58.log
+-rw-r--r--. 1 cbis-admin cbis-admin  7.4M Nov 18 04:13 usdelpod14-ncs_HealthChecksSummary_2024-11-18_04-00.html
+-rw-r--r--. 1 cbis-admin cbis-admin  6.2M Nov 18 04:13 usdelpod14-ncs_HealthChecksSummary_2024-11-18_04-00.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.4M Nov 18 04:13 usdelpod14-ncs_HealthChecksSummary_2024-11-18_04-00.log
+-rw-r--r--. 1 cbis-admin cbis-admin  7.5M Nov 18 16:02 usdelpod14-ncs_HealthChecksSummary_2024-11-18_15-49.html
+-rw-r--r--. 1 cbis-admin cbis-admin  6.2M Nov 18 16:02 usdelpod14-ncs_HealthChecksSummary_2024-11-18_15-49.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.5M Nov 18 16:02 usdelpod14-ncs_HealthChecksSummary_2024-11-18_15-49.log
+-rwxrwxrwx. 1 cbis-admin cbis-admin  7.5M Dec 13 14:20 usdelpod14-ncs_HealthChecksSummary_2024-12-13_14-06.html
+-rw-r--r--. 1 cbis-admin cbis-admin  6.2M Dec 13 14:20 usdelpod14-ncs_HealthChecksSummary_2024-12-13_14-06.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.5M Dec 13 14:20 usdelpod14-ncs_HealthChecksSummary_2024-12-13_14-06.log
+-rw-r--r--. 1 cbis-admin cbis-admin  7.4M Jan 15 16:06 usdelpod14-ncs_HealthChecksSummary_2025-01-15_15-52.html
+-rw-r--r--. 1 cbis-admin cbis-admin  6.2M Jan 15 16:06 usdelpod14-ncs_HealthChecksSummary_2025-01-15_15-52.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.4M Jan 15 16:06 usdelpod14-ncs_HealthChecksSummary_2025-01-15_15-52.log
+-rw-r--r--. 1 cbis-admin cbis-admin  7.9M Jan 21 08:39 usdelpod14-ncs_HealthChecksSummary_2025-01-21_08-24.html
+-rw-r--r--. 1 cbis-admin cbis-admin  6.7M Jan 21 08:39 usdelpod14-ncs_HealthChecksSummary_2025-01-21_08-24.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.5M Jan 21 08:39 usdelpod14-ncs_HealthChecksSummary_2025-01-21_08-24.log
+-rw-r--r--. 1 cbis-admin cbis-admin  7.9M Jan 22 09:49 usdelpod14-ncs_HealthChecksSummary_2025-01-22_09-34.html
+-rw-r--r--. 1 cbis-admin cbis-admin  6.7M Jan 22 09:49 usdelpod14-ncs_HealthChecksSummary_2025-01-22_09-34.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.5M Jan 22 09:49 usdelpod14-ncs_HealthChecksSummary_2025-01-22_09-34.log
+-rw-r--r--. 1 cbis-admin cbis-admin  7.8M Apr 24 09:04 usdelpod14-ncs_HealthChecksSummary_2025-04-24_08-50.html
+-rw-r--r--. 1 cbis-admin cbis-admin  7.3M Apr 24 09:04 usdelpod14-ncs_HealthChecksSummary_2025-04-24_08-50.json
+-rw-r--r--. 1 cbis-admin cbis-admin  1.5M Apr 24 09:04 usdelpod14-ncs_HealthChecksSummary_2025-04-24_08-50.log
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 HealthCheckFiles (Active)]$ date
+Thu Apr 24 09:05:38 UTC 2025
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 HealthCheckFiles (Active)]$ sudo cp usdelpod14-ncs_HealthChecksSum                  mary_2025-04-24_08-50.html /home/superuser1/
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 HealthCheckFiles (Active)]$ sudo cp usdelpod14-ncs_HealthChecksSum                  mary_2025-04-24_08-50.json /home/superuser1/
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 HealthCheckFiles (Active)]$ sudo cp usdelpod14-ncs_HealthChecksSum                  mary_2025-04-24_08-50.log /home/superuser1/
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 HealthCheckFiles (Active)]$
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 HealthCheckFiles (Active)]$
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 HealthCheckFiles (Active)]$ logout
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ ls -lrth
+total 143M
+-rw-r--r--. 1 superuser1 superuser1 7.9M Mar 25 23:12 usdelpod14-ncs_HealthChecksSummary_2025-03-25_22-49.html
+-rw-r--r--. 1 superuser1 superuser1 7.3M Mar 25 23:12 usdelpod14-ncs_HealthChecksSummary_2025-03-25_22-49.json
+-rw-r--r--. 1 superuser1 superuser1 1.5M Mar 25 23:12 usdelpod14-ncs_HealthChecksSummary_2025-03-25_22-49.log
+-rw-r-----. 1 superuser1 superuser1 110M Apr 24 08:16 ice-support-package-1.3-b455-base.tar.gz.ext
+-rw-r-----. 1 root       root       7.8M Apr 24 09:06 usdelpod14-ncs_HealthChecksSummary_2025-04-24_08-50.html
+-rw-r-----. 1 root       root       7.3M Apr 24 09:06 usdelpod14-ncs_HealthChecksSummary_2025-04-24_08-50.json
+-rw-r-----. 1 root       root       1.5M Apr 24 09:06 usdelpod14-ncs_HealthChecksSummary_2025-04-24_08-50.log
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ chmod +x usdelpod14-ncs_HealthChecksSummary_2025-04-2                  4_08-50.html
+chmod: changing permissions of ‘usdelpod14-ncs_HealthChecksSummary_2025-04-24_08-50.html’: Operation not permitted
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ sudo chmod +x usdelpod14-ncs_HealthChecksSummary_2025                  -04-24_08-50.html
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ ls -lrthj
+ls: invalid option -- 'j'
+Try 'ls --help' for more information.
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ ls -lrrh
+total 143M
+-rw-r-----. 1 root       root       1.5M Apr 24 09:06 usdelpod14-ncs_HealthChecksSummary_2025-04-24_08-50.log
+-rw-r-----. 1 root       root       7.3M Apr 24 09:06 usdelpod14-ncs_HealthChecksSummary_2025-04-24_08-50.json
+-rwxr-x---. 1 root       root       7.8M Apr 24 09:06 usdelpod14-ncs_HealthChecksSummary_2025-04-24_08-50.html
+-rw-r--r--. 1 superuser1 superuser1 1.5M Mar 25 23:12 usdelpod14-ncs_HealthChecksSummary_2025-03-25_22-49.log
+-rw-r--r--. 1 superuser1 superuser1 7.3M Mar 25 23:12 usdelpod14-ncs_HealthChecksSummary_2025-03-25_22-49.json
+-rw-r--r--. 1 superuser1 superuser1 7.9M Mar 25 23:12 usdelpod14-ncs_HealthChecksSummary_2025-03-25_22-49.html
+-rw-r-----. 1 superuser1 superuser1 110M Apr 24 08:16 ice-support-package-1.3-b455-base.tar.gz.ext
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ pwd
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$
+[superuser1@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ sudo -i -u cbis-admin
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$
+[cbis-admin@usdelpod14-centralsite-centralsitemanager-0 ~ (Active)]$ ssh 172.31.0.17
+The authenticity of host '172.31.0.17 (172.31.0.17)' can't be established.
+ECDSA key fingerprint is SHA256:VGh5mKHCTPADUy1tHIUKIuWfbBDw5RwhuFw4Lqn6JT8.
+ECDSA key fingerprint is MD5:cd:2f:9f:db:32:cb:fc:be:5c:f4:1a:c3:79:76:00:41.
+Are you sure you want to continue connecting (yes/no)? yes
+Failed to add the host to the list of known hosts (/home/cbis-admin/.ssh/known_hosts).
+------------------------------------------------------------------------------
+* WARNING                                                                    *
+* You are accessing a secured system and your actions will be logged along   *
+* with identifying information. Disconnect immediately if you are not an     *
+* authorized user of this system.                                            *
+------------------------------------------------------------------------------
+ =========== ** W A R N I N G ** ======================
+
+ This is a Nokia system, restricted
+ to authorized individuals. This system is subject to
+ monitoring. Unauthorized users, access, and/or
+ modification will be prosecuted.
+
+ ======================================================
+[cbis-admin@usdelpod14-ncs-masterbm-0 ~ (Active)]$
+[cbis-admin@usdelpod14-ncs-masterbm-0 ~ (Active)]$ sudo kubectl get pods -A | grep -vE -e "([0-9]+)/\1.*Running" -e Completed
+NAMESPACE             NAME                                                              READY   STATUS             RESTARTS   AGE
+upbcel02-fo           pg14-prod-repo1-full-29091240-9mlxr                               0/1     Error              0          3h13m
+upbcel02-fo           pg14-prod-repo1-full-29091240-q6zmj                               0/1     Error              0          3h13m
+upbcel02-fo           pg14-prod-repo1-full-29091240-q7bjz                               0/1     Error              0          3h12m
+upbcel02-fo           pg14-prod-repo1-full-29091240-rsv9v                               0/1     Error              0          3h12m
+upbcel02-fo           pg14-prod-repo1-full-29091240-rvdmk                               0/1     Error              0          3h13m
+upbcel02-fo           pg14-prod-repo1-full-29091240-s5vcm                               0/1     Error              0          3h8m
+upbcel02-fo           pg14-prod-repo1-full-29091240-tsl7l                               0/1     Error              0          3h10m
+upccel02-ccf          ckey-ckey-0                                                       0/1     Running            1550       86d
+upccel02-ccf          cmdb-maxscale-0                                                   1/2     Running            5777       86d
+upccel02-oh           fo-cmgo-replica-0                                                 0/1     Running            3067       86d
+upccel02-oh           oh-fo-orderhub-559f7fcc9-2zb54                                    0/1     CrashLoopBackOff   6082       86d
+[cbis-admin@usdelpod14-ncs-masterbm-0 ~ (Active)]$

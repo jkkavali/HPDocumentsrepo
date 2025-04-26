@@ -1,0 +1,3367 @@
+Pre-authentication banner message from server:
+| -----------------------------------------------------------------------------
+> -
+| * WARNING
+> *
+| * You are accessing a secured system and your actions will be logged along
+> *
+| * with identifying information. Disconnect immediately if you are not an
+> *
+| * authorized user of this system.
+> *
+| -----------------------------------------------------------------------------
+> -
+End of banner message from server
+     ┌────────────────────────────────────────────────────────────────────┐
+     │                        • MobaXterm 20.2 •                          │
+     │            (SSH client, X-server and networking tools)             │
+     │                                                                    │
+     │ ➤ SSH session to cbis-admin@10.147.161.228                         │
+     │   • SSH compression : ✔                                            │
+     │   • SSH-browser     : ✔                                            │
+     │   • X11-forwarding  : ✘  (disabled or not supported by server)     │
+     │   • DISPLAY         : 10.1.0.108:0.0                               │
+     │                                                                    │
+     │ ➤ For more info, ctrl+click on help or visit our website           │
+     └────────────────────────────────────────────────────────────────────┘
+
+ =========== ** W A R N I N G ** ======================
+
+ This is a Nokia system, restricted
+ to authorized individuals. This system is subject to
+ monitoring. Unauthorized users, access, and/or
+ modification will be prosecuted.
+
+ ======================================================
+Last login: Tue Apr 22 09:17:03 UTC 2025 from 172.31.0.58 on ssh
+Last login: Tue Apr 22 09:24:52 2025 from 10.147.179.2
+ =========== ** W A R N I N G ** ======================
+
+ This is a Nokia system, restricted
+ to authorized individuals. This system is subject to
+ monitoring. Unauthorized users, access, and/or
+ modification will be prosecuted.
+
+ ======================================================
+[cbis-admin@usddlpod06-centralsite-centralsitemanager-0 ~ (Active)]$ ssh usddlpod06-ncs-masterbm-0
+------------------------------------------------------------------------------
+* WARNING                                                                    *
+* You are accessing a secured system and your actions will be logged along   *
+* with identifying information. Disconnect immediately if you are not an     *
+* authorized user of this system.                                            *
+------------------------------------------------------------------------------
+ =========== ** W A R N I N G ** ======================
+
+ This is a Nokia system, restricted
+ to authorized individuals. This system is subject to
+ monitoring. Unauthorized users, access, and/or
+ modification will be prosecuted.
+
+ ======================================================
+[cbis-admin@usddlpod06-ncs-masterbm-0 ~ (Active)]$
+[cbis-admin@usddlpod06-ncs-masterbm-0 ~ (Active)]$ logout
+Connection to usddlpod06-ncs-masterbm-0 closed.
+[cbis-admin@usddlpod06-centralsite-centralsitemanager-0 ~ (Active)]$ openstack cbis cm -s ALL
+^CTraceback (most recent call last):
+  File "/usr/bin/openstack", line 10, in <module>
+    sys.exit(main())
+  File "/usr/lib/python3.6/site-packages/openstackclient/shell.py", line 145, in main
+    return OpenStackShell().run(argv)
+  File "/usr/lib/python3.6/site-packages/openstackclient/shell.py", line 40, in __init__
+    deferred_help=True)
+  File "/usr/lib/python3.6/site-packages/osc_lib/shell.py", line 111, in __init__
+    deferred_help=True,
+  File "/usr/lib/python3.6/site-packages/cliff/app.py", line 85, in __init__
+    self.parser = self.build_option_parser(description, version)
+  File "/usr/lib/python3.6/site-packages/openstackclient/shell.py", line 52, in build_option_parser
+    parser = auth.build_auth_plugins_option_parser(parser)
+  File "/usr/lib/python3.6/site-packages/osc_lib/api/auth.py", line 144, in build_auth_plugins_option_parser
+    available_plugins = list(get_plugin_list())
+  File "/usr/lib/python3.6/site-packages/osc_lib/api/auth.py", line 40, in get_plugin_list
+    PLUGIN_LIST = base.get_available_plugin_names()
+  File "/usr/local/lib/python3.6/site-packages/keystoneauth1/loading/base.py", line 48, in get_available_plugin_names
+    propagate_map_exceptions=True)
+  File "/usr/local/lib/python3.6/site-packages/stevedore/enabled.py", line 72, in __init__
+    verify_requirements=verify_requirements,
+  File "/usr/local/lib/python3.6/site-packages/stevedore/extension.py", line 144, in __init__
+    verify_requirements)
+  File "/usr/local/lib/python3.6/site-packages/stevedore/extension.py", line 233, in _load_plugins
+    verify_requirements,
+  File "/usr/local/lib/python3.6/site-packages/stevedore/enabled.py", line 79, in _load_one_plugin
+    verify_requirements,
+  File "/usr/local/lib/python3.6/site-packages/stevedore/extension.py", line 263, in _load_one_plugin
+    plugin = ep.load()
+  File "/usr/local/lib/python3.6/site-packages/importlib_metadata/__init__.py", line 194, in load
+    module = import_module(match.group('module'))
+  File "/usr/lib64/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 941, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/usr/local/lib/python3.6/site-packages/swiftclient/__init__.py", line 20, in <module>
+    from .client import *  # noqa
+  File "/usr/local/lib/python3.6/site-packages/swiftclient/client.py", line 74, in <module>
+    from keystoneclient.v3 import client as ksclient_v3
+  File "/usr/lib/python3.6/site-packages/keystoneclient/v3/__init__.py", line 2, in <module>
+    from keystoneclient.v3.client import Client  # noqa
+  File "/usr/lib/python3.6/site-packages/keystoneclient/v3/client.py", line 47, in <module>
+    from keystoneclient.v3 import roles
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 674, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 771, in get_code
+  File "<frozen importlib._bootstrap_external>", line 482, in _validate_bytecode_header
+KeyboardInterrupt
+[cbis-admin@usddlpod06-centralsite-centralsitemanager-0 ~ (Active)]$ openstack cbis cm -s all
+usage: openstack cbis cm [-h] [-f {csv,json,table,value,yaml}] [-c COLUMN]
+                         [--quote {all,minimal,none,nonnumeric}] [--noindent]
+                         [--max-width <integer>] [--fit-width] [--print-empty]
+                         [--sort-column SORT_COLUMN]
+                         [--sort-ascending | --sort-descending]
+                         [-C NETWORK_CONFIG] [-S SHORT] [-N NETWORK] [-L]
+                         [-H HARDWARE] [-V VERSION]
+openstack cbis cm: error: unrecognized arguments: -s all
+
+[cbis-admin@usddlpod06-centralsite-centralsitemanager-0 ~ (Active)]$ openstack cbis CM -s all
+openstack: 'cbis CM -s all' is not an openstack command. See 'openstack --help'.
+Did you mean one of these?
+  cbis cm
+  cbis hwcmp
+  cbis node show hardware
+  cbis set compute capability
+  cbis set profile
+  cbis version
+  claim create
+  claim query
+  claim release
+  claim renew
+[cbis-admin@usddlpod06-centralsite-centralsitemanager-0 ~ (Active)]$ openstack cbis cm -S all
++---------------------------------------------+--------------+--------------+
+| HostName                                    | IPMI         | Provisioning |
++---------------------------------------------+--------------+--------------+
+| usddlpod06-centralsite-centralsitemanager-0 | 10.147.80.30 | 172.31.0.3   |
+| usddlpod06-centralsite-centralsitemanager-1 | 10.147.80.19 | 172.31.0.4   |
+| usddlpod06-centralsite-centralsitemanager-2 | 10.147.80.53 | 172.31.0.5   |
+| usddlpod06-ncs-edgebm-0                     | 10.147.80.18 | 172.31.0.51  |
+| usddlpod06-ncs-edgebm-1                     | 10.147.80.20 | 172.31.0.52  |
+| usddlpod06-ncs-edgebm-2                     | 10.147.80.21 | 172.31.0.53  |
+| usddlpod06-ncs-edgebm-3                     | 10.147.80.56 | 172.31.0.54  |
+| usddlpod06-ncs-edgebm-4                     | 10.147.80.57 | 172.31.0.55  |
+| usddlpod06-ncs-masterbm-0                   | 10.147.80.16 | 172.31.0.56  |
+| usddlpod06-ncs-masterbm-1                   | 10.147.80.17 | 172.31.0.57  |
+| usddlpod06-ncs-masterbm-2                   | 10.147.80.52 | 172.31.0.58  |
+| usddlpod06-ncs-storagebm-0                  | 10.147.80.10 | 172.31.0.59  |
+| usddlpod06-ncs-storagebm-1                  | 10.147.80.11 | 172.31.0.60  |
+| usddlpod06-ncs-storagebm-2                  | 10.147.80.12 | 172.31.0.61  |
+| usddlpod06-ncs-storagebm-3                  | 10.147.80.46 | 172.31.0.62  |
+| usddlpod06-ncs-storagebm-4                  | 10.147.80.47 | 172.31.0.63  |
+| usddlpod06-ncs-storagebm-5                  | 10.147.80.48 | 172.31.0.64  |
+| usddlpod06-ncs-workerbm-0                   | 10.147.80.13 | 172.31.0.65  |
+| usddlpod06-ncs-workerbm-1                   | 10.147.80.14 | 172.31.0.66  |
+| usddlpod06-ncs-workerbm-10                  | 10.147.80.29 | 172.31.0.67  |
+| usddlpod06-ncs-workerbm-11                  | 10.147.80.31 | 172.31.0.68  |
+| usddlpod06-ncs-workerbm-12                  | 10.147.80.32 | 172.31.0.69  |
+| usddlpod06-ncs-workerbm-13                  | 10.147.80.33 | 172.31.0.70  |
+| usddlpod06-ncs-workerbm-14                  | 10.147.80.34 | 172.31.0.71  |
+| usddlpod06-ncs-workerbm-15                  | 10.147.80.35 | 172.31.0.72  |
+| usddlpod06-ncs-workerbm-16                  | 10.147.80.36 | 172.31.0.73  |
+| usddlpod06-ncs-workerbm-17                  | 10.147.80.37 | 172.31.0.74  |
+| usddlpod06-ncs-workerbm-18                  | 10.147.80.38 | 172.31.0.75  |
+| usddlpod06-ncs-workerbm-19                  | 10.147.80.39 | 172.31.0.76  |
+| usddlpod06-ncs-workerbm-2                   | 10.147.80.15 | 172.31.0.77  |
+| usddlpod06-ncs-workerbm-20                  | 10.147.80.49 | 172.31.0.78  |
+| usddlpod06-ncs-workerbm-21                  | 10.147.80.50 | 172.31.0.79  |
+| usddlpod06-ncs-workerbm-22                  | 10.147.80.51 | 172.31.0.80  |
+| usddlpod06-ncs-workerbm-23                  | 10.147.80.54 | 172.31.0.81  |
+| usddlpod06-ncs-workerbm-24                  | 10.147.80.55 | 172.31.0.82  |
+| usddlpod06-ncs-workerbm-25                  | 10.147.80.58 | 172.31.0.83  |
+| usddlpod06-ncs-workerbm-26                  | 10.147.80.59 | 172.31.0.84  |
+| usddlpod06-ncs-workerbm-27                  | 10.147.80.60 | 172.31.0.85  |
+| usddlpod06-ncs-workerbm-28                  | 10.147.80.61 | 172.31.0.86  |
+| usddlpod06-ncs-workerbm-29                  | 10.147.80.62 | 172.31.0.87  |
+| usddlpod06-ncs-workerbm-3                   | 10.147.80.22 | 172.31.0.88  |
+| usddlpod06-ncs-workerbm-30                  | 10.147.80.63 | 172.31.0.89  |
+| usddlpod06-ncs-workerbm-31                  | 10.147.80.64 | 172.31.0.90  |
+| usddlpod06-ncs-workerbm-32                  | 10.147.80.65 | 172.31.0.91  |
+| usddlpod06-ncs-workerbm-33                  | 10.147.80.66 | 172.31.0.92  |
+| usddlpod06-ncs-workerbm-34                  | 10.147.80.67 | 172.31.0.93  |
+| usddlpod06-ncs-workerbm-35                  | 10.147.80.68 | 172.31.0.94  |
+| usddlpod06-ncs-workerbm-36                  | 10.147.80.69 | 172.31.0.95  |
+| usddlpod06-ncs-workerbm-37                  | 10.147.80.70 | 172.31.0.96  |
+| usddlpod06-ncs-workerbm-38                  | 10.147.80.71 | 172.31.0.97  |
+| usddlpod06-ncs-workerbm-39                  | 10.147.80.72 | 172.31.0.98  |
+| usddlpod06-ncs-workerbm-4                   | 10.147.80.23 | 172.31.0.99  |
+| usddlpod06-ncs-workerbm-40                  | 10.147.80.73 | 172.31.0.100 |
+| usddlpod06-ncs-workerbm-41                  | 10.147.80.74 | 172.31.0.101 |
+| usddlpod06-ncs-workerbm-42                  | 10.147.80.75 | 172.31.0.102 |
+| usddlpod06-ncs-workerbm-43                  | 10.147.80.76 | 172.31.0.103 |
+| usddlpod06-ncs-workerbm-44                  | 10.147.80.77 | 172.31.0.104 |
+| usddlpod06-ncs-workerbm-45                  | 10.147.80.78 | 172.31.0.105 |
+| usddlpod06-ncs-workerbm-46                  | 10.147.80.79 | 172.31.0.106 |
+| usddlpod06-ncs-workerbm-47                  | 10.147.80.80 | 172.31.0.107 |
+| usddlpod06-ncs-workerbm-48                  | 10.147.80.81 | 172.31.0.108 |
+| usddlpod06-ncs-workerbm-5                   | 10.147.80.24 | 172.31.0.109 |
+| usddlpod06-ncs-workerbm-6                   | 10.147.80.25 | 172.31.0.110 |
+| usddlpod06-ncs-workerbm-7                   | 10.147.80.26 | 172.31.0.111 |
+| usddlpod06-ncs-workerbm-8                   | 10.147.80.27 | 172.31.0.112 |
+| usddlpod06-ncs-workerbm-9                   | 10.147.80.28 | 172.31.0.113 |
++---------------------------------------------+--------------+--------------+
+[cbis-admin@usddlpod06-centralsite-centralsitemanager-0 ~ (Active)]$ ssh usddlpod06-ncs-masterbm-0
+------------------------------------------------------------------------------
+* WARNING                                                                    *
+* You are accessing a secured system and your actions will be logged along   *
+* with identifying information. Disconnect immediately if you are not an     *
+* authorized user of this system.                                            *
+------------------------------------------------------------------------------
+ =========== ** W A R N I N G ** ======================
+
+ This is a Nokia system, restricted
+ to authorized individuals. This system is subject to
+ monitoring. Unauthorized users, access, and/or
+ modification will be prosecuted.
+
+ ======================================================
+[cbis-admin@usddlpod06-ncs-masterbm-0 ~ (Active)]$
+[cbis-admin@usddlpod06-ncs-masterbm-0 ~ (Active)]$ sudo -i
+-bash-4.4# mkdir host_mapping
+-bash-4.4# ls -lrth
+total 796M
+-rw-------. 1 root       root       6.5K Jan 28  2019 original-ks.cfg
+-rw-------. 1 root       root       6.8K Jan 28  2019 anaconda-ks.cfg
+drwxr-xr-x. 5 cbis-admin hugetlbfs  4.0K Jul 28  2022 MLNX_OFED_LINUX-5.7-1.0.2.0-rhel7.9-x86_64
+-rw-r--r--. 1 cbis-admin hugetlbfs   81M Jan 24  2023 dpdk-20.11.0-1.el7.x86_64.rpm
+-rw-r--r--. 1 cbis-admin hugetlbfs  6.0K Jan 24  2023 igb_uio_default_kernel.tar.gz
+-rw-r--r--. 1 cbis-admin hugetlbfs   16M Jan 24  2023 falco_src.tgz
+-rw-r--r--. 1 cbis-admin hugetlbfs  2.5M Jan 24  2023 wireguard.tgz
+-rw-r--r--. 1 cbis-admin hugetlbfs  2.2K Jan 28  2023 baremetal_updater.sh
+-rw-r--r--. 1 cbis-admin hugetlbfs  2.0M Jan 28  2023 fw-ConnectX5-rel-16_25_1020-MCX542A-ACA_Ax-UEFI-14.18.19-FlexBoot-3.5.701.bin.zip
+-rw-r--r--. 1 cbis-admin hugetlbfs  2.0M Jan 28  2023 fw-ConnectX5-rel-16_25_1020-MCX512F-ACA_Ax-UEFI-14.18.19-FlexBoot-3.5.701.bin.zip
+-rw-r--r--. 1 cbis-admin hugetlbfs   98M Jan 28  2023 mft-4.15.0-104-x86_64-rpm.tgz
+-r--r--r--. 1 root       root       214K Jul 26  2023 installed_packages.yaml
+drwxr-xr-x. 5 root       root       4.0K Dec  6  2023 MLNX_OFED_LINUX-23.10-1.1.9.0-rhel8.8-x86_64
+drwxr-xr-x. 3 root       root         28 Apr 12  2024 hfx_backup
+-rw-r-----. 1 root       root        956 Apr 12  2024 harbor-harbor-registry.org4122024.yaml
+-rw-r-----. 1 root       root        20K Apr 15  2024 inventory.tgz
+-rw-r-----. 1 root       root       1.8K Apr 19  2024 memcheck.sh
+-rw-r-----. 1 root       root       3.9K Apr 19  2024 20240419-211412_usddlpod06-ncs-masterbm-0_tenant_list.txt
+drwxr-x---. 2 root       root        175 Apr 22  2024 virtualip
+-rw-r-----. 1 root       root        31K Apr 22  2024 1
+drwxr-x---. 2 root       root         62 Apr 24  2024 NCD
+-rw-r-----. 1 root       root       1.1K May  1  2024 list.txt
+-rw-r-----. 1 root       root        752 Jul  5  2024 bcmt-api.yaml
+dr-xr-xr-x. 2 root       root       8.0K Jul 24  2024 pip3_repo
+dr-xr-xr-x. 2 root       root       4.0K Jul 24  2024 pip3.9_repo
+dr-xr-xr-x. 2 root       root       4.0K Jul 24  2024 pip3.8_repo
+-r--r--r--. 1 root       root       230M Jul 24  2024 MLNX_OFED_LINUX-23.10-1.1.9.0-rhel8.8-x86_64.tgz
+-rw-r-----. 1 root       root       1.3K Aug 22  2024 memCpuChk_v2.1.sh
+-rw-r-----. 1 root       root       7.1K Aug 22  2024 20240822-194903_usddlpod06-ncs-masterbm-0_tenant_list.txt
+-rw-r-----. 1 root       root        155 Feb 27 16:06 tst.json
+-rw-r-----. 1 root       root       5.4K Mar 21 19:17 pip_local_os_upgrade
+-rw-r-----. 1 root       root       1.9K Mar 21 19:17 pip3_local_os_upgrade
+-rw-r--r--. 1 root       root       364M Mar 21 19:18 MLNX_OFED_LINUX-5.7-1.0.2.0-rhel7.9-x86_64.tgz
+-rw-r-----. 1 root       root        22K Mar 22 02:51 harbor-orig-values_22Jan.yml
+-rw-r-----. 1 root       root        22K Mar 24 17:47 harbor-orig-values.yml
+drwxr-xr-x. 2 root       root         33 Apr  1 07:45 tmp_leapp_py3
+-rw-r-----. 1 root       root       7.6K Apr  4 13:09 fluentd_control.yaml
+-rw-------. 1 root       root       7.5K Apr  4 13:11 fluentd_worker.yaml
+-rw-r-----. 1 root       root        62K Apr  5 04:19 rpm_local_os_upgrade
+drwxr-x---. 2 root       root        80K Apr  8 02:43 upgrade
+-rw-------. 1 cbis-admin cbis-admin 1.4M Apr 15 10:18 busybox-latest.tgz
+-rw-------. 1 root       root        506 Apr 16 04:57 device-sriov-ens2f0.yaml
+-rw-------. 1 root       root        308 Apr 16 05:03 rbac-test.yaml
+-rw-------. 1 root       root        964 Apr 16 05:49 sriov-deployment.yaml
+-rwx------. 1 root       root       318K Apr 16 05:53 report.json
+-rw-------. 1 root       root        530 Apr 16 09:56 deployment.yaml
+drwx------. 3 root       root         76 Apr 21 08:36 atp-test-app
+-rw-------. 1 root       root        103 Apr 22 06:58 adddelete-rules.json
+drwx------. 2 root       root          6 Apr 22 09:27 host_mapping
+-bash-4.4# cd host_mapping
+-bash-4.4# ls -lrth
+total 0
+-bash-4.4# timed out waiting for input: auto-logout
+[cbis-admin@usddlpod06-ncs-masterbm-0 ~ (Active)]$ timed out waiting for input: auto-logout
+Connection to usddlpod06-ncs-masterbm-0 closed.
+[cbis-admin@usddlpod06-centralsite-centralsitemanager-0 ~ (Active)]$ timed out waiting for input: auto-logout
+
+─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+Session stopped
+    - Press <return> to exit tab
+    - Press R to restart session
+    - Press S to save terminal output to file
+Pre-authentication banner message from server:
+| -----------------------------------------------------------------------------
+> -
+| * WARNING
+> *
+| * You are accessing a secured system and your actions will be logged along
+> *
+| * with identifying information. Disconnect immediately if you are not an
+> *
+| * authorized user of this system.
+> *
+| -----------------------------------------------------------------------------
+> -
+End of banner message from server
+     ┌────────────────────────────────────────────────────────────────────┐
+     │                        • MobaXterm 20.2 •                          │
+     │            (SSH client, X-server and networking tools)             │
+     │                                                                    │
+     │ ➤ SSH session to cbis-admin@10.147.161.228                         │
+     │   • SSH compression : ✔                                            │
+     │   • SSH-browser     : ✔                                            │
+     │   • X11-forwarding  : ✘  (disabled or not supported by server)     │
+     │   • DISPLAY         : 10.1.0.108:0.0                               │
+     │                                                                    │
+     │ ➤ For more info, ctrl+click on help or visit our website           │
+     └────────────────────────────────────────────────────────────────────┘
+
+ =========== ** W A R N I N G ** ======================
+
+ This is a Nokia system, restricted
+ to authorized individuals. This system is subject to
+ monitoring. Unauthorized users, access, and/or
+ modification will be prosecuted.
+
+ ======================================================
+Last login: Tue Apr 22 10:17:03 UTC 2025 from 172.31.0.57 on ssh
+Last login: Tue Apr 22 10:20:22 2025 from 10.147.179.96
+ =========== ** W A R N I N G ** ======================
+
+ This is a Nokia system, restricted
+ to authorized individuals. This system is subject to
+ monitoring. Unauthorized users, access, and/or
+ modification will be prosecuted.
+
+ ======================================================
+[cbis-admin@usddlpod06-centralsite-centralsitemanager-0 ~ (Active)]$
+[cbis-admin@usddlpod06-centralsite-centralsitemanager-0 ~ (Active)]$
+[cbis-admin@usddlpod06-centralsite-centralsitemanager-0 ~ (Active)]$ ssh usddlpod06-ncs-masterbm-0
+------------------------------------------------------------------------------
+* WARNING                                                                    *
+* You are accessing a secured system and your actions will be logged along   *
+* with identifying information. Disconnect immediately if you are not an     *
+* authorized user of this system.                                            *
+------------------------------------------------------------------------------
+ =========== ** W A R N I N G ** ======================
+
+ This is a Nokia system, restricted
+ to authorized individuals. This system is subject to
+ monitoring. Unauthorized users, access, and/or
+ modification will be prosecuted.
+
+ ======================================================
+[cbis-admin@usddlpod06-ncs-masterbm-0 ~ (Active)]$ sudo -i
+-bash-4.4# ls -lrth
+total 796M
+-rw-------. 1 root       root       6.5K Jan 28  2019 original-ks.cfg
+-rw-------. 1 root       root       6.8K Jan 28  2019 anaconda-ks.cfg
+drwxr-xr-x. 5 cbis-admin hugetlbfs  4.0K Jul 28  2022 MLNX_OFED_LINUX-5.7-1.0.2.0-rhel7.9-x86_64
+-rw-r--r--. 1 cbis-admin hugetlbfs   81M Jan 24  2023 dpdk-20.11.0-1.el7.x86_64.rpm
+-rw-r--r--. 1 cbis-admin hugetlbfs  6.0K Jan 24  2023 igb_uio_default_kernel.tar.gz
+-rw-r--r--. 1 cbis-admin hugetlbfs   16M Jan 24  2023 falco_src.tgz
+-rw-r--r--. 1 cbis-admin hugetlbfs  2.5M Jan 24  2023 wireguard.tgz
+-rw-r--r--. 1 cbis-admin hugetlbfs  2.2K Jan 28  2023 baremetal_updater.sh
+-rw-r--r--. 1 cbis-admin hugetlbfs  2.0M Jan 28  2023 fw-ConnectX5-rel-16_25_1020-MCX542A-ACA_Ax-UEFI-14.18.19-FlexBoot-3.5.701.bin.zip
+-rw-r--r--. 1 cbis-admin hugetlbfs  2.0M Jan 28  2023 fw-ConnectX5-rel-16_25_1020-MCX512F-ACA_Ax-UEFI-14.18.19-FlexBoot-3.5.701.bin.zip
+-rw-r--r--. 1 cbis-admin hugetlbfs   98M Jan 28  2023 mft-4.15.0-104-x86_64-rpm.tgz
+-r--r--r--. 1 root       root       214K Jul 26  2023 installed_packages.yaml
+drwxr-xr-x. 5 root       root       4.0K Dec  6  2023 MLNX_OFED_LINUX-23.10-1.1.9.0-rhel8.8-x86_64
+drwxr-xr-x. 3 root       root         28 Apr 12  2024 hfx_backup
+-rw-r-----. 1 root       root        956 Apr 12  2024 harbor-harbor-registry.org4122024.yaml
+-rw-r-----. 1 root       root        20K Apr 15  2024 inventory.tgz
+-rw-r-----. 1 root       root       1.8K Apr 19  2024 memcheck.sh
+-rw-r-----. 1 root       root       3.9K Apr 19  2024 20240419-211412_usddlpod06-ncs-masterbm-0_tenant_list.txt
+drwxr-x---. 2 root       root        175 Apr 22  2024 virtualip
+-rw-r-----. 1 root       root        31K Apr 22  2024 1
+drwxr-x---. 2 root       root         62 Apr 24  2024 NCD
+-rw-r-----. 1 root       root       1.1K May  1  2024 list.txt
+-rw-r-----. 1 root       root        752 Jul  5  2024 bcmt-api.yaml
+dr-xr-xr-x. 2 root       root       8.0K Jul 24  2024 pip3_repo
+dr-xr-xr-x. 2 root       root       4.0K Jul 24  2024 pip3.9_repo
+dr-xr-xr-x. 2 root       root       4.0K Jul 24  2024 pip3.8_repo
+-r--r--r--. 1 root       root       230M Jul 24  2024 MLNX_OFED_LINUX-23.10-1.1.9.0-rhel8.8-x86_64.tgz
+-rw-r-----. 1 root       root       1.3K Aug 22  2024 memCpuChk_v2.1.sh
+-rw-r-----. 1 root       root       7.1K Aug 22  2024 20240822-194903_usddlpod06-ncs-masterbm-0_tenant_list.txt
+-rw-r-----. 1 root       root        155 Feb 27 16:06 tst.json
+-rw-r-----. 1 root       root       5.4K Mar 21 19:17 pip_local_os_upgrade
+-rw-r-----. 1 root       root       1.9K Mar 21 19:17 pip3_local_os_upgrade
+-rw-r--r--. 1 root       root       364M Mar 21 19:18 MLNX_OFED_LINUX-5.7-1.0.2.0-rhel7.9-x86_64.tgz
+-rw-r-----. 1 root       root        22K Mar 22 02:51 harbor-orig-values_22Jan.yml
+-rw-r-----. 1 root       root        22K Mar 24 17:47 harbor-orig-values.yml
+drwxr-xr-x. 2 root       root         33 Apr  1 07:45 tmp_leapp_py3
+-rw-r-----. 1 root       root       7.6K Apr  4 13:09 fluentd_control.yaml
+-rw-------. 1 root       root       7.5K Apr  4 13:11 fluentd_worker.yaml
+-rw-r-----. 1 root       root        62K Apr  5 04:19 rpm_local_os_upgrade
+drwxr-x---. 2 root       root        80K Apr  8 02:43 upgrade
+-rw-------. 1 cbis-admin cbis-admin 1.4M Apr 15 10:18 busybox-latest.tgz
+-rw-------. 1 root       root        506 Apr 16 04:57 device-sriov-ens2f0.yaml
+-rw-------. 1 root       root        308 Apr 16 05:03 rbac-test.yaml
+-rw-------. 1 root       root        964 Apr 16 05:49 sriov-deployment.yaml
+-rwx------. 1 root       root       318K Apr 16 05:53 report.json
+-rw-------. 1 root       root        530 Apr 16 09:56 deployment.yaml
+drwx------. 3 root       root         76 Apr 21 08:36 atp-test-app
+-rw-------. 1 root       root        103 Apr 22 06:58 adddelete-rules.json
+drwx------. 2 root       root          6 Apr 22 09:27 host_mapping
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4# cd host_mapping
+-bash-4.4# pwd
+/root/host_mapping
+-bash-4.4# ls -lrth
+total 0
+-bash-4.4# vi DNP_Mapping.txt
+-bash-4.4#
+-bash-4.4#
+-bash-4.4# cat DNP_Mapping.txt
+MNDL6002     10.147.80.30
+MNDL6001     10.147.80.19
+MNDL6003     10.147.80.53
+CNDL6054     10.147.80.18
+CNDL6004     10.147.80.20
+CNDL6005     10.147.80.21
+CNDL6028     10.147.80.56
+CNDL6029     10.147.80.57
+NMDL6001     10.147.80.16
+NMDL6002     10.147.80.17
+NMDL6003     10.147.80.52
+JCDL6001     10.147.80.10
+JCDL6002     10.147.80.11
+JCDL6003     10.147.80.12
+JCDL6004     10.147.80.46
+JCDL6005     10.147.80.47
+JCDL6006     10.147.80.48
+CNDL6001     10.147.80.13
+CNDL6002     10.147.80.14
+CNDL6013     10.147.80.29
+CNDL6014     10.147.80.31
+CNDL6015     10.147.80.32
+CNDL6016     10.147.80.33
+CNDL6017     10.147.80.34
+CNDL6018     10.147.80.35
+CNDL6019     10.147.80.36
+CNDL6020     10.147.80.37
+CNDL6021     10.147.80.38
+CNDL6022     10.147.80.39
+CNDL6003     10.147.80.15
+CNDL6023     10.147.80.49
+CNDL6024     10.147.80.50
+CNDL6025     10.147.80.51
+CNDL6026     10.147.80.54
+CNDL6027     10.147.80.55
+CNDL6030     10.147.80.58
+CNDL6031     10.147.80.59
+CNDL6032     10.147.80.60
+CNDL6033     10.147.80.61
+CNDL6034     10.147.80.62
+CNDL6006     10.147.80.22
+CNDL6035     10.147.80.63
+CNDL6036     10.147.80.64
+CNDL6037     10.147.80.65
+CNDL6038     10.147.80.66
+CNDL6039     10.147.80.67
+CNDL6040     10.147.80.68
+CNDL6041     10.147.80.69
+CNDL6042     10.147.80.70
+CNDL6043     10.147.80.71
+CNDL6044     10.147.80.72
+CNDL6007     10.147.80.23
+CNDL6045     10.147.80.73
+CNDL6046     10.147.80.74
+CNDL6047     10.147.80.75
+CNDL6050     10.147.80.76
+CNDL6051     10.147.80.77
+CNDL6052     10.147.80.78
+CNDL6053     10.147.80.79
+CNDL6048     10.147.80.80
+CNDL6049     10.147.80.81
+CNDL6008     10.147.80.24
+CNDL6009     10.147.80.25
+CNDL6010     10.147.80.26
+CNDL6011     10.147.80.27
+CNDL6012     10.147.80.28
+
+-bash-4.4# vi NCS_Mapping.txt
+-bash-4.4#
+-bash-4.4#
+-bash-4.4# cat NCS_Mapping.txt
+usddlpod06-centralsite-centralsitemanager-0       10.147.80.30
+usddlpod06-centralsite-centralsitemanager-1       10.147.80.19
+usddlpod06-centralsite-centralsitemanager-2       10.147.80.53
+usddlpod06-ncs-edgebm-0                           10.147.80.18
+usddlpod06-ncs-edgebm-1                           10.147.80.20
+usddlpod06-ncs-edgebm-2                           10.147.80.21
+usddlpod06-ncs-edgebm-3                           10.147.80.56
+usddlpod06-ncs-edgebm-4                           10.147.80.57
+usddlpod06-ncs-masterbm-0                         10.147.80.16
+usddlpod06-ncs-masterbm-1                         10.147.80.17
+usddlpod06-ncs-masterbm-2                         10.147.80.52
+usddlpod06-ncs-storagebm-0                        10.147.80.10
+usddlpod06-ncs-storagebm-1                        10.147.80.11
+usddlpod06-ncs-storagebm-2                        10.147.80.12
+usddlpod06-ncs-storagebm-3                        10.147.80.46
+usddlpod06-ncs-storagebm-4                        10.147.80.47
+usddlpod06-ncs-storagebm-5                        10.147.80.48
+usddlpod06-ncs-workerbm-0                         10.147.80.13
+usddlpod06-ncs-workerbm-1                         10.147.80.14
+usddlpod06-ncs-workerbm-10                        10.147.80.29
+usddlpod06-ncs-workerbm-11                        10.147.80.31
+usddlpod06-ncs-workerbm-12                        10.147.80.32
+usddlpod06-ncs-workerbm-13                        10.147.80.33
+usddlpod06-ncs-workerbm-14                        10.147.80.34
+usddlpod06-ncs-workerbm-15                        10.147.80.35
+usddlpod06-ncs-workerbm-16                        10.147.80.36
+usddlpod06-ncs-workerbm-17                        10.147.80.37
+usddlpod06-ncs-workerbm-18                        10.147.80.38
+usddlpod06-ncs-workerbm-19                        10.147.80.39
+usddlpod06-ncs-workerbm-2                         10.147.80.15
+usddlpod06-ncs-workerbm-20                        10.147.80.49
+usddlpod06-ncs-workerbm-21                        10.147.80.50
+usddlpod06-ncs-workerbm-22                        10.147.80.51
+usddlpod06-ncs-workerbm-23                        10.147.80.54
+usddlpod06-ncs-workerbm-24                        10.147.80.55
+usddlpod06-ncs-workerbm-25                        10.147.80.58
+usddlpod06-ncs-workerbm-26                        10.147.80.59
+usddlpod06-ncs-workerbm-27                        10.147.80.60
+usddlpod06-ncs-workerbm-28                        10.147.80.61
+usddlpod06-ncs-workerbm-29                        10.147.80.62
+usddlpod06-ncs-workerbm-3                         10.147.80.22
+usddlpod06-ncs-workerbm-30                        10.147.80.63
+usddlpod06-ncs-workerbm-31                        10.147.80.64
+usddlpod06-ncs-workerbm-32                        10.147.80.65
+usddlpod06-ncs-workerbm-33                        10.147.80.66
+usddlpod06-ncs-workerbm-34                        10.147.80.67
+usddlpod06-ncs-workerbm-35                        10.147.80.68
+usddlpod06-ncs-workerbm-36                        10.147.80.69
+usddlpod06-ncs-workerbm-37                        10.147.80.70
+usddlpod06-ncs-workerbm-38                        10.147.80.71
+usddlpod06-ncs-workerbm-39                        10.147.80.72
+usddlpod06-ncs-workerbm-4                         10.147.80.23
+usddlpod06-ncs-workerbm-40                        10.147.80.73
+usddlpod06-ncs-workerbm-41                        10.147.80.74
+usddlpod06-ncs-workerbm-42                        10.147.80.75
+usddlpod06-ncs-workerbm-43                        10.147.80.76
+usddlpod06-ncs-workerbm-44                        10.147.80.77
+usddlpod06-ncs-workerbm-45                        10.147.80.78
+usddlpod06-ncs-workerbm-46                        10.147.80.79
+usddlpod06-ncs-workerbm-47                        10.147.80.80
+usddlpod06-ncs-workerbm-48                        10.147.80.81
+usddlpod06-ncs-workerbm-5                         10.147.80.24
+usddlpod06-ncs-workerbm-6                         10.147.80.25
+usddlpod06-ncs-workerbm-7                         10.147.80.26
+usddlpod06-ncs-workerbm-8                         10.147.80.27
+usddlpod06-ncs-workerbm-9                         10.147.80.28
+
+-bash-4.4# #awk '{print "- action: replace\n  regex: "$2"\n  replacement: "$1"\n  sourceLabels:\n  - host\n targetLabel: host"}' DNP_Mapping.txt > hostsmapping.yaml
+-bash-4.4# LS -LRTH
+-bash: LS: command not found
+-bash-4.4# ls -lrth
+total 12K
+-rw-------. 1 root root 1.7K Apr 22 10:31 DNP_Mapping.txt
+-rw-------. 1 root root 4.1K Apr 22 10:33 NCS_Mapping.txt
+-bash-4.4# awk '{print "- action: replace\n  regex: "$2"\n  replacement: "$1"\n  sourceLabels:\n  - host\n targetLabel: host"}' DNP_Mapping.txt > hostsmapping.yaml
+-bash-4.4# ls -lrth
+total 20K
+-rw-------. 1 root root 1.7K Apr 22 10:31 DNP_Mapping.txt
+-rw-------. 1 root root 4.1K Apr 22 10:33 NCS_Mapping.txt
+-rw-------. 1 root root 7.1K Apr 22 10:35 hostsmapping.yaml
+-bash-4.4# cat hostsmapping.yaml
+- action: replace
+  regex: 10.147.80.30
+  replacement: MNDL6002
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.19
+  replacement: MNDL6001
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.53
+  replacement: MNDL6003
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.18
+  replacement: CNDL6054
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.20
+  replacement: CNDL6004
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.21
+  replacement: CNDL6005
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.56
+  replacement: CNDL6028
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.57
+  replacement: CNDL6029
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.16
+  replacement: NMDL6001
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.17
+  replacement: NMDL6002
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.52
+  replacement: NMDL6003
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.10
+  replacement: JCDL6001
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.11
+  replacement: JCDL6002
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.12
+  replacement: JCDL6003
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.46
+  replacement: JCDL6004
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.47
+  replacement: JCDL6005
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.48
+  replacement: JCDL6006
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.13
+  replacement: CNDL6001
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.14
+  replacement: CNDL6002
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.29
+  replacement: CNDL6013
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.31
+  replacement: CNDL6014
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.32
+  replacement: CNDL6015
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.33
+  replacement: CNDL6016
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.34
+  replacement: CNDL6017
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.35
+  replacement: CNDL6018
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.36
+  replacement: CNDL6019
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.37
+  replacement: CNDL6020
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.38
+  replacement: CNDL6021
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.39
+  replacement: CNDL6022
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.15
+  replacement: CNDL6003
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.49
+  replacement: CNDL6023
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.50
+  replacement: CNDL6024
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.51
+  replacement: CNDL6025
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.54
+  replacement: CNDL6026
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.55
+  replacement: CNDL6027
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.58
+  replacement: CNDL6030
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.59
+  replacement: CNDL6031
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.60
+  replacement: CNDL6032
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.61
+  replacement: CNDL6033
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.62
+  replacement: CNDL6034
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.22
+  replacement: CNDL6006
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.63
+  replacement: CNDL6035
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.64
+  replacement: CNDL6036
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.65
+  replacement: CNDL6037
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.66
+  replacement: CNDL6038
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.67
+  replacement: CNDL6039
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.68
+  replacement: CNDL6040
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.69
+  replacement: CNDL6041
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.70
+  replacement: CNDL6042
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.71
+  replacement: CNDL6043
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.72
+  replacement: CNDL6044
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.23
+  replacement: CNDL6007
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.73
+  replacement: CNDL6045
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.74
+  replacement: CNDL6046
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.75
+  replacement: CNDL6047
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.76
+  replacement: CNDL6050
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.77
+  replacement: CNDL6051
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.78
+  replacement: CNDL6052
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.79
+  replacement: CNDL6053
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.80
+  replacement: CNDL6048
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.81
+  replacement: CNDL6049
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.24
+  replacement: CNDL6008
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.25
+  replacement: CNDL6009
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.26
+  replacement: CNDL6010
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.27
+  replacement: CNDL6011
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: 10.147.80.28
+  replacement: CNDL6012
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex:
+  replacement:
+  sourceLabels:
+  - host
+ targetLabel: host
+-bash-4.4#
+-bash-4.4# kubectl -n ncms get prometheuses.monitoring.coreos.com
+NAME                  VERSION   DESIRED   READY   RECONCILED   AVAILABLE   AGE
+operator-prometheus   v2.52.0   2         2       True         True        18d
+-bash-4.4# kubectl -n ncms get prometheuses.monitoring.coreos.com operator-prometheus -o yaml > operator-prometheus_bkp.yaml
+-bash-4.4# kubectl -n ncms edit prometheuses.monitoring.coreos.com operator-prometheus
+error: prometheuses.monitoring.coreos.com "operator-prometheus" is invalid
+A copy of your changes has been stored to "/tmp/kubectl-edit-3253379057.yaml"
+error: Edit cancelled, no valid changes were saved.
+-bash-4.4# kubectl -n ncms edit prometheuses.monitoring.coreos.com operator-prometheus
+error: prometheuses.monitoring.coreos.com "operator-prometheus" is invalid
+A copy of your changes has been stored to "/tmp/kubectl-edit-261784981.yaml"
+error: Edit cancelled, no valid changes were saved.
+-bash-4.4# vi ~/.vimrc
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4# kubectl -n ncms edit prometheuses.monitoring.coreos.com operator-prometheus
+Edit cancelled, no changes made.
+-bash-4.4#
+-bash-4.4#
+-bash-4.4# ls -lrth
+total 28K
+-rw-------. 1 root root 1.7K Apr 22 10:31 DNP_Mapping.txt
+-rw-------. 1 root root 4.1K Apr 22 10:33 NCS_Mapping.txt
+-rw-------. 1 root root 7.1K Apr 22 10:35 hostsmapping.yaml
+-rw-------. 1 root root 4.3K Apr 22 10:36 operator-prometheus_bkp.yaml
+-bash-4.4# cat DNP_Mapping.txt
+MNDL6002     10.147.80.30
+MNDL6001     10.147.80.19
+MNDL6003     10.147.80.53
+CNDL6054     10.147.80.18
+CNDL6004     10.147.80.20
+CNDL6005     10.147.80.21
+CNDL6028     10.147.80.56
+CNDL6029     10.147.80.57
+NMDL6001     10.147.80.16
+NMDL6002     10.147.80.17
+NMDL6003     10.147.80.52
+JCDL6001     10.147.80.10
+JCDL6002     10.147.80.11
+JCDL6003     10.147.80.12
+JCDL6004     10.147.80.46
+JCDL6005     10.147.80.47
+JCDL6006     10.147.80.48
+CNDL6001     10.147.80.13
+CNDL6002     10.147.80.14
+CNDL6013     10.147.80.29
+CNDL6014     10.147.80.31
+CNDL6015     10.147.80.32
+CNDL6016     10.147.80.33
+CNDL6017     10.147.80.34
+CNDL6018     10.147.80.35
+CNDL6019     10.147.80.36
+CNDL6020     10.147.80.37
+CNDL6021     10.147.80.38
+CNDL6022     10.147.80.39
+CNDL6003     10.147.80.15
+CNDL6023     10.147.80.49
+CNDL6024     10.147.80.50
+CNDL6025     10.147.80.51
+CNDL6026     10.147.80.54
+CNDL6027     10.147.80.55
+CNDL6030     10.147.80.58
+CNDL6031     10.147.80.59
+CNDL6032     10.147.80.60
+CNDL6033     10.147.80.61
+CNDL6034     10.147.80.62
+CNDL6006     10.147.80.22
+CNDL6035     10.147.80.63
+CNDL6036     10.147.80.64
+CNDL6037     10.147.80.65
+CNDL6038     10.147.80.66
+CNDL6039     10.147.80.67
+CNDL6040     10.147.80.68
+CNDL6041     10.147.80.69
+CNDL6042     10.147.80.70
+CNDL6043     10.147.80.71
+CNDL6044     10.147.80.72
+CNDL6007     10.147.80.23
+CNDL6045     10.147.80.73
+CNDL6046     10.147.80.74
+CNDL6047     10.147.80.75
+CNDL6050     10.147.80.76
+CNDL6051     10.147.80.77
+CNDL6052     10.147.80.78
+CNDL6053     10.147.80.79
+CNDL6048     10.147.80.80
+CNDL6049     10.147.80.81
+CNDL6008     10.147.80.24
+CNDL6009     10.147.80.25
+CNDL6010     10.147.80.26
+CNDL6011     10.147.80.27
+CNDL6012     10.147.80.28
+
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4# vi DNP_Mapping.txt
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4# awk '{print "- action: replace\n  regex: "$2"\n  replacement: "$1"\n  sourceLabels:\n  - host\n targetLabel: host"}' DNP_Mapping.txt > hostsmapping.yaml
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4# cat hostsmapping.yaml
+- action: replace
+  regex: usddlpod06-centralsite-centralsitemanager-0
+  replacement: MNDL6002
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-centralsite-centralsitemanager-1
+  replacement: MNDL6001
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-centralsite-centralsitemanager-2
+  replacement: MNDL6003
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-edgebm-0
+  replacement: CNDL6054
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-edgebm-1
+  replacement: CNDL6004
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-edgebm-2
+  replacement: CNDL6005
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-edgebm-3
+  replacement: CNDL6028
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-edgebm-4
+  replacement: CNDL6029
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-masterbm-0
+  replacement: NMDL6001
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-masterbm-1
+  replacement: NMDL6002
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-masterbm-2
+  replacement: NMDL6003
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-storagebm-0
+  replacement: JCDL6001
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-storagebm-1
+  replacement: JCDL6002
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-storagebm-2
+  replacement: JCDL6003
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-storagebm-3
+  replacement: JCDL6004
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-storagebm-4
+  replacement: JCDL6005
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-storagebm-5
+  replacement: JCDL6006
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-0
+  replacement: CNDL6001
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-1
+  replacement: CNDL6002
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-10
+  replacement: CNDL6013
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-11
+  replacement: CNDL6014
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-12
+  replacement: CNDL6015
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-13
+  replacement: CNDL6016
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-14
+  replacement: CNDL6017
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-15
+  replacement: CNDL6018
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-16
+  replacement: CNDL6019
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-17
+  replacement: CNDL6020
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-18
+  replacement: CNDL6021
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-19
+  replacement: CNDL6022
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-2
+  replacement: CNDL6003
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-20
+  replacement: CNDL6023
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-21
+  replacement: CNDL6024
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-22
+  replacement: CNDL6025
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-23
+  replacement: CNDL6026
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-24
+  replacement: CNDL6027
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-25
+  replacement: CNDL6030
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-26
+  replacement: CNDL6031
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-27
+  replacement: CNDL6032
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-28
+  replacement: CNDL6033
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-29
+  replacement: CNDL6034
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-3
+  replacement: CNDL6006
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-30
+  replacement: CNDL6035
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-31
+  replacement: CNDL6036
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-32
+  replacement: CNDL6037
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-33
+  replacement: CNDL6038
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-34
+  replacement: CNDL6039
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-35
+  replacement: CNDL6040
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-36
+  replacement: CNDL6041
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-37
+  replacement: CNDL6042
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-38
+  replacement: CNDL6043
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-39
+  replacement: CNDL6044
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-4
+  replacement: CNDL6007
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-40
+  replacement: CNDL6045
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-41
+  replacement: CNDL6046
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-42
+  replacement: CNDL6047
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-43
+  replacement: CNDL6050
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-44
+  replacement: CNDL6051
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-45
+  replacement: CNDL6052
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-46
+  replacement: CNDL6053
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-47
+  replacement: CNDL6048
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-48
+  replacement: CNDL6049
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-5
+  replacement: CNDL6008
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-6
+  replacement: CNDL6009
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-7
+  replacement: CNDL6010
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-8
+  replacement: CNDL6011
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex: usddlpod06-ncs-workerbm-9
+  replacement: CNDL6012
+  sourceLabels:
+  - host
+ targetLabel: host
+- action: replace
+  regex:
+  replacement:
+  sourceLabels:
+  - host
+ targetLabel: host
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4# ls -lrth
+total 28K
+-rw-------. 1 root root 4.1K Apr 22 10:33 NCS_Mapping.txt
+-rw-------. 1 root root 4.3K Apr 22 10:36 operator-prometheus_bkp.yaml
+-rw-------. 1 root root 3.5K Apr 22 10:45 DNP_Mapping.txt
+-rw-------. 1 root root 8.0K Apr 22 10:45 hostsmapping.yaml
+-bash-4.4#
+-bash-4.4# kubectl -n ncms edit prometheuses.monitoring.coreos.com operator-prometheus                                           error: prometheuses.monitoring.coreos.com "operator-prometheus" is invalid
+A copy of your changes has been stored to "/tmp/kubectl-edit-1596531728.yaml"
+error: Edit cancelled, no valid changes were saved.
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4# vi ~/.vimrc
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4# ls -lrth
+total 28K
+-rw-------. 1 root root 4.1K Apr 22 10:33 NCS_Mapping.txt
+-rw-------. 1 root root 4.3K Apr 22 10:36 operator-prometheus_bkp.yaml
+-rw-------. 1 root root 3.5K Apr 22 10:45 DNP_Mapping.txt
+-rw-------. 1 root root 8.0K Apr 22 10:45 hostsmapping.yaml
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4# kubectl -n ncms edit prometheuses.monitoring.coreos.com operator-prometheus
+Edit cancelled, no changes made.
+-bash-4.4#
+-bash-4.4# [
+-bash: [: missing `]'
+-bash-4.4#
+-bash-4.4# #awk '{print "    - action: replace\n      regex: "$2"\n      replacement: "$1"\n      sourceLabels:\n      - host\n      targetLabel: host"}' input.txt > hostmapping.txt
+-bash-4.4# ls -lrth
+total 28K
+-rw-------. 1 root root 4.1K Apr 22 10:33 NCS_Mapping.txt
+-rw-------. 1 root root 4.3K Apr 22 10:36 operator-prometheus_bkp.yaml
+-rw-------. 1 root root 3.5K Apr 22 10:45 DNP_Mapping.txt
+-rw-------. 1 root root 8.0K Apr 22 10:45 hostsmapping.yaml
+-bash-4.4# #awk '{print "    - action: replace\n      regex: "$2"\n      replacement: "$1"\n      sourceLabels:\n      - host\n      targetLabel: host"}' DNP_Mapping.txt > hostmapping.yaml
+-bash-4.4# awk '{print "    - action: replace\n      regex: "$2"\n      replacement: "$1"\n      sourceLabels:\n      - host\n      targetLabel: host"}' DNP_Mapping.txt > hostmapping.yaml
+-bash-4.4#
+-bash-4.4#
+-bash-4.4# ls -lrth
+total 40K
+-rw-------. 1 root root 4.1K Apr 22 10:33 NCS_Mapping.txt
+-rw-------. 1 root root 4.3K Apr 22 10:36 operator-prometheus_bkp.yaml
+-rw-------. 1 root root 3.5K Apr 22 10:45 DNP_Mapping.txt
+-rw-------. 1 root root 8.0K Apr 22 10:45 hostsmapping.yaml
+-rw-------. 1 root root 9.7K Apr 22 10:50 hostmapping.yaml
+-bash-4.4# cat host
+cat: host: No such file or directory
+-bash-4.4# cat hostmapping.yaml
+    - action: replace
+      regex: usddlpod06-centralsite-centralsitemanager-0
+      replacement: MNDL6002
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-centralsite-centralsitemanager-1
+      replacement: MNDL6001
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-centralsite-centralsitemanager-2
+      replacement: MNDL6003
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-edgebm-0
+      replacement: CNDL6054
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-edgebm-1
+      replacement: CNDL6004
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-edgebm-2
+      replacement: CNDL6005
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-edgebm-3
+      replacement: CNDL6028
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-edgebm-4
+      replacement: CNDL6029
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-masterbm-0
+      replacement: NMDL6001
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-masterbm-1
+      replacement: NMDL6002
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-masterbm-2
+      replacement: NMDL6003
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-storagebm-0
+      replacement: JCDL6001
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-storagebm-1
+      replacement: JCDL6002
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-storagebm-2
+      replacement: JCDL6003
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-storagebm-3
+      replacement: JCDL6004
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-storagebm-4
+      replacement: JCDL6005
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-storagebm-5
+      replacement: JCDL6006
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-0
+      replacement: CNDL6001
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-1
+      replacement: CNDL6002
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-10
+      replacement: CNDL6013
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-11
+      replacement: CNDL6014
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-12
+      replacement: CNDL6015
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-13
+      replacement: CNDL6016
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-14
+      replacement: CNDL6017
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-15
+      replacement: CNDL6018
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-16
+      replacement: CNDL6019
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-17
+      replacement: CNDL6020
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-18
+      replacement: CNDL6021
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-19
+      replacement: CNDL6022
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-2
+      replacement: CNDL6003
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-20
+      replacement: CNDL6023
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-21
+      replacement: CNDL6024
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-22
+      replacement: CNDL6025
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-23
+      replacement: CNDL6026
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-24
+      replacement: CNDL6027
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-25
+      replacement: CNDL6030
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-26
+      replacement: CNDL6031
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-27
+      replacement: CNDL6032
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-28
+      replacement: CNDL6033
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-29
+      replacement: CNDL6034
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-3
+      replacement: CNDL6006
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-30
+      replacement: CNDL6035
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-31
+      replacement: CNDL6036
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-32
+      replacement: CNDL6037
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-33
+      replacement: CNDL6038
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-34
+      replacement: CNDL6039
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-35
+      replacement: CNDL6040
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-36
+      replacement: CNDL6041
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-37
+      replacement: CNDL6042
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-38
+      replacement: CNDL6043
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-39
+      replacement: CNDL6044
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-4
+      replacement: CNDL6007
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-40
+      replacement: CNDL6045
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-41
+      replacement: CNDL6046
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-42
+      replacement: CNDL6047
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-43
+      replacement: CNDL6050
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-44
+      replacement: CNDL6051
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-45
+      replacement: CNDL6052
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-46
+      replacement: CNDL6053
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-47
+      replacement: CNDL6048
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-48
+      replacement: CNDL6049
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-5
+      replacement: CNDL6008
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-6
+      replacement: CNDL6009
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-7
+      replacement: CNDL6010
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-8
+      replacement: CNDL6011
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex: usddlpod06-ncs-workerbm-9
+      replacement: CNDL6012
+      sourceLabels:
+      - host
+      targetLabel: host
+    - action: replace
+      regex:
+      replacement:
+      sourceLabels:
+      - host
+      targetLabel: host
+-bash-4.4#
+-bash-4.4#
+-bash-4.4# ls -lrth
+total 40K
+-rw-------. 1 root root 4.1K Apr 22 10:33 NCS_Mapping.txt
+-rw-------. 1 root root 4.3K Apr 22 10:36 operator-prometheus_bkp.yaml
+-rw-------. 1 root root 3.5K Apr 22 10:45 DNP_Mapping.txt
+-rw-------. 1 root root 8.0K Apr 22 10:45 hostsmapping.yaml
+-rw-------. 1 root root 9.7K Apr 22 10:50 hostmapping.yaml
+-bash-4.4#
+-bash-4.4# date
+Tue Apr 22 10:51:11 UTC 2025
+-bash-4.4# diff -u hostsmapping.yaml hostmapping.yaml
+--- hostsmapping.yaml   2025-04-22 10:45:42.662284871 +0000
++++ hostmapping.yaml    2025-04-22 10:50:39.785508211 +0000
+@@ -1,402 +1,402 @@
+-- action: replace
+-  regex: usddlpod06-centralsite-centralsitemanager-0
+-  replacement: MNDL6002
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-centralsite-centralsitemanager-1
+-  replacement: MNDL6001
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-centralsite-centralsitemanager-2
+-  replacement: MNDL6003
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-edgebm-0
+-  replacement: CNDL6054
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-edgebm-1
+-  replacement: CNDL6004
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-edgebm-2
+-  replacement: CNDL6005
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-edgebm-3
+-  replacement: CNDL6028
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-edgebm-4
+-  replacement: CNDL6029
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-masterbm-0
+-  replacement: NMDL6001
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-masterbm-1
+-  replacement: NMDL6002
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-masterbm-2
+-  replacement: NMDL6003
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-storagebm-0
+-  replacement: JCDL6001
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-storagebm-1
+-  replacement: JCDL6002
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-storagebm-2
+-  replacement: JCDL6003
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-storagebm-3
+-  replacement: JCDL6004
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-storagebm-4
+-  replacement: JCDL6005
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-storagebm-5
+-  replacement: JCDL6006
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-0
+-  replacement: CNDL6001
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-1
+-  replacement: CNDL6002
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-10
+-  replacement: CNDL6013
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-11
+-  replacement: CNDL6014
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-12
+-  replacement: CNDL6015
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-13
+-  replacement: CNDL6016
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-14
+-  replacement: CNDL6017
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-15
+-  replacement: CNDL6018
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-16
+-  replacement: CNDL6019
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-17
+-  replacement: CNDL6020
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-18
+-  replacement: CNDL6021
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-19
+-  replacement: CNDL6022
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-2
+-  replacement: CNDL6003
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-20
+-  replacement: CNDL6023
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-21
+-  replacement: CNDL6024
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-22
+-  replacement: CNDL6025
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-23
+-  replacement: CNDL6026
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-24
+-  replacement: CNDL6027
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-25
+-  replacement: CNDL6030
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-26
+-  replacement: CNDL6031
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-27
+-  replacement: CNDL6032
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-28
+-  replacement: CNDL6033
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-29
+-  replacement: CNDL6034
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-3
+-  replacement: CNDL6006
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-30
+-  replacement: CNDL6035
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-31
+-  replacement: CNDL6036
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-32
+-  replacement: CNDL6037
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-33
+-  replacement: CNDL6038
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-34
+-  replacement: CNDL6039
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-35
+-  replacement: CNDL6040
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-36
+-  replacement: CNDL6041
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-37
+-  replacement: CNDL6042
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-38
+-  replacement: CNDL6043
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-39
+-  replacement: CNDL6044
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-4
+-  replacement: CNDL6007
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-40
+-  replacement: CNDL6045
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-41
+-  replacement: CNDL6046
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-42
+-  replacement: CNDL6047
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-43
+-  replacement: CNDL6050
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-44
+-  replacement: CNDL6051
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-45
+-  replacement: CNDL6052
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-46
+-  replacement: CNDL6053
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-47
+-  replacement: CNDL6048
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-48
+-  replacement: CNDL6049
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-5
+-  replacement: CNDL6008
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-6
+-  replacement: CNDL6009
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-7
+-  replacement: CNDL6010
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-8
+-  replacement: CNDL6011
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex: usddlpod06-ncs-workerbm-9
+-  replacement: CNDL6012
+-  sourceLabels:
+-  - host
+- targetLabel: host
+-- action: replace
+-  regex:
+-  replacement:
+-  sourceLabels:
+-  - host
+- targetLabel: host
++    - action: replace
++      regex: usddlpod06-centralsite-centralsitemanager-0
++      replacement: MNDL6002
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-centralsite-centralsitemanager-1
++      replacement: MNDL6001
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-centralsite-centralsitemanager-2
++      replacement: MNDL6003
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-edgebm-0
++      replacement: CNDL6054
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-edgebm-1
++      replacement: CNDL6004
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-edgebm-2
++      replacement: CNDL6005
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-edgebm-3
++      replacement: CNDL6028
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-edgebm-4
++      replacement: CNDL6029
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-masterbm-0
++      replacement: NMDL6001
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-masterbm-1
++      replacement: NMDL6002
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-masterbm-2
++      replacement: NMDL6003
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-storagebm-0
++      replacement: JCDL6001
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-storagebm-1
++      replacement: JCDL6002
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-storagebm-2
++      replacement: JCDL6003
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-storagebm-3
++      replacement: JCDL6004
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-storagebm-4
++      replacement: JCDL6005
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-storagebm-5
++      replacement: JCDL6006
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-0
++      replacement: CNDL6001
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-1
++      replacement: CNDL6002
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-10
++      replacement: CNDL6013
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-11
++      replacement: CNDL6014
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-12
++      replacement: CNDL6015
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-13
++      replacement: CNDL6016
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-14
++      replacement: CNDL6017
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-15
++      replacement: CNDL6018
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-16
++      replacement: CNDL6019
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-17
++      replacement: CNDL6020
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-18
++      replacement: CNDL6021
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-19
++      replacement: CNDL6022
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-2
++      replacement: CNDL6003
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-20
++      replacement: CNDL6023
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-21
++      replacement: CNDL6024
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-22
++      replacement: CNDL6025
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-23
++      replacement: CNDL6026
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-24
++      replacement: CNDL6027
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-25
++      replacement: CNDL6030
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-26
++      replacement: CNDL6031
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-27
++      replacement: CNDL6032
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-28
++      replacement: CNDL6033
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-29
++      replacement: CNDL6034
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-3
++      replacement: CNDL6006
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-30
++      replacement: CNDL6035
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-31
++      replacement: CNDL6036
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-32
++      replacement: CNDL6037
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-33
++      replacement: CNDL6038
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-34
++      replacement: CNDL6039
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-35
++      replacement: CNDL6040
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-36
++      replacement: CNDL6041
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-37
++      replacement: CNDL6042
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-38
++      replacement: CNDL6043
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-39
++      replacement: CNDL6044
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-4
++      replacement: CNDL6007
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-40
++      replacement: CNDL6045
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-41
++      replacement: CNDL6046
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-42
++      replacement: CNDL6047
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-43
++      replacement: CNDL6050
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-44
++      replacement: CNDL6051
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-45
++      replacement: CNDL6052
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-46
++      replacement: CNDL6053
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-47
++      replacement: CNDL6048
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-48
++      replacement: CNDL6049
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-5
++      replacement: CNDL6008
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-6
++      replacement: CNDL6009
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-7
++      replacement: CNDL6010
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-8
++      replacement: CNDL6011
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex: usddlpod06-ncs-workerbm-9
++      replacement: CNDL6012
++      sourceLabels:
++      - host
++      targetLabel: host
++    - action: replace
++      regex:
++      replacement:
++      sourceLabels:
++      - host
++      targetLabel: host
+-bash-4.4# ls -lrth
+total 40K
+-rw-------. 1 root root 4.1K Apr 22 10:33 NCS_Mapping.txt
+-rw-------. 1 root root 4.3K Apr 22 10:36 operator-prometheus_bkp.yaml
+-rw-------. 1 root root 3.5K Apr 22 10:45 DNP_Mapping.txt
+-rw-------. 1 root root 8.0K Apr 22 10:45 hostsmapping.yaml
+-rw-------. 1 root root 9.7K Apr 22 10:50 hostmapping.yaml
+-bash-4.4#
+-bash-4.4# rm hostsmapping.yaml
+-bash-4.4# ls -lrth
+total 32K
+-rw-------. 1 root root 4.1K Apr 22 10:33 NCS_Mapping.txt
+-rw-------. 1 root root 4.3K Apr 22 10:36 operator-prometheus_bkp.yaml
+-rw-------. 1 root root 3.5K Apr 22 10:45 DNP_Mapping.txt
+-rw-------. 1 root root 9.7K Apr 22 10:50 hostmapping.yaml
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4# kubectl -n ncms edit prometheuses.monitoring.coreos.com operator-prometheus
+prometheus.monitoring.coreos.com/operator-prometheus edited
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4#
+-bash-4.4# logout
+[cbis-admin@usddlpod06-ncs-masterbm-0 ~ (Active)]$ logout
+Connection to usddlpod06-ncs-masterbm-0 closed.
+[cbis-admin@usddlpod06-centralsite-centralsitemanager-0 ~ (Active)]$ cat /etc/hosts | grep -i worker
+ 172.31.0.110 usddlpod06-ncs-workerbm-6
+ 172.31.0.111 usddlpod06-ncs-workerbm-7
+ 172.31.0.99 usddlpod06-ncs-workerbm-4
+ 172.31.0.109 usddlpod06-ncs-workerbm-5
+ 172.31.0.105 usddlpod06-ncs-workerbm-45
+ 172.31.0.102 usddlpod06-ncs-workerbm-42
+ 172.31.0.104 usddlpod06-ncs-workerbm-44
+ 172.31.0.67 usddlpod06-ncs-workerbm-10
+ 172.31.0.68 usddlpod06-ncs-workerbm-11
+ 172.31.0.69 usddlpod06-ncs-workerbm-12
+ 172.31.0.70 usddlpod06-ncs-workerbm-13
+ 172.31.0.71 usddlpod06-ncs-workerbm-14
+ 172.31.0.72 usddlpod06-ncs-workerbm-15
+ 172.31.0.97 usddlpod06-ncs-workerbm-38
+ 172.31.0.74 usddlpod06-ncs-workerbm-17
+ 172.31.0.75 usddlpod06-ncs-workerbm-18
+ 172.31.0.76 usddlpod06-ncs-workerbm-19
+ 172.31.0.93 usddlpod06-ncs-workerbm-34
+ 172.31.0.94 usddlpod06-ncs-workerbm-35
+ 172.31.0.91 usddlpod06-ncs-workerbm-32
+ 172.31.0.92 usddlpod06-ncs-workerbm-33
+ 172.31.0.89 usddlpod06-ncs-workerbm-30
+ 172.31.0.90 usddlpod06-ncs-workerbm-31
+ 172.31.0.77 usddlpod06-ncs-workerbm-2
+ 172.31.0.88 usddlpod06-ncs-workerbm-3
+ 172.31.0.65 usddlpod06-ncs-workerbm-0
+ 172.31.0.98 usddlpod06-ncs-workerbm-39
+ 172.31.0.66 usddlpod06-ncs-workerbm-1
+ 172.31.0.113 usddlpod06-ncs-workerbm-9
+ 172.31.0.95 usddlpod06-ncs-workerbm-36
+ 172.31.0.112 usddlpod06-ncs-workerbm-8
+ 172.31.0.96 usddlpod06-ncs-workerbm-37
+ 172.31.0.73 usddlpod06-ncs-workerbm-16
+ 172.31.0.101 usddlpod06-ncs-workerbm-41
+ 172.31.0.103 usddlpod06-ncs-workerbm-43
+ 172.31.0.100 usddlpod06-ncs-workerbm-40
+ 172.31.0.107 usddlpod06-ncs-workerbm-47
+ 172.31.0.106 usddlpod06-ncs-workerbm-46
+ 172.31.0.108 usddlpod06-ncs-workerbm-48
+ 172.31.0.87 usddlpod06-ncs-workerbm-29
+ 172.31.0.86 usddlpod06-ncs-workerbm-28
+ 172.31.0.83 usddlpod06-ncs-workerbm-25
+ 172.31.0.82 usddlpod06-ncs-workerbm-24
+ 172.31.0.85 usddlpod06-ncs-workerbm-27
+ 172.31.0.84 usddlpod06-ncs-workerbm-26
+ 172.31.0.79 usddlpod06-ncs-workerbm-21
+ 172.31.0.78 usddlpod06-ncs-workerbm-20
+ 172.31.0.81 usddlpod06-ncs-workerbm-23
+ 172.31.0.80 usddlpod06-ncs-workerbm-22
+[cbis-admin@usddlpod06-centralsite-centralsitemanager-0 ~ (Active)]$ ssh 172.31.0.87
+------------------------------------------------------------------------------
+* WARNING                                                                    *
+* You are accessing a secured system and your actions will be logged along   *
+* with identifying information. Disconnect immediately if you are not an     *
+* authorized user of this system.                                            *
+------------------------------------------------------------------------------
+ =========== ** W A R N I N G ** ======================
+
+ This is a Nokia system, restricted
+ to authorized individuals. This system is subject to
+ monitoring. Unauthorized users, access, and/or
+ modification will be prosecuted.
+
+ ======================================================
+[cbis-admin@usddlpod06-ncs-workerbm-29 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-29 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-29 ~]$ ip a
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host
+       valid_lft forever preferred_lft forever
+2: eno1: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN group default qlen 1000
+    link/ether 00:30:64:38:a9:4c brd ff:ff:ff:ff:ff:ff
+    altname enp3s0
+3: enp94s0f0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master infra-bond state UP group default qlen 1000
+    link/ether 04:3f:72:d6:59:98 brd ff:ff:ff:ff:ff:ff
+4: enp94s0f1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master infra-bond state UP group default qlen 1000
+    link/ether 04:3f:72:d6:59:98 brd ff:ff:ff:ff:ff:ff permaddr 04:3f:72:d6:59:99
+5: ens2f0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+    link/ether 04:3f:72:e3:d1:cc brd ff:ff:ff:ff:ff:ff
+    altname enp175s0f0np0
+6: ens2f1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+    link/ether 04:3f:72:e3:d1:cc brd ff:ff:ff:ff:ff:ff permaddr 04:3f:72:e3:d1:cd
+    altname enp175s0f1np1
+7: gre0@NONE: <NOARP> mtu 1476 qdisc noop state DOWN group default qlen 1000
+    link/gre 0.0.0.0 brd 0.0.0.0
+8: gretap0@NONE: <BROADCAST,MULTICAST> mtu 1462 qdisc noop state DOWN group default qlen 1000
+    link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff
+9: erspan0@NONE: <BROADCAST,MULTICAST> mtu 1450 qdisc noop state DOWN group default qlen 1000
+    link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff
+10: infra-bond: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+    link/ether 04:3f:72:d6:59:98 brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::63f:72ff:fed6:5998/64 scope link
+       valid_lft forever preferred_lft forever
+11: tenant-bond: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+    link/ether 04:3f:72:e3:d1:cc brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::63f:72ff:fee3:d1cc/64 scope link
+       valid_lft forever preferred_lft forever
+12: vlan201@infra-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+    link/ether 04:3f:72:d6:59:98 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.3.31/24 brd 172.17.3.255 scope global vlan201
+       valid_lft forever preferred_lft forever
+    inet6 fe80::63f:72ff:fed6:5998/64 scope link
+       valid_lft forever preferred_lft forever
+13: vlan202@infra-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+    link/ether 04:3f:72:d6:59:98 brd ff:ff:ff:ff:ff:ff
+    inet 172.17.4.38/24 brd 172.17.4.255 scope global vlan202
+       valid_lft forever preferred_lft forever
+    inet6 fe80::63f:72ff:fed6:5998/64 scope link
+       valid_lft forever preferred_lft forever
+14: vlan205@infra-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+    link/ether 04:3f:72:d6:59:98 brd ff:ff:ff:ff:ff:ff
+    inet 172.31.0.87/21 brd 172.31.7.255 scope global vlan205
+       valid_lft forever preferred_lft forever
+    inet6 fe80::63f:72ff:fed6:5998/64 scope link
+       valid_lft forever preferred_lft forever
+37: cali0c04c2fb2d7@if5: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+    link/ether ee:ee:ee:ee:ee:ee brd ff:ff:ff:ff:ff:ff link-netns cni-955e3aa6-ead2-f989-682d-2133ff14e71f
+    inet6 fe80::ecee:eeff:feee:eeee/64 scope link
+       valid_lft forever preferred_lft forever
+38: cali8396f4d4294@if5: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+    link/ether ee:ee:ee:ee:ee:ee brd ff:ff:ff:ff:ff:ff link-netns cni-8be4656f-0acd-77be-8af8-d3abc7535990
+    inet6 fe80::ecee:eeff:feee:eeee/64 scope link
+       valid_lft forever preferred_lft forever
+40: cali6f577cab0be@if5: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+    link/ether ee:ee:ee:ee:ee:ee brd ff:ff:ff:ff:ff:ff link-netns cni-fbd3f387-664b-dead-64a9-37608a97ce68
+    inet6 fe80::ecee:eeff:feee:eeee/64 scope link
+       valid_lft forever preferred_lft forever
+41: cali7ed52da456c@if5: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+    link/ether ee:ee:ee:ee:ee:ee brd ff:ff:ff:ff:ff:ff link-netns cni-819e72a2-5a25-fcb9-deca-ed58b604b253
+    inet6 fe80::ecee:eeff:feee:eeee/64 scope link
+       valid_lft forever preferred_lft forever
+42: cali05b48801c32@if5: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+    link/ether ee:ee:ee:ee:ee:ee brd ff:ff:ff:ff:ff:ff link-netns cni-a9f4f79a-7cbd-6b9f-70d1-02ba31e5efcb
+    inet6 fe80::ecee:eeff:feee:eeee/64 scope link
+       valid_lft forever preferred_lft forever
+43: tenant.312@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+    link/ether 04:3f:72:e3:d1:cc brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::63f:72ff:fee3:d1cc/64 scope link
+       valid_lft forever preferred_lft forever
+44: tenant.311@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+    link/ether 04:3f:72:e3:d1:cc brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::63f:72ff:fee3:d1cc/64 scope link
+       valid_lft forever preferred_lft forever
+45: tenant.320@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+    link/ether 04:3f:72:e3:d1:cc brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::63f:72ff:fee3:d1cc/64 scope link
+       valid_lft forever preferred_lft forever
+46: tenant.221@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+    link/ether 04:3f:72:e3:d1:cc brd ff:ff:ff:ff:ff:ff
+    inet6 fe80::63f:72ff:fee3:d1cc/64 scope link
+       valid_lft forever preferred_lft forever
+50: cali3f40fa708ff@if5: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+    link/ether ee:ee:ee:ee:ee:ee brd ff:ff:ff:ff:ff:ff link-netns cni-7d88bfe7-2b0b-9fbf-d26a-eac3b6ec1411
+    inet6 fe80::ecee:eeff:feee:eeee/64 scope link
+       valid_lft forever preferred_lft forever
+52: cali05f3837e3f1@if5: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+    link/ether ee:ee:ee:ee:ee:ee brd ff:ff:ff:ff:ff:ff link-netns cni-e661e0ee-4d9e-5a52-5cc4-bf8e7f113ab8
+    inet6 fe80::ecee:eeff:feee:eeee/64 scope link
+       valid_lft forever preferred_lft forever
+77: cali797dc2d8497@if5: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+    link/ether ee:ee:ee:ee:ee:ee brd ff:ff:ff:ff:ff:ff link-netns cni-863b05ce-a081-522e-20e9-d79c9e3e30ca
+    inet6 fe80::ecee:eeff:feee:eeee/64 scope link
+       valid_lft forever preferred_lft forever
+[cbis-admin@usddlpod06-ncs-workerbm-29 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-29 ~]$ ip a | grep -i tenant
+5: ens2f0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+6: ens2f1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+11: tenant-bond: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+43: tenant.312@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+44: tenant.311@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+45: tenant.320@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+46: tenant.221@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+[cbis-admin@usddlpod06-ncs-workerbm-29 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-29 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-29 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-29 ~]$ ifdown ens2f1
+WARN      : [ifdown] You are using 'ifdown' script provided by 'network-scripts', which are now deprecated.
+WARN      : [ifdown] 'network-scripts' will be removed in one of the next major releases of RHEL.
+WARN      : [ifdown] It is advised to switch to 'NetworkManager' instead - it provides 'ifup/ifdown' scripts as well.
+Users cannot control this device.
+[cbis-admin@usddlpod06-ncs-workerbm-29 ~]$ ifup ens2f1
+WARN      : [ifup] You are using 'ifup' script provided by 'network-scripts', which are now deprecated.
+WARN      : [ifup] 'network-scripts' will be removed in one of the next major releases of RHEL.
+WARN      : [ifup] It is advised to switch to 'NetworkManager' instead - it provides 'ifup/ifdown' scripts as well.
+Users cannot control this device.
+[cbis-admin@usddlpod06-ncs-workerbm-29 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-29 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-29 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-29 ~]$ logout
+Connection to 172.31.0.87 closed.
+[cbis-admin@usddlpod06-centralsite-centralsitemanager-0 ~ (Active)]$
+[cbis-admin@usddlpod06-centralsite-centralsitemanager-0 ~ (Active)]$ ssh 172.31.0.82
+------------------------------------------------------------------------------
+* WARNING                                                                    *
+* You are accessing a secured system and your actions will be logged along   *
+* with identifying information. Disconnect immediately if you are not an     *
+* authorized user of this system.                                            *
+------------------------------------------------------------------------------
+ =========== ** W A R N I N G ** ======================
+
+ This is a Nokia system, restricted
+ to authorized individuals. This system is subject to
+ monitoring. Unauthorized users, access, and/or
+ modification will be prosecuted.
+
+ ======================================================
+[cbis-admin@usddlpod06-ncs-workerbm-24 ~]$ ip a | grep tenantg
+[cbis-admin@usddlpod06-ncs-workerbm-24 ~]$ ip a | grep tenant
+5: ens2f0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+6: ens2f1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+11: tenant-bond: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+47: tenant.221@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+48: tenant.311@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+49: tenant.320@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+50: tenant.312@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+[cbis-admin@usddlpod06-ncs-workerbm-24 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-24 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-24 ~]$ ifdown ens2f1
+WARN      : [ifdown] You are using 'ifdown' script provided by 'network-scripts', which are now deprecated.
+WARN      : [ifdown] 'network-scripts' will be removed in one of the next major releases of RHEL.
+WARN      : [ifdown] It is advised to switch to 'NetworkManager' instead - it provides 'ifup/ifdown' scripts as well.
+Users cannot control this device.
+[cbis-admin@usddlpod06-ncs-workerbm-24 ~]$ ip a | grep tenant
+5: ens2f0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+6: ens2f1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+11: tenant-bond: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+47: tenant.221@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+48: tenant.311@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+49: tenant.320@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+50: tenant.312@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+[cbis-admin@usddlpod06-ncs-workerbm-24 ~]$ ip a | grep tenant
+5: ens2f0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+6: ens2f1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+11: tenant-bond: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+47: tenant.221@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+48: tenant.311@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+49: tenant.320@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+50: tenant.312@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+[cbis-admin@usddlpod06-ncs-workerbm-24 ~]$ ip a | grep tenant
+5: ens2f0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+6: ens2f1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+11: tenant-bond: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+47: tenant.221@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+48: tenant.311@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+49: tenant.320@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+50: tenant.312@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+[cbis-admin@usddlpod06-ncs-workerbm-24 ~]$ ip a | grep tenant
+5: ens2f0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+6: ens2f1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+11: tenant-bond: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+47: tenant.221@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+48: tenant.311@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+49: tenant.320@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+50: tenant.312@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+[cbis-admin@usddlpod06-ncs-workerbm-24 ~]$ ip a | grep tenant
+5: ens2f0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+6: ens2f1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+11: tenant-bond: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+47: tenant.221@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+48: tenant.311@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+49: tenant.320@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+50: tenant.312@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+[cbis-admin@usddlpod06-ncs-workerbm-24 ~]$ ip a | grep tenant
+5: ens2f0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+6: ens2f1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+11: tenant-bond: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+47: tenant.221@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+48: tenant.311@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+49: tenant.320@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+50: tenant.312@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+[cbis-admin@usddlpod06-ncs-workerbm-24 ~]$ ip a | grep tenant
+5: ens2f0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+6: ens2f1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+11: tenant-bond: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+47: tenant.221@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+48: tenant.311@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+49: tenant.320@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+50: tenant.312@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+[cbis-admin@usddlpod06-ncs-workerbm-24 ~]$ ip a | grep tenant
+5: ens2f0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+6: ens2f1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+11: tenant-bond: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+47: tenant.221@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+48: tenant.311@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+49: tenant.320@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+50: tenant.312@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+[cbis-admin@usddlpod06-ncs-workerbm-24 ~]$ ip a | grep tenant
+5: ens2f0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+6: ens2f1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+11: tenant-bond: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+47: tenant.221@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+48: tenant.311@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+49: tenant.320@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+50: tenant.312@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+[cbis-admin@usddlpod06-ncs-workerbm-24 ~]$ ip a | grep tenant
+5: ens2f0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+6: ens2f1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+11: tenant-bond: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+47: tenant.221@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+48: tenant.311@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+49: tenant.320@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+50: tenant.312@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+[cbis-admin@usddlpod06-ncs-workerbm-24 ~]$ ip a | grep tenant
+5: ens2f0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+6: ens2f1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+11: tenant-bond: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+47: tenant.221@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+48: tenant.311@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+49: tenant.320@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+50: tenant.312@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+[cbis-admin@usddlpod06-ncs-workerbm-24 ~]$ sudo ifdown ens2f1
+WARN      : [ifdown] You are using 'ifdown' script provided by 'network-scripts', which are now deprecated.
+WARN      : [ifdown] 'network-scripts' will be removed in one of the next major releases of RHEL.
+WARN      : [ifdown] It is advised to switch to 'NetworkManager' instead - it provides 'ifup/ifdown' scripts as well.
+[cbis-admin@usddlpod06-ncs-workerbm-24 ~]$ sudo ip a | grep tenant
+5: ens2f0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+11: tenant-bond: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+47: tenant.221@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+48: tenant.311@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+49: tenant.320@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+50: tenant.312@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+[cbis-admin@usddlpod06-ncs-workerbm-24 ~]$ sudo ifup  ens2f1
+WARN      : [ifup] You are using 'ifup' script provided by 'network-scripts', which are now deprecated.
+WARN      : [ifup] 'network-scripts' will be removed in one of the next major releases of RHEL.
+WARN      : [ifup] It is advised to switch to 'NetworkManager' instead - it provides 'ifup/ifdown' scripts as well.
+[cbis-admin@usddlpod06-ncs-workerbm-24 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-24 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-24 ~]$ sudo ip a | grep tenant
+5: ens2f0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+6: ens2f1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+11: tenant-bond: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+47: tenant.221@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+48: tenant.311@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+49: tenant.320@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+50: tenant.312@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+[cbis-admin@usddlpod06-ncs-workerbm-24 ~]$ sudo ifdown ens2f1
+WARN      : [ifdown] You are using 'ifdown' script provided by 'network-scripts', which are now deprecated.
+WARN      : [ifdown] 'network-scripts' will be removed in one of the next major releases of RHEL.
+WARN      : [ifdown] It is advised to switch to 'NetworkManager' instead - it provides 'ifup/ifdown' scripts as well.
+[cbis-admin@usddlpod06-ncs-workerbm-24 ~]$ sudo ifup  ens2f1
+WARN      : [ifup] You are using 'ifup' script provided by 'network-scripts', which are now deprecated.
+WARN      : [ifup] 'network-scripts' will be removed in one of the next major releases of RHEL.
+WARN      : [ifup] It is advised to switch to 'NetworkManager' instead - it provides 'ifup/ifdown' scripts as well.
+[cbis-admin@usddlpod06-ncs-workerbm-24 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-24 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-24 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-24 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-24 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-24 ~]$ ssh 172.31.0.113
+The authenticity of host '172.31.0.113 (172.31.0.113)' can't be established.
+ECDSA key fingerprint is SHA256:agX9E14KjXyBchsYDcXoEzTpxglubN0c0r+d5SHYttY.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '172.31.0.113' (ECDSA) to the list of known hosts.
+------------------------------------------------------------------------------
+* WARNING                                                                    *
+* You are accessing a secured system and your actions will be logged along   *
+* with identifying information. Disconnect immediately if you are not an     *
+* authorized user of this system.                                            *
+------------------------------------------------------------------------------
+ =========== ** W A R N I N G ** ======================
+
+ This is a Nokia system, restricted
+ to authorized individuals. This system is subject to
+ monitoring. Unauthorized users, access, and/or
+ modification will be prosecuted.
+
+ ======================================================
+[cbis-admin@usddlpod06-ncs-workerbm-9 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-9 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-9 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-9 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-9 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-9 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-9 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-9 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-9 ~]$ ip a | grep -i tenant
+5: ens2f0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+6: ens2f1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+11: tenant-bond: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+43: tenant.221@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+44: tenant.311@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+45: tenant.312@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+46: tenant.320@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+[cbis-admin@usddlpod06-ncs-workerbm-9 ~]$ ifdown ens2f1
+WARN      : [ifdown] You are using 'ifdown' script provided by 'network-scripts', which are now deprecated.
+WARN      : [ifdown] 'network-scripts' will be removed in one of the next major releases of RHEL.
+WARN      : [ifdown] It is advised to switch to 'NetworkManager' instead - it provides 'ifup/ifdown' scripts as well.
+Users cannot control this device.
+[cbis-admin@usddlpod06-ncs-workerbm-9 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-9 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-9 ~]$ ip a | grep -i tenant
+5: ens2f0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+6: ens2f1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+11: tenant-bond: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+43: tenant.221@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+44: tenant.311@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+45: tenant.312@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+46: tenant.320@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+[cbis-admin@usddlpod06-ncs-workerbm-9 ~]$ sudo ifdown ens2f1
+WARN      : [ifdown] You are using 'ifdown' script provided by 'network-scripts', which are now deprecated.
+WARN      : [ifdown] 'network-scripts' will be removed in one of the next major releases of RHEL.
+WARN      : [ifdown] It is advised to switch to 'NetworkManager' instead - it provides 'ifup/ifdown' scripts as well.
+[cbis-admin@usddlpod06-ncs-workerbm-9 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-9 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-9 ~]$ ip a | grep -i tenant
+5: ens2f0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+11: tenant-bond: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+43: tenant.221@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+44: tenant.311@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+45: tenant.312@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+46: tenant.320@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+[cbis-admin@usddlpod06-ncs-workerbm-9 ~]$ sudo ifup ens2f1
+WARN      : [ifup] You are using 'ifup' script provided by 'network-scripts', which are now deprecated.
+WARN      : [ifup] 'network-scripts' will be removed in one of the next major releases of RHEL.
+WARN      : [ifup] It is advised to switch to 'NetworkManager' instead - it provides 'ifup/ifdown' scripts as well.
+[cbis-admin@usddlpod06-ncs-workerbm-9 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-9 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-9 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-9 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-9 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-9 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-9 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-9 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-9 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-9 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-9 ~]$ ssh 172.31.0.80
+The authenticity of host '172.31.0.80 (172.31.0.80)' can't be established.
+ECDSA key fingerprint is SHA256:woX8C8jWFir+w0+6x4mAyjsi5twbKiGSQlVS/5p8MOQ.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '172.31.0.80' (ECDSA) to the list of known hosts.
+------------------------------------------------------------------------------
+* WARNING                                                                    *
+* You are accessing a secured system and your actions will be logged along   *
+* with identifying information. Disconnect immediately if you are not an     *
+* authorized user of this system.                                            *
+------------------------------------------------------------------------------
+ =========== ** W A R N I N G ** ======================
+
+ This is a Nokia system, restricted
+ to authorized individuals. This system is subject to
+ monitoring. Unauthorized users, access, and/or
+ modification will be prosecuted.
+
+ ======================================================
+[cbis-admin@usddlpod06-ncs-workerbm-22 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-22 ~]$ ip a | grep -i tenant
+5: ens2f0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+6: ens2f1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+11: tenant-bond: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+43: tenant.311@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+44: tenant.312@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+45: tenant.320@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+46: tenant.221@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+[cbis-admin@usddlpod06-ncs-workerbm-22 ~]$ sudo ifdown ens2f1
+WARN      : [ifdown] You are using 'ifdown' script provided by 'network-scripts', which are now deprecated.
+WARN      : [ifdown] 'network-scripts' will be removed in one of the next major releases of RHEL.
+WARN      : [ifdown] It is advised to switch to 'NetworkManager' instead - it provides 'ifup/ifdown' scripts as well.
+[cbis-admin@usddlpod06-ncs-workerbm-22 ~]$ ip a | grep -i tenant
+5: ens2f0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+11: tenant-bond: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+43: tenant.311@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+44: tenant.312@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+45: tenant.320@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+46: tenant.221@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+[cbis-admin@usddlpod06-ncs-workerbm-22 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-22 ~]$ sudo ifup ens2f1
+WARN      : [ifup] You are using 'ifup' script provided by 'network-scripts', which are now deprecated.
+WARN      : [ifup] 'network-scripts' will be removed in one of the next major releases of RHEL.
+WARN      : [ifup] It is advised to switch to 'NetworkManager' instead - it provides 'ifup/ifdown' scripts as well.
+[cbis-admin@usddlpod06-ncs-workerbm-22 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-22 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-22 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-22 ~]$ ssh 172.31.0.83
+The authenticity of host '172.31.0.83 (172.31.0.83)' can't be established.
+ECDSA key fingerprint is SHA256:4tqYnWs45TI5Go52rnOdL7jrGgVkWhAB8zHCocbEjiw.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '172.31.0.83' (ECDSA) to the list of known hosts.
+------------------------------------------------------------------------------
+* WARNING                                                                    *
+* You are accessing a secured system and your actions will be logged along   *
+* with identifying information. Disconnect immediately if you are not an     *
+* authorized user of this system.                                            *
+------------------------------------------------------------------------------
+ =========== ** W A R N I N G ** ======================
+
+ This is a Nokia system, restricted
+ to authorized individuals. This system is subject to
+ monitoring. Unauthorized users, access, and/or
+ modification will be prosecuted.
+
+ ======================================================
+[cbis-admin@usddlpod06-ncs-workerbm-25 ~]$ sudo ip a | grep -i tenanat
+[cbis-admin@usddlpod06-ncs-workerbm-25 ~]$ sudo ip a | grep -i ten
+5: ens2f0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+6: ens2f1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+11: tenant-bond: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+43: tenant.311@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+44: tenant.320@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+45: tenant.221@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+46: tenant.312@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+[cbis-admin@usddlpod06-ncs-workerbm-25 ~]$ sudo ifdown ens2f1
+WARN      : [ifdown] You are using 'ifdown' script provided by 'network-scripts', which are now deprecated.
+WARN      : [ifdown] 'network-scripts' will be removed in one of the next major releases of RHEL.
+WARN      : [ifdown] It is advised to switch to 'NetworkManager' instead - it provides 'ifup/ifdown' scripts as well.
+[cbis-admin@usddlpod06-ncs-workerbm-25 ~]$ sudo ip a | grep -i ten
+5: ens2f0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+11: tenant-bond: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+43: tenant.311@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+44: tenant.320@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+45: tenant.221@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+46: tenant.312@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+[cbis-admin@usddlpod06-ncs-workerbm-25 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-25 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-25 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-25 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-25 ~]$ sudo ip a | grep -i ten
+5: ens2f0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+11: tenant-bond: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+43: tenant.311@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+44: tenant.320@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+45: tenant.221@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+46: tenant.312@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+[cbis-admin@usddlpod06-ncs-workerbm-25 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-25 ~]$ sudo ifup ens2f1
+WARN      : [ifup] You are using 'ifup' script provided by 'network-scripts', which are now deprecated.
+WARN      : [ifup] 'network-scripts' will be removed in one of the next major releases of RHEL.
+WARN      : [ifup] It is advised to switch to 'NetworkManager' instead - it provides 'ifup/ifdown' scripts as well.
+[cbis-admin@usddlpod06-ncs-workerbm-25 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-25 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-25 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-25 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-25 ~]$
+[cbis-admin@usddlpod06-ncs-workerbm-25 ~]$ sudo ip a | grep -i ten
+5: ens2f0: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+6: ens2f1: <BROADCAST,MULTICAST,SLAVE,UP,LOWER_UP> mtu 9000 qdisc mq master tenant-bond state UP group default qlen 1000
+11: tenant-bond: <BROADCAST,MULTICAST,MASTER,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default qlen 1000
+43: tenant.311@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+44: tenant.320@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+45: tenant.221@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+46: tenant.312@tenant-bond: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 9000 qdisc noqueue state UP group default
+[cbis-admin@usddlpod06-ncs-workerbm-25 ~]$
